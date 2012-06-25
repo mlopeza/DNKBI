@@ -1,0 +1,83 @@
+2012/06/04 13:19:35 - DW Sell In - Loading transformation from XML file [file:///root/Transformations/DWDNK\Trans\SELL-INN PREDW 3.0.ktr]
+2012/06/04 13:19:36 - SELL-INN PREDW 30 - Dispatching started for transformation [SELL-INN PREDW 30]
+2012/06/04 13:19:42 - Todas las Facturas.0 - Finished reading query, closing connection.
+2012/06/04 13:19:42 - Sort rows.0 - Finished processing (I=0, O=0, R=7747, W=7747, U=0, E=0)
+2012/06/04 13:19:42 - Todas las Facturas.0 - Finished processing (I=7747, O=0, R=0, W=7747, U=0, E=0)
+2012/06/04 13:19:44 - Descuento  en Facturas.0 - Finished reading query, closing connection.
+2012/06/04 13:19:44 - Descuento  en Facturas.0 - Finished processing (I=3652, O=0, R=0, W=3652, U=0, E=0)
+2012/06/04 13:19:44 - Sort rows 2.0 - Finished processing (I=0, O=0, R=3652, W=3652, U=0, E=0)
+2012/06/04 13:19:45 - Subtotales de las Facturas.0 - Finished reading query, closing connection.
+2012/06/04 13:19:45 - Sort rows 4.0 - Finished processing (I=0, O=0, R=7744, W=7744, U=0, E=0)
+2012/06/04 13:19:45 - Subtotales de las Facturas.0 - Finished processing (I=7744, O=0, R=0, W=7744, U=0, E=0)
+2012/06/04 13:19:45 - Left join.0 - Finished processing (I=0, O=0, R=11399, W=7747, U=0, E=0)
+2012/06/04 13:19:46 - Sort rows 4 2.0 - Finished processing (I=0, O=0, R=7747, W=7747, U=0, E=0)
+2012/06/04 13:19:47 - Merge Join 2.0 - Finished processing (I=0, O=0, R=15491, W=7747, U=0, E=0)
+2012/06/04 13:19:47 - If field value is null.0 - Finished processing (I=0, O=0, R=7747, W=7747, U=0, E=0)
+2012/06/04 13:19:47 - Formula 2.0 - Finished processing (I=0, O=0, R=7747, W=7747, U=0, E=0)
+2012/06/04 13:19:47 - Select values.0 - Finished processing (I=0, O=0, R=7747, W=7747, U=0, E=0)
+2012/06/04 13:19:47 - Sort rows 3 2.0 - Finished processing (I=0, O=0, R=7747, W=7747, U=0, E=0)
+2012/06/04 13:20:03 - SELL IN PLANA.0 - linenr 50000
+2012/06/04 13:20:03 - Formula.0 - Linenr 50000
+2012/06/04 13:20:03 - Split Fields.0 - linenr 50000
+2012/06/04 13:20:03 - Add ID a cada registro.0 - linenr 50000
+2012/06/04 13:20:03 - Formato y clasificación de Atributos.0 - linenr 50000
+2012/06/04 13:20:03 - Filter rows.0 - linenr 50000
+2012/06/04 13:20:04 - VENTAS EFECTIVAS.0 - LineNr : 50000
+2012/06/04 13:20:04 - Append streams.0 - linenr 50000
+2012/06/04 13:20:05 - Coato Total y Subtotal.0 - Linenr 50000
+2012/06/04 13:20:05 - Sort rows 3.0 - Linenr 50000
+2012/06/04 13:20:21 - SELL IN PLANA.0 - Finished reading query, closing connection.
+2012/06/04 13:20:21 - Split Fields.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - Add ID a cada registro.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - Formula.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - Quita valores nulos.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - Formato y clasificación de Atributos.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - SELL IN PLANA.0 - Finished processing (I=90621, O=0, R=0, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - Quita Ceros.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - String .0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - Rangos de precios.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - String.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - ESTADOS.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - TIENDA ESTADO.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - VENTAS EFECTIVAS.0 - Finished processing (I=0, O=0, R=90495, W=90495, U=0, E=0)
+2012/06/04 13:20:21 - VENTAS NO EFECTIVAS.0 - Finished processing (I=0, O=0, R=126, W=126, U=0, E=0)
+2012/06/04 13:20:21 - Filter rows.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - Append streams.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:21 - Coato Total y Subtotal.0 - Finished processing (I=0, O=0, R=90621, W=90621, U=0, E=0)
+2012/06/04 13:20:34 - Filter rows 3.0 - linenr 50000
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Unexpected error
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : org.pentaho.di.core.exception.KettleValueException: 
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : org.pentaho.reporting.libraries.formula.EvaluationException: LibFormulaErrorValue{errorCode=503, errorMessage=Arithmetic Error}
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : LibFormulaErrorValue{errorCode=503, errorMessage=Arithmetic Error}
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.formula.Formula.calcFields(Formula.java:230)
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.formula.Formula.processRow(Formula.java:97)
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at java.lang.Thread.run(Thread.java:619)
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Caused by: org.pentaho.reporting.libraries.formula.EvaluationException: LibFormulaErrorValue{errorCode=503, errorMessage=Arithmetic Error}
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.reporting.libraries.formula.EvaluationException.getInstance(EvaluationException.java:70)
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.reporting.libraries.formula.util.NumberUtil.divide(NumberUtil.java:145)
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.reporting.libraries.formula.operators.DivideOperator.evaluate(DivideOperator.java:43)
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.reporting.libraries.formula.operators.AbstractNumericOperator.evaluate(AbstractNumericOperator.java:66)
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.reporting.libraries.formula.lvalues.Term.evaluate(Term.java:63)
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.formula.Formula.calcFields(Formula.java:145)
+2012/06/04 13:20:35 - descuento %.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	... 3 more
+2012/06/04 13:20:35 - SELL-INN PREDW 30 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!
+2012/06/04 13:20:35 - SELL-INN PREDW 30 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!
+2012/06/04 13:20:35 - Filter rows 3 2.0 - Finished processing (I=0, O=0, R=45959, W=45959, U=0, E=0)
+2012/06/04 13:20:35 - descuento %.0 - Finished processing (I=0, O=0, R=46095, W=46094, U=0, E=1)
+2012/06/04 13:20:35 - Add constants.0 - Finished processing (I=0, O=0, R=2079, W=2079, U=0, E=0)
+2012/06/04 13:20:35 - Filter rows 3.0 - Finished processing (I=0, O=0, R=56188, W=56188, U=0, E=0)
+2012/06/04 13:20:35 - Dummy (do nothing).0 - Finished processing (I=0, O=0, R=92, W=92, U=0, E=0)
+2012/06/04 13:20:35 - Dummy (do nothing) 2 2.0 - Finished processing (I=0, O=0, R=33, W=33, U=0, E=0)
+2012/06/04 13:20:35 - Sort rows 3.0 - Finished processing (I=0, O=0, R=90621, W=76092, U=0, E=0)
+2012/06/04 13:20:35 - Merge Join.0 - Finished processing (I=0, O=0, R=72189, W=66155, U=0, E=0)
+2012/06/04 13:20:35 - MARGEN DE VENTA .0 - Finished processing (I=0, O=0, R=43782, W=43782, U=0, E=0)
+2012/06/04 13:20:35 - DESCUENTO$.0 - Finished processing (I=0, O=0, R=46056, W=46056, U=0, E=0)
+2012/06/04 13:20:35 - SELL-INN PREDW 30 - SELL-INN PREDW 30
+2012/06/04 13:20:35 - vENTA NETA MARGEN BRUTO%.0 - Finished processing (I=0, O=0, R=11101, W=11101, U=0, E=0)
+2012/06/04 13:20:35 - Append streams 2.0 - Finished processing (I=0, O=0, R=41137, W=41137, U=0, E=0)
+2012/06/04 13:20:35 - Cantidades validas.0 - Finished processing (I=0, O=0, R=31136, W=31136, U=0, E=0)
+2012/06/04 13:20:35 - Filter rows 2.0 - Finished processing (I=0, O=0, R=21135, W=21135, U=0, E=0)
+2012/06/04 13:20:35 - SELL-INN PREDW 30 - SELL-INN PREDW 30
+2012/06/04 13:20:35 - Insert / Update.0 - Finished processing (I=1100, O=0, R=1100, W=1099, U=489, E=0)

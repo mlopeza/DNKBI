@@ -1,0 +1,485 @@
+===============Mon Apr 23 23:38:53 UTC 2012==========================
+INFO  23-04 23:38:58,451 - Pan - Logging is at level : Minimal logging
+INFO  23-04 23:38:58,453 - Pan - Start of run.
+INFO  23-04 23:39:55,908 - Pan - Finished!
+INFO  23-04 23:39:55,908 - Pan - Start=2012/04/23 23:38:58.467, Stop=2012/04/23 23:39:55.908
+INFO  23-04 23:39:55,909 - Pan - Processing ended after 57 seconds.
+===============Tue Apr 24 00:05:01 UTC 2012==========================
+INFO  24-04 00:05:07,170 - Pan - Logging is at level : Minimal logging
+INFO  24-04 00:05:07,171 - Pan - Start of run.
+INFO  24-04 00:06:04,371 - Pan - Finished!
+INFO  24-04 00:06:04,372 - Pan - Start=2012/04/24 00:05:07.173, Stop=2012/04/24 00:06:04.372
+INFO  24-04 00:06:04,372 - Pan - Processing ended after 57 seconds.
+===============Tue Apr 24 01:31:39 UTC 2012==========================
+INFO  24-04 01:31:44,530 - Pan - Logging is at level : Minimal logging
+INFO  24-04 01:31:44,531 - Pan - Start of run.
+ERROR 24-04 01:33:49,200 - Transforma/Normaliza Tipo  - Unexpected error
+ERROR 24-04 01:33:49,200 - Transforma/Normaliza Tipo  - org.pentaho.di.core.exception.KettleValueException: 
+Javascript error: 
+TypeError: Cannot call method "match" of null (script#2)
+
+	at org.pentaho.di.trans.steps.scriptvalues_mod.ScriptValuesMod.addValues(ScriptValuesMod.java:457)
+	at org.pentaho.di.trans.steps.scriptvalues_mod.ScriptValuesMod.processRow(ScriptValuesMod.java:688)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.mozilla.javascript.EcmaError: TypeError: Cannot call method "match" of null (script#2)
+	at org.mozilla.javascript.ScriptRuntime.constructError(ScriptRuntime.java:3654)
+	at org.mozilla.javascript.ScriptRuntime.constructError(ScriptRuntime.java:3632)
+	at org.mozilla.javascript.ScriptRuntime.typeError(ScriptRuntime.java:3660)
+	at org.mozilla.javascript.ScriptRuntime.typeError2(ScriptRuntime.java:3679)
+	at org.mozilla.javascript.ScriptRuntime.undefCallError(ScriptRuntime.java:3698)
+	at org.mozilla.javascript.ScriptRuntime.getPropFunctionAndThisHelper(ScriptRuntime.java:2221)
+	at org.mozilla.javascript.ScriptRuntime.getPropFunctionAndThis(ScriptRuntime.java:2214)
+	at org.mozilla.javascript.gen.c2._c0(script:2)
+	at org.mozilla.javascript.gen.c2.call(script)
+	at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:398)
+	at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3065)
+	at org.mozilla.javascript.gen.c2.call(script)
+	at org.mozilla.javascript.gen.c2.exec(script)
+	at org.pentaho.di.trans.steps.scriptvalues_mod.ScriptValuesMod.addValues(ScriptValuesMod.java:376)
+	... 3 more
+
+INFO  24-04 01:33:49,226 - DNK_INVENTARIO_PLANA - DNK_INVENTARIO_PLANA
+INFO  24-04 01:33:49,226 - DNK_INVENTARIO_PLANA - DNK_INVENTARIO_PLANA
+ERROR 24-04 01:33:49,263 - Table input - Unexpected error
+ERROR 24-04 01:33:49,264 - Table input - org.pentaho.di.core.exception.KettleDatabaseException: 
+Couldn't get row from result set
+ERROR: canceling statement due to user request
+
+	at org.pentaho.di.core.database.Database.getRow(Database.java:2796)
+	at org.pentaho.di.core.database.Database.getRow(Database.java:2768)
+	at org.pentaho.di.trans.steps.tableinput.TableInput.processRow(TableInput.java:143)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.postgresql.util.PSQLException: ERROR: canceling statement due to user request
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2077)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1810)
+	at org.postgresql.core.v3.QueryExecutorImpl.fetch(QueryExecutorImpl.java:2012)
+	at org.postgresql.jdbc2.AbstractJdbc2ResultSet.next(AbstractJdbc2ResultSet.java:1833)
+	at org.pentaho.di.core.database.Database.getRow(Database.java:2784)
+	... 4 more
+
+INFO  24-04 01:33:49,327 - DNK_INVENTARIO_PLANA - DNK_INVENTARIO_PLANA
+INFO  24-04 01:33:49,327 - Pan - Finished!
+INFO  24-04 01:33:49,327 - DNK_INVENTARIO_PLANA - DNK_INVENTARIO_PLANA
+INFO  24-04 01:33:49,328 - Pan - Start=2012/04/24 01:31:44.532, Stop=2012/04/24 01:33:49.328
+INFO  24-04 01:33:49,328 - Pan - Processing ended after 2 minutes and 4 seconds (124 seconds total).
+===============Tue Apr 24 01:37:55 UTC 2012==========================
+INFO  24-04 01:38:01,294 - Pan - Logging is at level : Minimal logging
+INFO  24-04 01:38:01,296 - Pan - Start of run.
+INFO  24-04 01:39:41,513 - Pan - Finished!
+INFO  24-04 01:39:41,514 - Pan - Start=2012/04/24 01:38:01.296, Stop=2012/04/24 01:39:41.514
+INFO  24-04 01:39:41,514 - Pan - Processing ended after 1 minutes and 40 seconds (100 seconds total).
+===============Tue Apr 24 17:45:40 UTC 2012==========================
+INFO  24-04 17:45:45,830 - Pan - Logging is at level : Minimal logging
+INFO  24-04 17:45:45,832 - Pan - Start of run.
+INFO  24-04 17:47:04,516 - Pan - Finished!
+INFO  24-04 17:47:04,516 - Pan - Start=2012/04/24 17:45:45.832, Stop=2012/04/24 17:47:04.516
+INFO  24-04 17:47:04,516 - Pan - Processing ended after 1 minutes and 18 seconds (78 seconds total).
+===============Tue Apr 24 18:04:07 UTC 2012==========================
+INFO  24-04 18:04:12,124 - Pan - Logging is at level : Minimal logging
+INFO  24-04 18:04:12,125 - Pan - Start of run.
+INFO  24-04 18:05:30,263 - Pan - Finished!
+INFO  24-04 18:05:30,263 - Pan - Start=2012/04/24 18:04:12.126, Stop=2012/04/24 18:05:30.263
+INFO  24-04 18:05:30,263 - Pan - Processing ended after 1 minutes and 18 seconds (78 seconds total).
+===============Mon Apr 25 18:10:08 UTC 2011==========================
+INFO  25-04 18:10:13,543 - Pan - Logging is at level : Minimal logging
+INFO  25-04 18:10:13,545 - Pan - Start of run.
+===============Wed Apr 25 18:10:03 UTC 2012==========================
+INFO  25-04 18:10:08,459 - Pan - Logging is at level : Minimal logging
+INFO  25-04 18:10:08,461 - Pan - Start of run.
+INFO  25-04 18:11:27,125 - Pan - Finished!
+INFO  25-04 18:11:27,125 - Pan - Start=2012/04/25 18:10:08.461, Stop=2012/04/25 18:11:27.125
+INFO  25-04 18:11:27,126 - Pan - Processing ended after 1 minutes and 18 seconds (78 seconds total).
+===============Tue Apr 24 18:20:02 UTC 2012==========================
+INFO  24-04 18:20:07,396 - Pan - Logging is at level : Minimal logging
+INFO  24-04 18:20:07,398 - Pan - Start of run.
+===============Tue Apr 24 18:20:58 UTC 2012==========================
+INFO  24-04 18:21:03,322 - Pan - Logging is at level : Minimal logging
+INFO  24-04 18:21:03,324 - Pan - Start of run.
+INFO  24-04 18:22:22,702 - Pan - Finished!
+INFO  24-04 18:22:22,702 - Pan - Start=2012/04/24 18:21:03.324, Stop=2012/04/24 18:22:22.702
+INFO  24-04 18:22:22,703 - Pan - Processing ended after 1 minutes and 19 seconds (79 seconds total).
+===============Tue Apr 24 18:22:28 UTC 2012==========================
+INFO  24-04 18:22:33,461 - Pan - Logging is at level : Minimal logging
+INFO  24-04 18:22:33,463 - Pan - Start of run.
+INFO  24-04 18:23:51,419 - Pan - Finished!
+INFO  24-04 18:23:51,420 - Pan - Start=2012/04/24 18:22:33.463, Stop=2012/04/24 18:23:51.420
+INFO  24-04 18:23:51,420 - Pan - Processing ended after 1 minutes and 17 seconds (77 seconds total).
+===============Tue Apr 24 19:14:16 UTC 2012==========================
+INFO  24-04 19:14:21,331 - Pan - Logging is at level : Minimal logging
+INFO  24-04 19:14:21,333 - Pan - Start of run.
+ERROR 24-04 19:21:13,151 - Insert / Update - Unexpected error
+ERROR 24-04 19:21:13,152 - Insert / Update - org.pentaho.di.core.exception.KettleStepException: 
+Error in step, asking everyone to stop because of:
+
+Error looking up row in database
+Unknown column 'costo_venta' in 'field list'
+
+
+	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.processRow(InsertUpdate.java:307)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.pentaho.di.core.exception.KettleDatabaseException: 
+Error looking up row in database
+Unknown column 'costo_venta' in 'field list'
+
+	at org.pentaho.di.core.database.Database.getLookup(Database.java:3120)
+	at org.pentaho.di.core.database.Database.getLookup(Database.java:3093)
+	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.lookupValues(InsertUpdate.java:80)
+	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.processRow(InsertUpdate.java:290)
+	... 2 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'costo_venta' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3597)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3529)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1990)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2151)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2625)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2119)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2281)
+	at org.pentaho.di.core.database.Database.getLookup(Database.java:3101)
+	... 5 more
+
+INFO  24-04 19:21:13,163 - DNK_INVENTARIO_PLANA - DNK_INVENTARIO_PLANA
+INFO  24-04 19:21:13,164 - DNK_INVENTARIO_PLANA - DNK_INVENTARIO_PLANA
+ERROR 24-04 19:21:13,164 - Table input - Unexpected error
+ERROR 24-04 19:21:13,164 - Table input - org.pentaho.di.core.exception.KettleDatabaseException: 
+Couldn't get row from result set
+ERROR: canceling statement due to user request
+
+	at org.pentaho.di.core.database.Database.getRow(Database.java:2796)
+	at org.pentaho.di.core.database.Database.getRow(Database.java:2768)
+	at org.pentaho.di.trans.steps.tableinput.TableInput.processRow(TableInput.java:143)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.postgresql.util.PSQLException: ERROR: canceling statement due to user request
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2077)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1810)
+	at org.postgresql.core.v3.QueryExecutorImpl.fetch(QueryExecutorImpl.java:2012)
+	at org.postgresql.jdbc2.AbstractJdbc2ResultSet.next(AbstractJdbc2ResultSet.java:1833)
+	at org.pentaho.di.core.database.Database.getRow(Database.java:2784)
+	... 4 more
+
+INFO  24-04 19:21:13,264 - DNK_INVENTARIO_PLANA - DNK_INVENTARIO_PLANA
+INFO  24-04 19:21:13,265 - DNK_INVENTARIO_PLANA - DNK_INVENTARIO_PLANA
+INFO  24-04 19:21:13,366 - Pan - Finished!
+INFO  24-04 19:21:13,367 - Pan - Start=2012/04/24 19:14:21.333, Stop=2012/04/24 19:21:13.367
+INFO  24-04 19:21:13,367 - Pan - Processing ended after 6 minutes and 52 seconds (412 seconds total).
+===============Tue Apr 24 19:23:54 UTC 2012==========================
+INFO  24-04 19:23:59,023 - Pan - Logging is at level : Minimal logging
+INFO  24-04 19:23:59,025 - Pan - Start of run.
+INFO  24-04 19:31:12,779 - Pan - Finished!
+INFO  24-04 19:31:12,779 - Pan - Start=2012/04/24 19:23:59.025, Stop=2012/04/24 19:31:12.779
+INFO  24-04 19:31:12,779 - Pan - Processing ended after 7 minutes and 13 seconds (433 seconds total).
+===============Tue Apr 24 19:31:50 UTC 2012==========================
+INFO  24-04 19:31:55,724 - Pan - Logging is at level : Minimal logging
+INFO  24-04 19:31:55,726 - Pan - Start of run.
+INFO  24-04 19:39:10,038 - Pan - Finished!
+INFO  24-04 19:39:10,039 - Pan - Start=2012/04/24 19:31:55.726, Stop=2012/04/24 19:39:10.039
+INFO  24-04 19:39:10,039 - Pan - Processing ended after 7 minutes and 14 seconds (434 seconds total).
+===============Wed Apr 25 00:05:01 UTC 2012==========================
+INFO  25-04 00:05:05,919 - Pan - Logging is at level : Minimal logging
+INFO  25-04 00:05:05,921 - Pan - Start of run.
+INFO  25-04 00:12:20,601 - Pan - Finished!
+INFO  25-04 00:12:20,601 - Pan - Start=2012/04/25 00:05:05.921, Stop=2012/04/25 00:12:20.601
+INFO  25-04 00:12:20,601 - Pan - Processing ended after 7 minutes and 14 seconds (434 seconds total).
+INFO  25-04 00:12:26,503 - Pan - Logging is at level : Minimal logging
+INFO  25-04 00:12:26,505 - Pan - Start of run.
+INFO  25-04 00:12:44,343 - Pan - Finished!
+INFO  25-04 00:12:44,343 - Pan - Start=2012/04/25 00:12:26.505, Stop=2012/04/25 00:12:44.343
+INFO  25-04 00:12:44,343 - Pan - Processing ended after 17 seconds.
+INFO  25-04 00:12:49,324 - Pan - Logging is at level : Minimal logging
+INFO  25-04 00:12:49,325 - Pan - Start of run.
+INFO  25-04 00:15:01,855 - Pan - Finished!
+INFO  25-04 00:15:01,856 - Pan - Start=2012/04/25 00:12:49.326, Stop=2012/04/25 00:15:01.855
+INFO  25-04 00:15:01,856 - Pan - Processing ended after 2 minutes and 12 seconds (132 seconds total).
+INFO  24-04 23:30:22,979 - Pan - Logging is at level : Minimal logging
+INFO  24-04 23:30:23,007 - Pan - Start of run.
+ERROR 24-04 23:30:34,268 - Transforma/Normaliza Tipo  - Unexpected error
+ERROR 24-04 23:30:34,268 - Transforma/Normaliza Tipo  - org.pentaho.di.core.exception.KettleValueException: 
+Couldn't compile javascript: 
+missing } in compound statement (script#15)
+
+	at org.pentaho.di.trans.steps.scriptvalues_mod.ScriptValuesMod.addValues(ScriptValuesMod.java:310)
+	at org.pentaho.di.trans.steps.scriptvalues_mod.ScriptValuesMod.processRow(ScriptValuesMod.java:688)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.mozilla.javascript.EvaluatorException: missing } in compound statement (script#15)
+	at org.mozilla.javascript.DefaultErrorReporter.runtimeError(DefaultErrorReporter.java:109)
+	at org.mozilla.javascript.DefaultErrorReporter.error(DefaultErrorReporter.java:96)
+	at org.mozilla.javascript.Parser.addError(Parser.java:146)
+	at org.mozilla.javascript.Parser.reportError(Parser.java:160)
+	at org.mozilla.javascript.Parser.mustMatchToken(Parser.java:246)
+	at org.mozilla.javascript.Parser.statementHelper(Parser.java:1146)
+	at org.mozilla.javascript.Parser.statement(Parser.java:707)
+	at org.mozilla.javascript.Parser.statementHelper(Parser.java:751)
+	at org.mozilla.javascript.Parser.statement(Parser.java:707)
+	at org.mozilla.javascript.Parser.statementHelper(Parser.java:751)
+	at org.mozilla.javascript.Parser.statement(Parser.java:707)
+	at org.mozilla.javascript.Parser.statementHelper(Parser.java:751)
+	at org.mozilla.javascript.Parser.statement(Parser.java:707)
+	at org.mozilla.javascript.Parser.statementHelper(Parser.java:751)
+	at org.mozilla.javascript.Parser.statement(Parser.java:707)
+	at org.mozilla.javascript.Parser.parse(Parser.java:401)
+	at org.mozilla.javascript.Parser.parse(Parser.java:338)
+	at org.mozilla.javascript.Context.compileImpl(Context.java:2368)
+	at org.mozilla.javascript.Context.compileString(Context.java:1359)
+	at org.mozilla.javascript.Context.compileString(Context.java:1348)
+	at org.pentaho.di.trans.steps.scriptvalues_mod.ScriptValuesMod.addValues(ScriptValuesMod.java:308)
+	... 3 more
+
+INFO  24-04 23:30:34,305 - DNK_COMPRAS_PLANA - DNK_COMPRAS_PLANA
+INFO  24-04 23:30:34,305 - DNK_COMPRAS_PLANA - DNK_COMPRAS_PLANA
+INFO  24-04 23:30:34,487 - Pan - Finished!
+INFO  24-04 23:30:34,488 - Pan - Start=2012/04/24 23:30:23.008, Stop=2012/04/24 23:30:34.487
+INFO  24-04 23:30:34,488 - Pan - Processing ended after 11 seconds.
+INFO  24-04 23:33:14,427 - Pan - Logging is at level : Minimal logging
+INFO  24-04 23:33:14,429 - Pan - Start of run.
+ERROR 24-04 23:33:24,980 - Transforma/Normaliza Tipo  - Unexpected error
+ERROR 24-04 23:33:24,980 - Transforma/Normaliza Tipo  - org.pentaho.di.core.exception.KettleValueException: 
+Couldn't compile javascript: 
+missing } in compound statement (script#15)
+
+	at org.pentaho.di.trans.steps.scriptvalues_mod.ScriptValuesMod.addValues(ScriptValuesMod.java:310)
+	at org.pentaho.di.trans.steps.scriptvalues_mod.ScriptValuesMod.processRow(ScriptValuesMod.java:688)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.mozilla.javascript.EvaluatorException: missing } in compound statement (script#15)
+	at org.mozilla.javascript.DefaultErrorReporter.runtimeError(DefaultErrorReporter.java:109)
+	at org.mozilla.javascript.DefaultErrorReporter.error(DefaultErrorReporter.java:96)
+	at org.mozilla.javascript.Parser.addError(Parser.java:146)
+	at org.mozilla.javascript.Parser.reportError(Parser.java:160)
+	at org.mozilla.javascript.Parser.mustMatchToken(Parser.java:246)
+	at org.mozilla.javascript.Parser.statementHelper(Parser.java:1146)
+	at org.mozilla.javascript.Parser.statement(Parser.java:707)
+	at org.mozilla.javascript.Parser.statementHelper(Parser.java:751)
+	at org.mozilla.javascript.Parser.statement(Parser.java:707)
+	at org.mozilla.javascript.Parser.statementHelper(Parser.java:751)
+	at org.mozilla.javascript.Parser.statement(Parser.java:707)
+	at org.mozilla.javascript.Parser.statementHelper(Parser.java:751)
+	at org.mozilla.javascript.Parser.statement(Parser.java:707)
+	at org.mozilla.javascript.Parser.statementHelper(Parser.java:751)
+	at org.mozilla.javascript.Parser.statement(Parser.java:707)
+	at org.mozilla.javascript.Parser.parse(Parser.java:401)
+	at org.mozilla.javascript.Parser.parse(Parser.java:338)
+	at org.mozilla.javascript.Context.compileImpl(Context.java:2368)
+	at org.mozilla.javascript.Context.compileString(Context.java:1359)
+	at org.mozilla.javascript.Context.compileString(Context.java:1348)
+	at org.pentaho.di.trans.steps.scriptvalues_mod.ScriptValuesMod.addValues(ScriptValuesMod.java:308)
+	... 3 more
+
+INFO  24-04 23:33:24,989 - DNK_COMPRAS_PLANA - DNK_COMPRAS_PLANA
+INFO  24-04 23:33:24,989 - DNK_COMPRAS_PLANA - DNK_COMPRAS_PLANA
+INFO  24-04 23:33:25,171 - Pan - Finished!
+INFO  24-04 23:33:25,171 - Pan - Start=2012/04/24 23:33:14.429, Stop=2012/04/24 23:33:25.171
+INFO  24-04 23:33:25,172 - Pan - Processing ended after 10 seconds.
+===============Wed Apr 25 00:05:01 UTC 2012==========================
+INFO  25-04 00:05:12,629 - Pan - Logging is at level : Minimal logging
+INFO  25-04 00:05:12,643 - Pan - Start of run.
+INFO  25-04 00:14:11,540 - Pan - Finished!
+INFO  25-04 00:14:11,584 - Pan - Start=2012/04/25 00:05:12.643, Stop=2012/04/25 00:14:11.583
+INFO  25-04 00:14:11,584 - Pan - Processing ended after 8 minutes and 58 seconds (538 seconds total).
+INFO  25-04 00:14:21,615 - Pan - Logging is at level : Minimal logging
+INFO  25-04 00:14:21,624 - Pan - Start of run.
+INFO  25-04 00:14:35,425 - Pan - Finished!
+INFO  25-04 00:14:35,425 - Pan - Start=2012/04/25 00:14:21.624, Stop=2012/04/25 00:14:35.425
+INFO  25-04 00:14:35,425 - Pan - Processing ended after 13 seconds.
+INFO  25-04 00:14:40,691 - Pan - Logging is at level : Minimal logging
+INFO  25-04 00:14:40,692 - Pan - Start of run.
+INFO  25-04 00:15:06,803 - Pan - Finished!
+INFO  25-04 00:15:06,804 - Pan - Start=2012/04/25 00:14:40.692, Stop=2012/04/25 00:15:06.804
+INFO  25-04 00:15:06,804 - Pan - Processing ended after 26 seconds.
+INFO  25-04 00:15:12,695 - Pan - Logging is at level : Minimal logging
+INFO  25-04 00:15:12,697 - Pan - Start of run.
+INFO  25-04 00:17:55,379 - Pan - Finished!
+INFO  25-04 00:17:55,404 - Pan - Start=2012/04/25 00:15:12.697, Stop=2012/04/25 00:17:55.404
+INFO  25-04 00:17:55,406 - Pan - Processing ended after 2 minutes and 42 seconds (162 seconds total).
+===============Sat Apr 21 00:05:01 UTC 2012==========================
+INFO  21-04 00:05:12,134 - Pan - Logging is at level : Minimal logging
+INFO  21-04 00:05:12,148 - Pan - Start of run.
+INFO  21-04 00:12:35,161 - Pan - Finished!
+INFO  21-04 00:12:35,189 - Pan - Start=2012/04/21 00:05:12.148, Stop=2012/04/21 00:12:35.189
+INFO  21-04 00:12:35,189 - Pan - Processing ended after 7 minutes and 23 seconds (443 seconds total).
+INFO  21-04 00:12:43,271 - Pan - Logging is at level : Minimal logging
+INFO  21-04 00:12:43,273 - Pan - Start of run.
+INFO  21-04 00:13:14,894 - Pan - Finished!
+INFO  21-04 00:13:14,894 - Pan - Start=2012/04/21 00:12:43.273, Stop=2012/04/21 00:13:14.894
+INFO  21-04 00:13:14,895 - Pan - Processing ended after 31 seconds.
+INFO  21-04 00:13:20,821 - Pan - Logging is at level : Minimal logging
+INFO  21-04 00:13:20,822 - Pan - Start of run.
+INFO  21-04 00:13:48,319 - Pan - Finished!
+INFO  21-04 00:13:48,321 - Pan - Start=2012/04/21 00:13:20.829, Stop=2012/04/21 00:13:48.321
+INFO  21-04 00:13:48,321 - Pan - Processing ended after 27 seconds.
+INFO  21-04 00:13:56,309 - Pan - Logging is at level : Minimal logging
+INFO  21-04 00:13:56,322 - Pan - Start of run.
+INFO  21-04 00:16:20,510 - Pan - Finished!
+INFO  21-04 00:16:20,531 - Pan - Start=2012/04/21 00:13:56.323, Stop=2012/04/21 00:16:20.531
+INFO  21-04 00:16:20,531 - Pan - Processing ended after 2 minutes and 24 seconds (144 seconds total).
+===============Sat Apr 28 00:05:02 UTC 2012==========================
+INFO  28-04 00:05:14,301 - Pan - Logging is at level : Minimal logging
+INFO  28-04 00:05:14,332 - Pan - Start of run.
+===============Sun Apr 29 00:05:01 UTC 2012==========================
+INFO  29-04 00:05:20,515 - Pan - Logging is at level : Minimal logging
+INFO  29-04 00:05:20,586 - Pan - Start of run.
+INFO  29-04 00:12:32,697 - Pan - Finished!
+INFO  29-04 00:12:32,740 - Pan - Start=2012/04/29 00:05:20.586, Stop=2012/04/29 00:12:32.740
+INFO  29-04 00:12:32,740 - Pan - Processing ended after 7 minutes and 12 seconds (432 seconds total).
+INFO  29-04 00:12:42,507 - Pan - Logging is at level : Minimal logging
+INFO  29-04 00:12:42,516 - Pan - Start of run.
+INFO  29-04 00:13:21,644 - Pan - Finished!
+INFO  29-04 00:13:21,644 - Pan - Start=2012/04/29 00:12:42.526, Stop=2012/04/29 00:13:21.644
+INFO  29-04 00:13:21,645 - Pan - Processing ended after 39 seconds.
+INFO  29-04 00:13:28,586 - Pan - Logging is at level : Minimal logging
+INFO  29-04 00:13:28,588 - Pan - Start of run.
+ERROR 29-04 00:13:40,833 - calculo de valor del inventario - Unexpected error
+ERROR 29-04 00:13:40,834 - calculo de valor del inventario - org.pentaho.di.core.exception.KettleValueException: 
+org.pentaho.reporting.libraries.formula.EvaluationException: LibFormulaErrorValue{errorCode=522, errorMessage=NA}
+LibFormulaErrorValue{errorCode=522, errorMessage=NA}
+
+	at org.pentaho.di.trans.steps.formula.Formula.calcFields(Formula.java:230)
+	at org.pentaho.di.trans.steps.formula.Formula.processRow(Formula.java:97)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.pentaho.reporting.libraries.formula.EvaluationException: LibFormulaErrorValue{errorCode=522, errorMessage=NA}
+	at org.pentaho.reporting.libraries.formula.EvaluationException.getInstance(EvaluationException.java:70)
+	at org.pentaho.reporting.libraries.formula.operators.AbstractNumericOperator.evaluate(AbstractNumericOperator.java:61)
+	at org.pentaho.reporting.libraries.formula.lvalues.Term.evaluate(Term.java:63)
+	at org.pentaho.di.trans.steps.formula.Formula.calcFields(Formula.java:145)
+	... 3 more
+
+INFO  29-04 00:13:40,888 - INVENTARIO PREDW 20 - INVENTARIO PREDW 20
+INFO  29-04 00:13:40,889 - INVENTARIO PREDW 20 - INVENTARIO PREDW 20
+ERROR 29-04 00:13:40,990 - INVENTARIO - Unexpected error closing query : org.pentaho.di.core.exception.KettleDatabaseException: 
+Couldn't close query: resultset or prepared statements
+Query execution was interrupted
+
+ERROR 29-04 00:13:40,991 - PREDW - Error disconnecting from database:
+
+Error comitting connection
+Streaming result set com.mysql.jdbc.RowDataDynamic@1de06d7e is still active. No statements may be issued when any streaming result sets are open and in use on a given connection. Ensure that you have called .close() on any active streaming result sets before attempting more queries.
+
+ERROR 29-04 00:13:40,992 - PREDW - org.pentaho.di.core.exception.KettleDatabaseException: 
+Error comitting connection
+Streaming result set com.mysql.jdbc.RowDataDynamic@1de06d7e is still active. No statements may be issued when any streaming result sets are open and in use on a given connection. Ensure that you have called .close() on any active streaming result sets before attempting more queries.
+
+	at org.pentaho.di.core.database.Database.commit(Database.java:711)
+	at org.pentaho.di.core.database.Database.commit(Database.java:680)
+	at org.pentaho.di.core.database.Database.disconnect(Database.java:571)
+	at org.pentaho.di.trans.steps.tableinput.TableInput.dispose(TableInput.java:275)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:69)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.sql.SQLException: Streaming result set com.mysql.jdbc.RowDataDynamic@1de06d7e is still active. No statements may be issued when any streaming result sets are open and in use on a given connection. Ensure that you have called .close() on any active streaming result sets before attempting more queries.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:934)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:931)
+	at com.mysql.jdbc.MysqlIO.checkForOutstandingStreamingData(MysqlIO.java:2735)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1899)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2151)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2619)
+	at com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1655)
+	at org.pentaho.di.core.database.Database.commit(Database.java:700)
+	... 5 more
+
+INFO  29-04 00:13:41,130 - INVENTARIO PREDW 20 - INVENTARIO PREDW 20
+INFO  29-04 00:13:41,131 - INVENTARIO PREDW 20 - INVENTARIO PREDW 20
+INFO  29-04 00:13:41,131 - Pan - Finished!
+INFO  29-04 00:13:41,131 - Pan - Start=2012/04/29 00:13:28.589, Stop=2012/04/29 00:13:41.131
+INFO  29-04 00:13:41,131 - Pan - Processing ended after 12 seconds.
+INFO  29-04 00:13:48,296 - Pan - Logging is at level : Minimal logging
+INFO  29-04 00:13:48,298 - Pan - Start of run.
+INFO  29-04 00:25:48,335 - Pan - Finished!
+INFO  29-04 00:25:48,676 - Pan - Start=2012/04/29 00:13:48.298, Stop=2012/04/29 00:25:48.616
+INFO  29-04 00:25:48,702 - Pan - Processing ended after 12 minutes and 0 seconds (720 seconds total).
+===============Mon Apr 30 00:05:02 UTC 2012==========================
+INFO  30-04 00:05:21,128 - Pan - Logging is at level : Minimal logging
+INFO  30-04 00:05:21,203 - Pan - Start of run.
+INFO  30-04 00:12:34,837 - Pan - Finished!
+INFO  30-04 00:12:34,872 - Pan - Start=2012/04/30 00:05:21.203, Stop=2012/04/30 00:12:34.872
+INFO  30-04 00:12:34,872 - Pan - Processing ended after 7 minutes and 13 seconds (433 seconds total).
+INFO  30-04 00:12:44,744 - Pan - Logging is at level : Minimal logging
+INFO  30-04 00:12:44,762 - Pan - Start of run.
+INFO  30-04 00:13:18,963 - Pan - Finished!
+INFO  30-04 00:13:18,963 - Pan - Start=2012/04/30 00:12:44.762, Stop=2012/04/30 00:13:18.963
+INFO  30-04 00:13:18,963 - Pan - Processing ended after 34 seconds.
+INFO  30-04 00:13:25,948 - Pan - Logging is at level : Minimal logging
+INFO  30-04 00:13:25,949 - Pan - Start of run.
+INFO  30-04 00:14:38,327 - Pan - Finished!
+INFO  30-04 00:14:38,388 - Pan - Start=2012/04/30 00:13:25.950, Stop=2012/04/30 00:14:38.387
+INFO  30-04 00:14:38,389 - Pan - Processing ended after 1 minutes and 12 seconds (72 seconds total).
+INFO  30-04 00:14:48,699 - Pan - Logging is at level : Minimal logging
+INFO  30-04 00:14:48,704 - Pan - Start of run.
+INFO  30-04 00:24:52,607 - Pan - Finished!
+INFO  30-04 00:24:53,033 - Pan - Start=2012/04/30 00:14:48.704, Stop=2012/04/30 00:24:52.986
+INFO  30-04 00:24:53,038 - Pan - Processing ended after 10 minutes and 4 seconds (604 seconds total).
+===============Tue May  1 00:05:01 UTC 2012==========================
+INFO  01-05 00:05:07,040 - Pan - Logging is at level : Minimal logging
+INFO  01-05 00:05:07,042 - Pan - Start of run.
+INFO  01-05 00:06:55,631 - Pan - Finished!
+INFO  01-05 00:06:55,632 - Pan - Start=2012/05/01 00:05:07.042, Stop=2012/05/01 00:06:55.631
+INFO  01-05 00:06:55,632 - Pan - Processing ended after 1 minutes and 48 seconds (108 seconds total).
+INFO  01-05 00:07:00,644 - Pan - Logging is at level : Minimal logging
+INFO  01-05 00:07:00,646 - Pan - Start of run.
+INFO  01-05 00:07:22,470 - Pan - Finished!
+INFO  01-05 00:07:22,470 - Pan - Start=2012/05/01 00:07:00.646, Stop=2012/05/01 00:07:22.470
+INFO  01-05 00:07:22,470 - Pan - Processing ended after 21 seconds.
+INFO  01-05 00:07:27,676 - Pan - Logging is at level : Minimal logging
+INFO  01-05 00:07:27,678 - Pan - Start of run.
+INFO  01-05 00:08:57,800 - Pan - Finished!
+INFO  01-05 00:08:57,825 - Pan - Start=2012/05/01 00:07:27.678, Stop=2012/05/01 00:08:57.825
+INFO  01-05 00:08:57,825 - Pan - Processing ended after 1 minutes and 30 seconds (90 seconds total).
+INFO  01-05 00:09:07,091 - Pan - Logging is at level : Minimal logging
+INFO  01-05 00:09:07,094 - Pan - Start of run.
+Processing has stopped because of an error: 
+Unable to read file [file:///root/Transformations/DWDNK/Trans/SELL-INN PREDW.ktr]
+Could not read from "file:///root/Transformations/DWDNK/Trans/SELL-INN PREDW.ktr" because it is a not a file.
+
+===============Wed May  2 00:05:02 UTC 2012==========================
+INFO  02-05 00:05:29,978 - Pan - Logging is at level : Minimal logging
+INFO  02-05 00:05:30,078 - Pan - Start of run.
+INFO  02-05 00:07:21,382 - Pan - Finished!
+INFO  02-05 00:07:21,382 - Pan - Start=2012/05/02 00:05:30.078, Stop=2012/05/02 00:07:21.382
+INFO  02-05 00:07:21,382 - Pan - Processing ended after 1 minutes and 51 seconds (111 seconds total).
+INFO  02-05 00:07:29,649 - Pan - Logging is at level : Minimal logging
+INFO  02-05 00:07:29,651 - Pan - Start of run.
+INFO  02-05 00:07:59,014 - Pan - Finished!
+INFO  02-05 00:07:59,015 - Pan - Start=2012/05/02 00:07:29.651, Stop=2012/05/02 00:07:59.014
+INFO  02-05 00:07:59,015 - Pan - Processing ended after 29 seconds.
+INFO  02-05 00:08:04,422 - Pan - Logging is at level : Minimal logging
+INFO  02-05 00:08:04,423 - Pan - Start of run.
+INFO  02-05 00:09:43,059 - Pan - Finished!
+INFO  02-05 00:09:43,075 - Pan - Start=2012/05/02 00:08:04.423, Stop=2012/05/02 00:09:43.075
+INFO  02-05 00:09:43,075 - Pan - Processing ended after 1 minutes and 38 seconds (98 seconds total).
+INFO  02-05 00:09:53,055 - Pan - Logging is at level : Minimal logging
+INFO  02-05 00:09:53,062 - Pan - Start of run.
+Processing has stopped because of an error: 
+Unable to read file [file:///root/Transformations/DWDNK/Trans/SELL-INN PREDW.ktr]
+Could not read from "file:///root/Transformations/DWDNK/Trans/SELL-INN PREDW.ktr" because it is a not a file.
+
+===============Thu May  3 00:05:02 UTC 2012==========================
+INFO  03-05 00:05:13,941 - Pan - Logging is at level : Minimal logging
+INFO  03-05 00:05:13,975 - Pan - Start of run.
+INFO  03-05 00:07:05,284 - Pan - Finished!
+INFO  03-05 00:07:05,285 - Pan - Start=2012/05/03 00:05:13.976, Stop=2012/05/03 00:07:05.285
+INFO  03-05 00:07:05,285 - Pan - Processing ended after 1 minutes and 51 seconds (111 seconds total).
+INFO  03-05 00:07:13,069 - Pan - Logging is at level : Minimal logging
+INFO  03-05 00:07:13,070 - Pan - Start of run.
+INFO  03-05 00:07:40,433 - Pan - Finished!
+INFO  03-05 00:07:40,434 - Pan - Start=2012/05/03 00:07:13.071, Stop=2012/05/03 00:07:40.434
+INFO  03-05 00:07:40,434 - Pan - Processing ended after 27 seconds.
+INFO  03-05 00:07:46,211 - Pan - Logging is at level : Minimal logging
+INFO  03-05 00:07:46,213 - Pan - Start of run.
+INFO  03-05 00:09:31,097 - Pan - Finished!
+INFO  03-05 00:09:31,147 - Pan - Start=2012/05/03 00:07:46.213, Stop=2012/05/03 00:09:31.147
+INFO  03-05 00:09:31,147 - Pan - Processing ended after 1 minutes and 44 seconds (104 seconds total).
+INFO  03-05 00:09:40,866 - Pan - Logging is at level : Minimal logging
+INFO  03-05 00:09:40,872 - Pan - Start of run.
+Processing has stopped because of an error: 
+Unable to read file [file:///root/Transformations/DWDNK/Trans/SELL-INN PREDW.ktr]
+Could not read from "file:///root/Transformations/DWDNK/Trans/SELL-INN PREDW.ktr" because it is a not a file.
+

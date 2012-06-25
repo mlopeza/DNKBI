@@ -1,0 +1,17 @@
+2012/05/25 12:34:48 - DW Inventario - Loading transformation from XML file [file:///root/Transformations/DWDNK\Trans\INVENTARIO PREDW 2.0.ktr]
+2012/05/25 12:34:49 - INVENTARIO PREDW 20 - Dispatching started for transformation [INVENTARIO PREDW 20]
+2012/05/25 12:34:52 - INVENTARIO.0 - Finished reading query, closing connection.
+2012/05/25 12:34:52 - Select values .0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - If field value is null.0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - calculo de valor del inventario.0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - Select values.0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - INVENTARIO.0 - Finished processing (I=8231, O=0, R=0, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - Add sequence.0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - Quita Null a Medidas.0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - String operations.0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - CD ALMACEN.0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - estado almacen.0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - GENERO.0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - Rangos de precios.0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:34:52 - String operations 2.0 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+2012/05/25 12:35:08 - InventarioDWplano.0 - Finished processing (I=8231, O=8231, R=8231, W=8231, U=0, E=0)

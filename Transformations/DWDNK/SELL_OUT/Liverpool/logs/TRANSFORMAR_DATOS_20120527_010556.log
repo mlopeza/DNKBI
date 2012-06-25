@@ -1,0 +1,9 @@
+2012/05/27 01:05:56 - Transformacion - Loading transformation from XML file [file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/LiverpoolReadSpreadSheet.ktr]
+2012/05/27 01:05:56 - LiverpoolReadSpreadSheet - Dispatching started for transformation [LiverpoolReadSpreadSheet]
+2012/05/27 01:05:56 - Generate Rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2012/05/27 01:05:56 - Campos.0 - Finished processing (I=0, O=0, R=0, W=16, U=0, E=0)
+2012/05/27 01:05:56 - CSV file input.0 - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/Layout.csv'
+2012/05/27 01:05:56 - Excel Input Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2012/05/27 01:05:57 - Append streams.0 - Finished processing (I=0, O=0, R=16, W=16, U=0, E=0)
+2012/05/27 01:05:57 - LiverpoolReadSpreadSheetTemplate - Dispatching started for transformation [LiverpoolReadSpreadSheetTemplate]
+2012/05/27 01:05:57 - CSV file input.0 - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/Layout.csv'

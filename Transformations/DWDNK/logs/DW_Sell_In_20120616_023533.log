@@ -1,0 +1,91 @@
+2012/06/16 02:35:33 - DW Sell In - Loading transformation from XML file [file:///root/Transformations/DWDNK\Trans\SELL-INN PREDW 3.0.ktr]
+2012/06/16 02:35:33 - SELL-INN PREDW 30 - Dispatching started for transformation [SELL-INN PREDW 30]
+2012/06/16 02:35:37 - Todas las Facturas.0 - Finished reading query, closing connection.
+2012/06/16 02:35:38 - Sort rows.0 - Finished processing (I=0, O=0, R=7841, W=7841, U=0, E=0)
+2012/06/16 02:35:38 - Todas las Facturas.0 - Finished processing (I=7841, O=0, R=0, W=7841, U=0, E=0)
+2012/06/16 02:35:38 - Descuento  en Facturas.0 - Finished reading query, closing connection.
+2012/06/16 02:35:38 - Descuento  en Facturas.0 - Finished processing (I=3686, O=0, R=0, W=3686, U=0, E=0)
+2012/06/16 02:35:38 - Sort rows 2.0 - Finished processing (I=0, O=0, R=3686, W=3686, U=0, E=0)
+2012/06/16 02:35:39 - Subtotales de las Facturas.0 - Finished reading query, closing connection.
+2012/06/16 02:35:39 - Subtotales de las Facturas.0 - Finished processing (I=7839, O=0, R=0, W=7839, U=0, E=0)
+2012/06/16 02:35:39 - Sort rows 4.0 - Finished processing (I=0, O=0, R=7839, W=7839, U=0, E=0)
+2012/06/16 02:35:39 - Left join.0 - Finished processing (I=0, O=0, R=11527, W=7841, U=0, E=0)
+2012/06/16 02:35:39 - Sort rows 4 2.0 - Finished processing (I=0, O=0, R=7841, W=7841, U=0, E=0)
+2012/06/16 02:35:40 - Merge Join 2.0 - Finished processing (I=0, O=0, R=15680, W=7841, U=0, E=0)
+2012/06/16 02:35:40 - If field value is null.0 - Finished processing (I=0, O=0, R=7841, W=7841, U=0, E=0)
+2012/06/16 02:35:40 - Formula 2.0 - Finished processing (I=0, O=0, R=7841, W=7841, U=0, E=0)
+2012/06/16 02:35:40 - Sort rows 3 2.0 - Finished processing (I=0, O=0, R=7841, W=7841, U=0, E=0)
+2012/06/16 02:35:40 - Select values.0 - Finished processing (I=0, O=0, R=7841, W=7841, U=0, E=0)
+2012/06/16 02:35:48 - SELL IN PLANA.0 - linenr 50000
+2012/06/16 02:35:48 - Formula.0 - Linenr 50000
+2012/06/16 02:35:48 - Split Fields.0 - linenr 50000
+2012/06/16 02:35:48 - Add ID a cada registro.0 - linenr 50000
+2012/06/16 02:35:48 - Formato y clasificación de Atributos.0 - linenr 50000
+2012/06/16 02:35:49 - Filter rows.0 - linenr 50000
+2012/06/16 02:35:49 - VENTAS EFECTIVAS.0 - LineNr : 50000
+2012/06/16 02:35:49 - Append streams.0 - linenr 50000
+2012/06/16 02:35:49 - Coato Total y Subtotal.0 - Linenr 50000
+2012/06/16 02:35:49 - Sort rows 3.0 - Linenr 50000
+2012/06/16 02:36:05 - SELL IN PLANA.0 - linenr 100000
+2012/06/16 02:36:05 - Formula.0 - Linenr 100000
+2012/06/16 02:36:31 - Add ID a cada registro.0 - linenr 100000
+2012/06/16 02:36:31 - Split Fields.0 - linenr 100000
+2012/06/16 02:36:31 - Formato y clasificación de Atributos.0 - linenr 100000
+2012/06/16 02:36:31 - Filter rows.0 - linenr 100000
+2012/06/16 02:36:31 - VENTAS EFECTIVAS.0 - LineNr : 100000
+2012/06/16 02:36:31 - Append streams.0 - linenr 100000
+2012/06/16 02:36:31 - Coato Total y Subtotal.0 - Linenr 100000
+2012/06/16 02:36:31 - Sort rows 3.0 - Linenr 100000
+2012/06/16 02:36:31 - SELL IN PLANA.0 - Finished reading query, closing connection.
+2012/06/16 02:36:31 - Formula.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - Add ID a cada registro.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - Split Fields.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - Quita valores nulos.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - Quita Ceros.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - String .0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - SELL IN PLANA.0 - Finished processing (I=103922, O=0, R=0, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - Formato y clasificación de Atributos.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - Rangos de precios.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - String.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - ESTADOS.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - TIENDA ESTADO.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:31 - Filter rows.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:32 - VENTAS EFECTIVAS.0 - Finished processing (I=0, O=0, R=103796, W=103796, U=0, E=0)
+2012/06/16 02:36:31 - VENTAS NO EFECTIVAS.0 - Finished processing (I=0, O=0, R=126, W=126, U=0, E=0)
+2012/06/16 02:36:32 - Append streams.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:32 - Coato Total y Subtotal.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:36:54 - Filter rows 3.0 - linenr 50000
+2012/06/16 02:36:54 - descuento %.0 - Linenr 50000
+2012/06/16 02:36:54 - DESCUENTO$.0 - Linenr 50000
+2012/06/16 02:36:54 - Filter rows 3 2.0 - linenr 50000
+2012/06/16 02:36:54 - MARGEN DE VENTA .0 - Linenr 50000
+2012/06/16 02:36:54 - Append streams 2.0 - linenr 50000
+2012/06/16 02:36:59 - Sort rows 3.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:37:03 - Filter rows 3.0 - linenr 100000
+2012/06/16 02:37:04 - Merge Join.0 - Finished processing (I=0, O=0, R=111763, W=103922, U=0, E=0)
+2012/06/16 02:37:04 - Filter rows 3.0 - Finished processing (I=0, O=0, R=103922, W=103922, U=0, E=0)
+2012/06/16 02:37:04 - Dummy (do nothing).0 - Finished processing (I=0, O=0, R=600, W=600, U=0, E=0)
+2012/06/16 02:37:42 - descuento %.0 - Linenr 100000
+2012/06/16 02:37:56 - descuento %.0 - Finished processing (I=0, O=0, R=103322, W=103322, U=0, E=0)
+2012/06/16 02:38:01 - Cantidades validas.0 - linenr 50000
+2012/06/16 02:38:32 - DESCUENTO$.0 - Linenr 100000
+2012/06/16 02:38:44 - DESCUENTO$.0 - Finished processing (I=0, O=0, R=103322, W=103322, U=0, E=0)
+2012/06/16 02:38:50 - Filter rows 2.0 - linenr 50000
+2012/06/16 02:39:16 - Filter rows 3 2.0 - linenr 100000
+2012/06/16 02:39:28 - Filter rows 3 2.0 - Finished processing (I=0, O=0, R=103322, W=103322, U=0, E=0)
+2012/06/16 02:39:28 - Add constants.0 - Finished processing (I=0, O=0, R=4838, W=4838, U=0, E=0)
+2012/06/16 02:39:34 - vENTA NETA MARGEN BRUTO 1 %.0 - Linenr 50000
+2012/06/16 02:40:07 - MARGEN DE VENTA .0 - Finished processing (I=0, O=0, R=98484, W=98484, U=0, E=0)
+2012/06/16 02:40:16 - vENTA NETA MARGEN BRUTO 2 % .0 - Linenr 50000
+2012/06/16 02:40:42 - Append streams 2.0 - linenr 100000
+2012/06/16 02:40:42 - Insert / Update.0 - linenr 50000
+2012/06/16 02:40:50 - Append streams 2.0 - Finished processing (I=0, O=0, R=103322, W=103322, U=0, E=0)
+2012/06/16 02:41:15 - Cantidades validas.0 - linenr 100000
+2012/06/16 02:41:24 - Cantidades validas.0 - Finished processing (I=0, O=0, R=103322, W=103322, U=0, E=0)
+2012/06/16 02:41:24 - Dummy (do nothing) 2.0 - Finished processing (I=0, O=0, R=126, W=126, U=0, E=0)
+2012/06/16 02:41:38 - Filter rows 2.0 - linenr 100000
+2012/06/16 02:41:38 - Filter rows 2.0 - Finished processing (I=0, O=0, R=103196, W=103196, U=0, E=0)
+2012/06/16 02:41:38 - Dummy (do nothing) 2 2.0 - Finished processing (I=0, O=0, R=4802, W=4802, U=0, E=0)
+2012/06/16 02:41:58 - vENTA NETA MARGEN BRUTO 1 %.0 - Finished processing (I=0, O=0, R=98394, W=98394, U=0, E=0)
+2012/06/16 02:42:26 - vENTA NETA MARGEN BRUTO 2 % .0 - Finished processing (I=0, O=0, R=98394, W=98394, U=0, E=0)
+2012/06/16 02:42:42 - Insert / Update.0 - Finished processing (I=98394, O=634, R=98394, W=98394, U=52363, E=0)

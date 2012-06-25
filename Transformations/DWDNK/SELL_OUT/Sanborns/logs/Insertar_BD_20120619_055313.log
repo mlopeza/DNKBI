@@ -1,0 +1,37 @@
+2012/06/19 05:53:13 - Insertar A base de Datos - Loading transformation from XML file [file:///root/Transformations/DWDNK/SELL_OUT/Sanborns/InsertDatabase.ktr]
+2012/06/19 05:53:13 - InsertDatabase - Dispatching started for transformation [InsertDatabase]
+2012/06/19 05:53:14 - CSV file input.0 - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Sanborns/Resultado.csv'
+2012/06/19 05:53:14 - CSV file input.0 - Finished processing (I=220, O=0, R=0, W=219, U=0, E=0)
+2012/06/19 05:53:14 - Direccion Cliente (Liverpool).0 - Finished reading query, closing connection.
+2012/06/19 05:53:14 - Replace in string.0 - Finished processing (I=0, O=0, R=219, W=219, U=0, E=0)
+2012/06/19 05:53:14 - Almacen.0 - Finished reading query, closing connection.
+2012/06/19 05:53:14 - Almacen.0 - Finished processing (I=1746, O=0, R=0, W=1746, U=0, E=0)
+2012/06/19 05:53:15 - Direccion Cliente (Liverpool).0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2012/06/19 05:53:15 - Microsoft Excel Input.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2012/06/19 05:53:15 - Direccion Tiendas.0 - Finished reading query, closing connection.
+2012/06/19 05:53:15 - Direccion Tiendas.0 - Finished processing (I=158, O=0, R=0, W=158, U=0, E=0)
+2012/06/19 05:53:15 - DNK Producto-SKU Liverpool.0 - Finished reading query, closing connection.
+2012/06/19 05:53:15 - Modified Java Script Value.0 - Optimization level set to 9.
+2012/06/19 05:53:15 - DNK Producto-SKU Liverpool.0 - Finished processing (I=675, O=0, R=0, W=675, U=0, E=0)
+2012/06/19 05:53:15 - Table input.0 - Finished reading query, closing connection.
+2012/06/19 05:53:15 - Table input.0 - Finished processing (I=7323, O=0, R=0, W=7323, U=0, E=0)
+2012/06/19 05:53:15 - Modified Java Script Value.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2012/06/19 05:53:15 - Select values.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2012/06/19 05:53:16 - Join Rows (cartesian product).0 - Finished processing (I=0, O=0, R=7542, W=219, U=0, E=0)
+2012/06/19 05:53:16 - Agrega fecha.0 - Finished processing (I=0, O=0, R=220, W=219, U=0, E=0)
+2012/06/19 05:53:16 - Sort SKU.0 - Finished processing (I=0, O=0, R=219, W=219, U=0, E=0)
+2012/06/19 05:53:16 - Merge Join.0 - Finished processing (I=0, O=0, R=894, W=219, U=0, E=0)
+2012/06/19 05:53:16 - Sort id Tienda.0 - Finished processing (I=0, O=0, R=219, W=219, U=0, E=0)
+2012/06/19 05:53:17 - Merge Join 2.0 - Finished processing (I=0, O=0, R=377, W=219, U=0, E=0)
+2012/06/19 05:53:17 - Sort rows.0 - Finished processing (I=0, O=0, R=219, W=219, U=0, E=0)
+2012/06/19 05:53:17 - Merge Join 3.0 - Finished processing (I=0, O=0, R=1965, W=219, U=0, E=0)
+2012/06/19 05:53:17 - Normaliza Genero.0 - Optimization level set to 9.
+2012/06/19 05:53:17 - Agrega Direccion Cliente.0 - Finished processing (I=0, O=0, R=220, W=219, U=0, E=0)
+2012/06/19 05:53:18 - Formula.0 - Finished processing (I=0, O=0, R=219, W=219, U=0, E=0)
+2012/06/19 05:53:18 - Campos de Fecha 2.0 - Finished processing (I=0, O=0, R=219, W=219, U=0, E=0)
+2012/06/19 05:53:18 - Normaliza Genero.0 - Finished processing (I=0, O=0, R=219, W=219, U=0, E=0)
+2012/06/19 05:53:18 - Filter rows.0 - Finished processing (I=0, O=0, R=219, W=219, U=0, E=0)
+2012/06/19 05:53:18 - Pone en 0 las que no tengan numero.0 - Finished processing (I=0, O=0, R=219, W=219, U=0, E=0)
+2012/06/19 05:53:18 - Add constants.0 - Finished processing (I=0, O=0, R=219, W=219, U=0, E=0)
+2012/06/19 05:53:18 - Cambia a formato de Tabla.0 - Finished processing (I=0, O=0, R=219, W=219, U=0, E=0)
+2012/06/19 05:53:19 - Insert / Update.0 - Finished processing (I=219, O=219, R=219, W=219, U=0, E=0)

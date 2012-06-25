@@ -1,0 +1,26 @@
+2012/06/19 05:11:34 - Insertar A base de Datos - Loading transformation from XML file [file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/InsertDatabase.ktr]
+2012/06/19 05:11:34 - InsertDatabase - Dispatching started for transformation [InsertDatabase]
+2012/06/19 05:11:34 - CSV file input.0 - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/Resultado.csv'
+2012/06/19 05:11:35 - Direccion Cliente (Liverpool).0 - Finished reading query, closing connection.
+2012/06/19 05:11:35 - Direccion Tiendas.0 - Finished reading query, closing connection.
+2012/06/19 05:11:35 - Direccion Tiendas.0 - Finished processing (I=92, O=0, R=0, W=92, U=0, E=0)
+2012/06/19 05:11:35 - Direccion Cliente (Liverpool).0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2012/06/19 05:11:35 - CSV file input.0 - Finished processing (I=9640, O=0, R=0, W=9639, U=0, E=0)
+2012/06/19 05:11:35 - Almacen.0 - Finished reading query, closing connection.
+2012/06/19 05:11:35 - Almacen.0 - Finished processing (I=1746, O=0, R=0, W=1746, U=0, E=0)
+2012/06/19 05:11:35 - Sort SKU.0 - Finished processing (I=0, O=0, R=9639, W=9639, U=0, E=0)
+2012/06/19 05:11:36 - DNK Producto-SKU Liverpool.0 - Finished reading query, closing connection.
+2012/06/19 05:11:36 - DNK Producto-SKU Liverpool.0 - Finished processing (I=3768, O=0, R=0, W=3768, U=0, E=0)
+2012/06/19 05:11:36 - Merge Join.0 - Finished processing (I=0, O=0, R=13407, W=9641, U=0, E=0)
+2012/06/19 05:11:36 - Sort id Tienda.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:11:37 - Merge Join 2.0 - Finished processing (I=0, O=0, R=9733, W=9641, U=0, E=0)
+2012/06/19 05:11:37 - Sort rows.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:11:37 - Normaliza Genero.0 - Optimization level set to 9.
+2012/06/19 05:11:37 - Merge Join 3.0 - Finished processing (I=0, O=0, R=11387, W=9641, U=0, E=0)
+2012/06/19 05:11:37 - Agrega Direccion Cliente.0 - Finished processing (I=0, O=0, R=9642, W=9641, U=0, E=0)
+2012/06/19 05:11:40 - Campos de Fecha 2.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:11:40 - Formula.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:11:40 - Normaliza Genero.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:11:40 - Filter rows.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:11:40 - Pone en 0 las que no tengan numero.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:12:01 - Insert / Update.0 - Finished processing (I=9641, O=9639, R=9641, W=9641, U=2, E=0)

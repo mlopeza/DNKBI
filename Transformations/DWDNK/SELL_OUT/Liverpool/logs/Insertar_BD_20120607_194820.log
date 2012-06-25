@@ -1,0 +1,15 @@
+2012/06/07 19:48:20 - Insertar A base de Datos - Loading transformation from XML file [file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/InsertDatabase.ktr]
+2012/06/07 19:48:22 - InsertDatabase - Dispatching started for transformation [InsertDatabase]
+2012/06/07 19:48:24 - CSV file input.0 - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/Resultado.csv'
+2012/06/07 19:48:24 - Direccion Cliente (Liverpool).0 - Finished reading query, closing connection.
+2012/06/07 19:48:24 - Direccion Tiendas.0 - Finished reading query, closing connection.
+2012/06/07 19:48:24 - Direccion Cliente (Liverpool).0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2012/06/07 19:48:24 - Direccion Tiendas.0 - Finished processing (I=92, O=0, R=0, W=92, U=0, E=0)
+2012/06/07 19:48:28 - DNK Producto-SKU Liverpool.0 - Finished reading query, closing connection.
+2012/06/07 19:48:28 - DNK Producto-SKU Liverpool.0 - Finished processing (I=3755, O=0, R=0, W=3755, U=0, E=0)
+2012/06/07 19:48:28 - Merge Join.0 - Finished processing (I=0, O=0, R=3755, W=0, U=0, E=0)
+2012/06/07 19:48:29 - Merge Join 2.0 - Finished processing (I=0, O=0, R=92, W=0, U=0, E=0)
+2012/06/07 19:48:29 - Almacen.0 - Finished reading query, closing connection.
+2012/06/07 19:48:29 - Almacen.0 - Finished processing (I=16719, O=0, R=0, W=16719, U=0, E=0)
+2012/06/07 19:48:29 - Merge Join 3.0 - Finished processing (I=0, O=0, R=16719, W=0, U=0, E=0)
+2012/06/07 19:48:29 - Agrega Direccion Cliente.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=0)

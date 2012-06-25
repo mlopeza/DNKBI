@@ -1,0 +1,46 @@
+2012/06/11 11:24:13 - PREDW SELL IN - Loading transformation from XML file [file:///root/Transformations/DWDNK\SELL_IN\SELL_IN_PLANA.ktr]
+2012/06/11 11:24:14 - SELL_IN_PLANA - Dispatching started for transformation [SELL_IN_PLANA]
+2012/06/11 11:28:54 - Transforma/Normaliza Tipo .0 - Optimization level set to 9.
+2012/06/11 11:28:55 - normaliza tienda_ciudad.0 - Optimization level set to 9.
+2012/06/11 11:28:56 - normaliza tienda_estado.0 - Optimization level set to 9.
+2012/06/11 11:28:56 - Normaliza Genero.0 - Optimization level set to 9.
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Unexpected error
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Couldn't get row from result set
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Un error de E/S ha ocurrido mientras se enviaba al backend.
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.database.Database.getRow(Database.java:2796)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.database.Database.getRow(Database.java:2768)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.tableinput.TableInput.processRow(TableInput.java:143)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at java.lang.Thread.run(Thread.java:619)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Caused by: org.postgresql.util.PSQLException: Un error de E/S ha ocurrido mientras se enviaba al backend.
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.core.v3.QueryExecutorImpl.fetch(QueryExecutorImpl.java:2017)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.jdbc2.AbstractJdbc2ResultSet.next(AbstractJdbc2ResultSet.java:1833)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.database.Database.getRow(Database.java:2784)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	... 4 more
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Caused by: java.io.EOFException
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.core.PGStream.Receive(PGStream.java:447)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.core.PGStream.ReceiveTupleV3(PGStream.java:350)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1789)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.core.v3.QueryExecutorImpl.fetch(QueryExecutorImpl.java:2012)
+2012/06/11 11:48:18 - Table input.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	... 6 more
+2012/06/11 11:48:18 - Campos de Fecha 2.0 - Finished processing (I=0, O=0, R=9999, W=9999, U=0, E=0)
+2012/06/11 11:48:18 - SELL_IN_PLANA - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!
+2012/06/11 11:48:18 - SELL_IN_PLANA - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!
+2012/06/11 11:48:18 - Formula.0 - Finished processing (I=0, O=0, R=9999, W=9999, U=0, E=0)
+2012/06/11 11:48:18 - Table input.0 - Finished reading query, closing connection.
+2012/06/11 11:48:18 - Filter rows.0 - Finished processing (I=0, O=0, R=9999, W=9999, U=0, E=0)
+2012/06/11 11:48:18 - No.0 - Finished processing (I=0, O=0, R=2728, W=2728, U=0, E=0)
+2012/06/11 11:48:18 - Normaliza Genero.0 - Finished processing (I=0, O=0, R=9999, W=9999, U=0, E=0)
+2012/06/11 11:48:18 - normaliza tienda_estado.0 - Finished processing (I=0, O=0, R=9999, W=9999, U=0, E=0)
+2012/06/11 11:48:18 - normaliza tienda_ciudad.0 - Finished processing (I=0, O=0, R=9999, W=9999, U=0, E=0)
+2012/06/11 11:48:18 - Transforma/Normaliza Tipo .0 - Finished processing (I=0, O=0, R=9999, W=9999, U=0, E=0)
+2012/06/11 11:48:18 - Si.0 - Finished processing (I=0, O=0, R=7271, W=7271, U=0, E=0)
+2012/06/11 11:48:18 - es PV.0 - Finished processing (I=0, O=0, R=7357, W=7357, U=0, E=0)
+2012/06/11 11:48:18 - Utilidad Positiva.0 - Finished processing (I=0, O=0, R=9999, W=9999, U=0, E=0)
+2012/06/11 11:48:18 - no es PV.0 - Finished processing (I=0, O=0, R=2642, W=2642, U=0, E=0)
+2012/06/11 11:48:18 - Table input.0 - Finished processing (I=10000, O=0, R=0, W=9999, U=0, E=1)
+2012/06/11 11:48:18 - SELL_IN_PLANA - SELL_IN_PLANA
+2012/06/11 11:48:18 - SELL_IN_PLANA - SELL_IN_PLANA
+2012/06/11 11:48:18 - Insert / Update.0 - Finished processing (I=9999, O=118, R=9999, W=9999, U=0, E=0)

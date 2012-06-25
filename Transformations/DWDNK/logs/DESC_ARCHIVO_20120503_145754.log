@@ -1,0 +1,8 @@
+2012/05/03 14:57:54 - Append streams.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Unexpected error
+2012/05/03 14:57:54 - Append streams.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : java.lang.NullPointerException
+2012/05/03 14:57:54 - Append streams.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.step.BaseStep.getRowFrom(BaseStep.java:1786)
+2012/05/03 14:57:54 - Append streams.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.append.Append.processRow(Append.java:75)
+2012/05/03 14:57:54 - Append streams.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+2012/05/03 14:57:54 - Append streams.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at java.lang.Thread.run(Thread.java:722)
+2012/05/03 14:57:54 - LiverpoolExtract2 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!
+2012/05/03 14:57:54 - LiverpoolExtract2 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!

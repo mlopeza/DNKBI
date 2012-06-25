@@ -1,0 +1,11 @@
+2012/05/30 09:48:52 - Transformacion - Loading transformation from XML file [file:///home/mario/Escritorio/Transformations/DWDNK/SELL_OUT/Sanborns/SanbornsReadSpreadSheet.ktr]
+2012/05/30 09:48:52 - SanbornsReadSpreadSheet - Dispatching started for transformation [SanbornsReadSpreadSheet]
+2012/05/30 09:48:53 - CSV file input.0 - Header row skipped in file 'file:///home/mario/Escritorio/Transformations/DWDNK/SELL_OUT/Sanborns/Layout.csv'
+2012/05/30 09:48:53 - Generate Rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2012/05/30 09:48:53 - Campos.0 - Finished processing (I=0, O=0, R=0, W=2, U=0, E=0)
+2012/05/30 09:48:53 - Excel Input Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2012/05/30 09:48:53 - Append streams.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2012/05/30 09:48:53 - SanbornsReadSpreadSheetTemplate - Dispatching started for transformation [SanbornsReadSpreadSheetTemplate]
+2012/05/30 09:48:53 - CSV file input.0 - Header row skipped in file 'file:///home/mario/Escritorio/Transformations/DWDNK/SELL_OUT/Sanborns/Layout.csv'
+2012/05/30 09:48:53 - Microsoft Excel Input 2.0 - Finished processing (I=56, O=0, R=0, W=56, U=0, E=0)
+2012/05/30 09:48:53 - Row Normaliser.0 - Finished processing (I=0, O=0, R=56, W=0, U=0, E=0)

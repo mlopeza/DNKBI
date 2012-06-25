@@ -1,0 +1,51 @@
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Unexpected error
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : org.pentaho.di.core.exception.KettleStepException: 
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Error in step, asking everyone to stop because of:
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Error looking up row in database
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Communications link failure
+
+The last packet successfully received from the server was 126.340 milliseconds ago.  The last packet sent successfully to the server was 126.340 milliseconds ago.
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.processRow(InsertUpdate.java:307)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at java.lang.Thread.run(Thread.java:722)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Caused by: org.pentaho.di.core.exception.KettleDatabaseException: 
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Error looking up row in database
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Communications link failure
+
+The last packet successfully received from the server was 126.340 milliseconds ago.  The last packet sent successfully to the server was 126.340 milliseconds ago.
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.database.Database.getLookup(Database.java:3120)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.database.Database.getLookup(Database.java:3093)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.lookupValues(InsertUpdate.java:80)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.processRow(InsertUpdate.java:290)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	... 2 more
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 126.340 milliseconds ago.  The last packet sent successfully to the server was 126.340 milliseconds ago.
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1116)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3090)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2979)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3520)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1990)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at com.mysql.jdbc.ServerPreparedStatement.serverExecute(ServerPreparedStatement.java:1337)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at com.mysql.jdbc.ServerPreparedStatement.executeInternal(ServerPreparedStatement.java:825)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2281)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.database.Database.getLookup(Database.java:3101)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	... 5 more
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2540)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2990)
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	... 12 more
+2012/05/03 21:00:55 - InsertDatabase - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!
+2012/05/03 21:00:55 - InsertDatabase - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Unable to commit connection(s) :org.pentaho.di.core.exception.KettleDatabaseException: 
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Error performing rollback on connection
+2012/05/03 21:00:55 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Communications link failure during rollback(). Transaction resolution unknown.

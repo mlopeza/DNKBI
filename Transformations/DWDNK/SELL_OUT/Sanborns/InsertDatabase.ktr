@@ -1,0 +1,2306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>InsertDatabase</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2012&#47;04&#47;27 14:17:16.778</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2012&#47;04&#47;27 14:17:16.778</modified_date>
+  </info>
+  <notepads>
+    <notepad>
+      <note>Busca la fecha en el EXCEL</note>
+      <xloc>21</xloc>
+      <yloc>129</yloc>
+      <width>177</width>
+      <heigth>26</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>165</backgroundcolorgreen>
+      <backgroundcolorblue>0</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Trae el m_product_id y compara con un contains la descripcion
+con el nombre del producto</note>
+      <xloc>46</xloc>
+      <yloc>5</yloc>
+      <width>377</width>
+      <heigth>42</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>165</backgroundcolorgreen>
+      <backgroundcolorblue>0</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+  <connection>
+    <name>DNK</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>openbravo</database>
+    <port>5832</port>
+    <username>tad</username>
+    <password>Encrypted 2be98afc86aa7f28bbb1ca072cc93b9d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5832</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>DWDNK</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>PREDW</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4a016be7fc797addb</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>DNK Producto-SKU Liverpool</from><to>Merge Join</to><enabled>Y</enabled> </hop>  <hop> <from>Sort SKU</from><to>Merge Join</to><enabled>Y</enabled> </hop>  <hop> <from>Merge Join</from><to>Sort id Tienda</to><enabled>Y</enabled> </hop>  <hop> <from>Direccion Tiendas</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>  <hop> <from>Sort id Tienda</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>  <hop> <from>Almacen</from><to>Merge Join 3</to><enabled>Y</enabled> </hop>  <hop> <from>Sort rows</from><to>Merge Join 3</to><enabled>Y</enabled> </hop>  <hop> <from>Merge Join 2</from><to>Sort rows</to><enabled>Y</enabled> </hop>  <hop> <from>Campos de Fecha 2</from><to>Formula</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows</from><to>Pone en 0 las que no tengan numero</to><enabled>Y</enabled> </hop>  <hop> <from>Merge Join 3</from><to>Agrega Direccion Cliente</to><enabled>Y</enabled> </hop>  <hop> <from>Direccion Cliente (Liverpool)</from><to>Agrega Direccion Cliente</to><enabled>Y</enabled> </hop>  <hop> <from>Agrega Direccion Cliente</from><to>Campos de Fecha 2</to><enabled>Y</enabled> </hop>  <hop> <from>Formula</from><to>Normaliza Genero</to><enabled>Y</enabled> </hop>  <hop> <from>Normaliza Genero</from><to>Filter rows</to><enabled>Y</enabled> </hop>  <hop> <from>Microsoft Excel Input</from><to>Modified Java Script Value</to><enabled>Y</enabled> </hop>  <hop> <from>Modified Java Script Value</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>Agrega fecha</to><enabled>Y</enabled> </hop>  <hop> <from>Agrega fecha</from><to>Sort SKU</to><enabled>Y</enabled> </hop>  <hop> <from>Table input</from><to>Join Rows (cartesian product)</to><enabled>Y</enabled> </hop>  <hop> <from>CSV file input</from><to>Replace in string</to><enabled>Y</enabled> </hop>  <hop> <from>Replace in string</from><to>Join Rows (cartesian product)</to><enabled>Y</enabled> </hop>  <hop> <from>Join Rows (cartesian product)</from><to>Agrega fecha</to><enabled>Y</enabled> </hop>  <hop> <from>Pone en 0 las que no tengan numero</from><to>Add constants</to><enabled>Y</enabled> </hop>  <hop> <from>Add constants</from><to>Cambia a formato de Tabla</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows</from><to>Add constants</to><enabled>Y</enabled> </hop>  <hop> <from>Cambia a formato de Tabla</from><to>Insert &#47; Update</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Add constants</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>NombreCentro</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Region</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Articulo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>NombreArticulo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Estado</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Modelo</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>EANUPC</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Temporada</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>typefield</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>OnHand</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>50</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>831</xloc>
+      <yloc>447</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Agrega Direccion Cliente</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>%%java.io.tmpdir%%</directory>
+      <prefix>out</prefix>
+      <cache_size>500</cache_size>
+      <main/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue/>
+ <function>=</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>659</xloc>
+      <yloc>180</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Agrega fecha</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>%%java.io.tmpdir%%</directory>
+      <prefix>out</prefix>
+      <cache_size>500</cache_size>
+      <main/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue/>
+ <function>=</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>325</xloc>
+      <yloc>221</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Almacen</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DWDNK</connection>
+    <sql>SELECT cantidad AS cantidad_en_almacen,id_producto,CAST(DATE_FORMAT(fecha,&apos;%d&#47;%m&#47;%Y&apos;) AS CHAR) AS fecha_tabla
+FROM V_INVENTARIO
+where cantidad &gt;= 0
+ORDER BY id_producto ASC,fecha ASC;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>453</xloc>
+      <yloc>170</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CSV file input</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename>${Internal.Transformation.Filename.Directory}&#47;Resultado.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>;</separator>
+    <enclosure>&quot;</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>N</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding/>
+    <fields>
+      <field>
+        <name>ean</name>
+        <type>Number</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>50</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>descripcion</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>50</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>typefield</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>cantidad</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>id_tienda</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>50</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>45</xloc>
+      <yloc>182</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cambia a formato de Tabla</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>id_tienda</name>
+        <rename/>
+        <length>50</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NombreCentro</name>
+        <rename/>
+        <length>50</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Articulo</name>
+        <rename/>
+        <length>50</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NombreArticulo</name>
+        <rename/>
+        <length>50</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>fecha</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Region</name>
+        <rename/>
+        <length>50</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>c_bpartner_id</name>
+        <rename/>
+        <length>32</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Cantidad</name>
+        <rename/>
+        <length>11</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EANUPC</name>
+        <rename/>
+        <length>50</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Estado</name>
+        <rename/>
+        <length>50</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Modelo</name>
+        <rename/>
+        <length>50</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Temporada</name>
+        <rename/>
+        <length>50</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ad_user_id</name>
+        <rename/>
+        <length>32</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>anio</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>atm</name>
+        <rename/>
+        <length>20</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>bp_name</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>bp_name_short</name>
+        <rename/>
+        <length>40</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>calle_tienda</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cantidad_en_almacen</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ciudad_tienda</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>clasificacion</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>colonia_tienda</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>color_aditamento</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>color_caja</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>color_caratula</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>color_correa</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>combinacion_boxset</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cp_tienda</name>
+        <rename/>
+        <length>10</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cuatri</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cuatrimestre</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>description</name>
+        <rename/>
+        <length>255</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dia</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>direccion_tienda</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk2_ano_temporada</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk2_basico_novedad</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk2_centrocomercial_id</name>
+        <rename/>
+        <length>32</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk2_genero</name>
+        <rename/>
+        <length>15</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk2_hay_brillantes</name>
+        <rename/>
+        <length>1</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk2_joyas_tamano</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk2_joyeria_clasificacion</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk2_maquinaria</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk2_movimiento</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk2_status</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk2_temporada</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>em_znk4_nombre_tienda</name>
+        <rename/>
+        <length>100</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>email</name>
+        <rename/>
+        <length>40</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>estado_tienda</name>
+        <rename/>
+        <length>40</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>firstname</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>formaanillo</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>formaaretes</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>formaboxset</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>formabrasalete</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>formacharm</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>formacollar</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>identificador_tienda</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>joyas_aditamentos</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>joyas_color</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>joyas_forma</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>joyas_materiales</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>joyas_metales</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lastname</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>m_product_id</name>
+        <rename/>
+        <length>32</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>material_caja</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>material_correa</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>mes</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nombreDia</name>
+        <rename/>
+        <length>10</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nombreMes</name>
+        <rename/>
+        <length>10</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nombre_estilo</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>num_tienda</name>
+        <rename/>
+        <length>10</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>pais_tienda</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>precio_de_lista</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>product_name</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>sem</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>semestre</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>sku_name</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>terminado_caja</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>terminado_caratula</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>terminado_correa</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tienda_centro_comercial</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tipo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tri</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>trimestre</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>typefield</name>
+        <rename/>
+        <length>11</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>znk2_forma_caja</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>znk2_producto_sku_id</name>
+        <rename/>
+        <length>32</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>OnHand</name>
+        <rename/>
+        <length>11</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>direccion_cliente_completa</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>calle_cliente</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numero_cliente</name>
+        <rename/>
+        <length>10</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>colonia_cliente</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ciudad_cliente</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>postal_cliente</name>
+        <rename/>
+        <length>10</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>delegacion_cliente</name>
+        <rename/>
+        <length>100</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>pais_cliente</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cliente_nombre</name>
+        <rename/>
+        <length>40</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cliente_nombre_completo</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>estado_cliente</name>
+        <rename/>
+        <length>40</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>producto_marca</name>
+        <rename/>
+        <length>60</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>fecha</name>
+        <rename>fecha</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd&#47;mm&#47;yyyy</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>711</xloc>
+      <yloc>502</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Campos de Fecha 2</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>anio</field_name>
+<formula_string>year([fecha])</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>mes</field_name>
+<formula_string>month([fecha])</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>sem</field_name>
+<formula_string>int((month([fecha])&#47;6)+.9)</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>cuatri</field_name>
+<formula_string>int((month([fecha])&#47;4)+.9)
+</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>tri</field_name>
+<formula_string>int((month([fecha])&#47;3)+.9)</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>dia</field_name>
+<formula_string>day([fecha])</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>nombreDia</field_name>
+<formula_string>choose(weekday([fecha];1);&quot;Domingo&quot;;&quot;Lunes&quot;;&quot;Martes&quot;;&quot;Miercoles&quot;;&quot;Jueves&quot;;&quot;Viernes&quot;;&quot;Sabado&quot;)</formula_string>
+<value_type>String</value_type>
+<value_length>10</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>nombreMes</field_name>
+<formula_string>choose(month([fecha]);&quot;Enero&quot;;&quot;Febrero&quot;;&quot;Marzo&quot;;&quot;Abril&quot;;&quot;Mayo&quot;;&quot;Junio&quot;;&quot;Julio&quot;;&quot;Agosto&quot;;&quot;Septiembre&quot;;&quot;Octubre&quot;;&quot;Noviembre&quot;;&quot;Diciembre&quot;)</formula_string>
+<value_type>String</value_type>
+<value_length>10</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>693</xloc>
+      <yloc>252</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DNK Producto-SKU Liverpool</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DNK</connection>
+    <sql>SELECT   
+--Producto
+       P.m_product_id,
+--Bussiness Partner
+BP.c_bpartner_id,
+       BP.ad_client_id,
+       BP.name AS bp_name,
+       BP.value AS bp_name_short,
+       BP.c_bp_group_id,
+       
+--SKU
+SKU.znk2_producto_sku_id,
+       SKU.name AS sku_name,
+       
+--Producto
+P.name AS product_name,
+       PP.pricelist AS precio_de_lista,
+       TRIM(P.em_znk2_tipo_producto) AS tipo,
+	   MARCA.name AS producto_marca,
+       P.EM_ZNK2_GENERO,
+       P.EM_ZNK2_ATM AS ATM,
+       P.EM_ZNK2_BASICO_NOVEDAD,
+       P.EM_ZNK2_STATUS,
+       P.EM_ZNK2_TEMPORADA,
+       EM_ZNK2_ANO_TEMPORADA,
+       EM_ZNK2_HAY_BRILLANTES,
+       P.EM_ZNK2_MAQUINARIA,
+       P.EM_ZNK2_MOVIMIENTO,
+       ZNK2_FORMA_CAJA.NAME AS ZNK2_FORMA_CAJA,
+       EM_ZNK2_JOYAS_TAMANO,
+       EM_ZNK2_JOYERIA_CLASIFICACION,
+       ZNK2_MATERIAL_CAJA.NAME AS MATERIAL_CAJA,
+       ZNK2_MATERIAL_CORREA.NAME AS MATERIAL_CORREA,
+       ZNK2_TERMINADO_CAJA.NAME AS TERMINADO_CAJA,
+       ZNK2_TERMINADO_CORREA.NAME AS TERMINADO_CORREA,
+       ZNK2_COLOR_CAJA.NAME AS COLOR_CAJA,
+       ZNK2_COLOR_CORREA.NAME AS COLOR_CORREA,
+       ZNK2_COLOR_CARATULA.NAME AS COLOR_CARATULA,
+       ZNK2_TERMINADO_CARATULA.NAME AS TERMINADO_CARATULA,
+       ZNK2_CLASIFICACION.NAME AS CLASIFICACION,
+       ZNK2_NOMBRE_ESTILO.NAME AS NOMBRE_ESTILO,
+       ZNK2_JOYAS_METALES.NAME AS JOYAS_METALES,
+       ZNK2_JOYAS_ADITAMENTOS.NAME AS JOYAS_ADITAMENTOS,
+       ZNK2_JOYAS_COLOR.NAME AS JOYAS_COLOR,
+       ZNK2_JOYAS_MATERIALES.NAME AS JOYAS_MATERIALES,
+       ZNK2_JOYAS_FORMA.NAME AS JOYAS_FORMA,
+       FCOLLAR.NAME AS FORMACOLLAR,
+       FBRASALETE.NAME AS FORMABRASALETE,
+       FARETES.NAME AS FORMAARETES,
+       FANILLO.NAME AS FORMAANILLO,
+       FBOXSET.NAME AS FORMABOXSET,
+       FCHARM.NAME AS FORMACHARM,
+       ZNK2_COMBINACION_BOXSET.NAME AS COMBINACION_BOXSET,
+       COLORADITAMENTO.NAME AS COLOR_ADITAMENTO
+FROM (SELECT *
+      FROM c_bpartner
+      WHERE c_bpartner_id = &apos;9BD06BF6BF034E06814200B0940EBA33&apos;
+      AND   ad_client_id = &apos;2D4B4E8A2ACE7F47012AD3387996000A&apos; LIMIT 1) BP 
+  INNER JOIN znk2_producto_sku SKU ON SKU.c_bpartner_id = BP.c_bpartner_id 
+  INNER JOIN m_product P ON P.m_product_id = SKU.m_product_id 
+  LEFT JOIN ZNK2_FORMA_CAJA ON EM_ZNK2_FORMA_CAJA_ID = ZNK2_FORMA_CAJA_ID 
+  LEFT JOIN ZNK2_MATERIAL_CAJA ON EM_ZNK2_MATERIAL_CAJA_ID = ZNK2_MATERIAL_CAJA_ID 
+  LEFT JOIN ZNK2_MATERIAL_CORREA ON EM_ZNK2_MATERIAL_CORREA_ID = ZNK2_MATERIAL_CORREA_ID 
+  LEFT JOIN ZNK2_TERMINADO_CAJA ON EM_ZNK2_TERMINADO_CAJA_ID = ZNK2_TERMINADO_CAJA_ID 
+  LEFT JOIN ZNK2_TERMINADO_CORREA ON EM_ZNK2_TERMINADO_CORREA_ID = ZNK2_TERMINADO_CORREA_ID 
+  LEFT JOIN ZNK2_COLOR_CAJA ON EM_ZNK2_COLOR_CAJA_ID = ZNK2_COLOR_CAJA_ID 
+  LEFT JOIN ZNK2_COLOR_CORREA ON EM_ZNK2_COLOR_CORREA_ID = ZNK2_COLOR_CORREA_ID 
+  LEFT JOIN ZNK2_COLOR_CARATULA ON EM_ZNK2_COLOR_CARATULA_ID = ZNK2_COLOR_CARATULA_ID 
+  LEFT JOIN ZNK2_TERMINADO_CARATULA ON EM_ZNK2_TERMINADO_CARATULA_ID = ZNK2_TERMINADO_CARATULA_ID 
+  LEFT JOIN ZNK2_CLASIFICACION ON EM_ZNK2_CLASIFICACION_ID = ZNK2_CLASIFICACION_ID 
+  LEFT JOIN ZNK2_NOMBRE_ESTILO ON EM_ZNK2_NOMBRE_ESTILO_ID = ZNK2_NOMBRE_ESTILO_ID 
+  LEFT JOIN ZNK2_JOYAS_METALES ON EM_ZNK2_JOYAS_METALES_ID = ZNK2_JOYAS_METALES_ID 
+  LEFT JOIN ZNK2_JOYAS_ADITAMENTOS ON EM_ZNK2_JOYAS_ADITAMENTOS_ID = ZNK2_JOYAS_ADITAMENTOS_ID 
+  LEFT JOIN ZNK2_JOYAS_COLOR ON EM_ZNK2_JOYAS_COLOR_ID = ZNK2_JOYAS_COLOR_ID 
+  LEFT JOIN ZNK2_JOYAS_MATERIALES ON EM_ZNK2_JOYAS_MATERIALES_ID = ZNK2_JOYAS_MATERIALES_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA ON EM_ZNK2_JOYAS_FORMA_ID = ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FCOLLAR ON EM_ZNK2_FORMACOLLAR_ID = FCOLLAR.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FBRASALETE ON EM_ZNK2_FORMABRASALETE_ID = FBRASALETE.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FARETES ON EM_ZNK2_FORMAARETES_ID = FARETES.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FANILLO ON EM_ZNK2_FORMAANILLO_ID = FANILLO.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FBOXSET ON EM_ZNK2_FORMABOXSET_ID = FBOXSET.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FCHARM ON EM_ZNK2_FORMACHARM_ID = FCHARM.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_COMBINACION_BOXSET ON EM_ZNK2_COMBINACION_BOXSET_ID = ZNK2_COMBINACION_BOXSET_ID 
+  LEFT JOIN ZNK2_JOYAS_COLOR COLORADITAMENTO ON EM_ZNK2_COLOR_ADITAMENTO_ID = COLORADITAMENTO.ZNK2_JOYAS_COLOR_ID 
+  LEFT JOIN ZNK2_MARCA MARCA ON P.EM_ZNK2_MARCA_id = MARCA.ZNK2_MARCA_ID
+  LEFT JOIN m_productprice PP ON PP.m_product_id=P.m_product_id AND PP.ad_client_id=&apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;
+  LEFT JOIN m_pricelist_version PLV ON PP.m_pricelist_version_id = PLV.m_pricelist_version_id AND PLV.isactive = &apos;Y&apos;
+  INNER JOIN m_pricelist PL ON PL.m_pricelist_id = PLV.m_pricelist_id AND PL.isactive=&apos;Y&apos; AND PL.isdefault=&apos;Y&apos; AND PL.issopricelist=&apos;Y&apos; AND PL.c_currency_id=&apos;130&apos;
+ORDER BY P.m_product_id ASC;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>279</xloc>
+      <yloc>390</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Direccion Cliente (Liverpool)</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DNK</connection>
+    <sql>SELECT BP.name AS cliente_nombre_completo,
+       BP.value AS cliente_nombre,
+       BPL.name AS direccion_cliente_completa,
+       CL.address1 AS calle_cliente,
+       CL.em_znk4_numero AS numero_cliente,
+       CL.address2 AS colonia_cliente,
+       CL.city AS ciudad_cliente,
+	   CL.regionname AS estado_cliente,
+       CL.postal AS postal_cliente,
+       CL.em_znk4_delegacion AS delegacion_cliente,
+       CTY.name AS pais_cliente,
+       BPL.c_bpartner_id
+FROM c_bpartner_location BPL
+  INNER JOIN c_bpartner BP ON BP.c_bpartner_id=&apos;3AD8D4E697464C4AB6F5B026D3623111&apos; AND BPL.c_bpartner_id = BP.c_bpartner_id
+  LEFT JOIN c_location CL ON CL.c_location_id = BPL.c_location_id 
+  LEFT JOIN c_country CTY ON CTY.c_country_id = CL.c_country_id
+WHERE   BPL.ad_client_id = &apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;
+AND   BPL.isbillto = &apos;Y&apos;
+AND   BPL.istaxlocation = &apos;Y&apos;
+LIMIT 1</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>571</xloc>
+      <yloc>131</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Direccion Tiendas</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DNK</connection>
+    <sql>SELECT AU.ad_user_id,
+       AU.name AS identificador_tienda,
+       AU.description,
+       AU.email,
+       AU.firstname,
+       AU.lastname,
+       AU.em_znk2_centrocomercial_id,
+       AU.em_znk4_nombre_tienda,
+       BPL.name AS direccion_tienda,
+       CL.address1 AS calle_tienda,
+       CL.address2 AS colonia_tienda,
+       CL.em_znk4_numero AS num_tienda,
+       CL.city AS ciudad_tienda,
+       CL.postal AS cp_tienda,
+       CL.regionname AS estado_tienda,
+       CTY.name AS pais_tienda,
+       CC.name AS tienda_centro_comercial
+FROM ad_user AU
+  LEFT JOIN c_bpartner_location BPL ON BPL.c_bpartner_location_id = AU.c_bpartner_location_id 
+  LEFT JOIN c_location CL ON CL.c_location_id = BPL.c_location_id 
+  LEFT JOIN c_country CTY ON CTY.c_country_id = CL.c_country_id 
+  LEFT JOIN znk2_centrocomercial CC ON CC.znk2_centrocomercial_id = AU.em_znk2_centrocomercial_id
+  WHERE AU.c_bpartner_id=&apos;9BD06BF6BF034E06814200B0940EBA33&apos;
+ORDER BY AU.name ASC;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>447</xloc>
+      <yloc>452</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Pone en 0 las que no tengan numero</send_true_to>
+<send_false_to>Add constants</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>cantidad_en_almacen</leftvalue>
+ <function>IS NULL</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>968</xloc>
+      <yloc>255</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Formula</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>trimestre</field_name>
+<formula_string>choose([tri];&quot;T1&quot;;&quot;T2&quot;;&quot;T3&quot;;&quot;T4&quot;)</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>semestre</field_name>
+<formula_string>choose([sem];&quot;S1&quot;;&quot;S2&quot;)</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>cuatrimestre</field_name>
+<formula_string>choose([cuatri];&quot;C1&quot;;&quot;C2&quot;;&quot;C3&quot;)</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>781</xloc>
+      <yloc>237</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Insert &#47; Update</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DWDNK</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema/>
+      <table>SELL_OUT_PLANA</table>
+      <key>
+        <name>id_tienda</name>
+        <field>id_tienda</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>NombreCentro</name>
+        <field>NombreCentro</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>Articulo</name>
+        <field>Articulo</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>NombreArticulo</name>
+        <field>NombreArticulo</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>fecha</name>
+        <field>fecha</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>Region</name>
+        <field>Region</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>c_bpartner_id</name>
+        <field>c_bpartner_id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>Articulo</name>
+        <rename>Articulo</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>NombreArticulo</name>
+        <rename>NombreArticulo</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>NombreCentro</name>
+        <rename>NombreCentro</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>Region</name>
+        <rename>Region</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>fecha</name>
+        <rename>fecha</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>id_tienda</name>
+        <rename>id_tienda</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>Cantidad</name>
+        <rename>Cantidad</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>EANUPC</name>
+        <rename>EANUPC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>Estado</name>
+        <rename>Estado</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>Modelo</name>
+        <rename>Modelo</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>Temporada</name>
+        <rename>Temporada</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ad_user_id</name>
+        <rename>ad_user_id</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>anio</name>
+        <rename>anio</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>atm</name>
+        <rename>atm</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>bp_name</name>
+        <rename>bp_name</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>bp_name_short</name>
+        <rename>bp_name_short</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>calle_tienda</name>
+        <rename>calle_tienda</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cantidad_en_almacen</name>
+        <rename>cantidad_en_almacen</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ciudad_tienda</name>
+        <rename>ciudad_tienda</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>clasificacion</name>
+        <rename>clasificacion</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>colonia_tienda</name>
+        <rename>colonia_tienda</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>color_aditamento</name>
+        <rename>color_aditamento</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>color_caja</name>
+        <rename>color_caja</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>color_caratula</name>
+        <rename>color_caratula</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>color_correa</name>
+        <rename>color_correa</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>combinacion_boxset</name>
+        <rename>combinacion_boxset</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cp_tienda</name>
+        <rename>cp_tienda</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cuatri</name>
+        <rename>cuatri</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cuatrimestre</name>
+        <rename>cuatrimestre</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>description</name>
+        <rename>description</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>dia</name>
+        <rename>dia</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>direccion_tienda</name>
+        <rename>direccion_tienda</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_ano_temporada</name>
+        <rename>em_znk2_ano_temporada</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_basico_novedad</name>
+        <rename>em_znk2_basico_novedad</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_centrocomercial_id</name>
+        <rename>em_znk2_centrocomercial_id</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_genero</name>
+        <rename>em_znk2_genero</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_hay_brillantes</name>
+        <rename>em_znk2_hay_brillantes</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_joyas_tamano</name>
+        <rename>em_znk2_joyas_tamano</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_joyeria_clasificacion</name>
+        <rename>em_znk2_joyeria_clasificacion</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_maquinaria</name>
+        <rename>em_znk2_maquinaria</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_movimiento</name>
+        <rename>em_znk2_movimiento</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_status</name>
+        <rename>em_znk2_status</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_temporada</name>
+        <rename>em_znk2_temporada</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk4_nombre_tienda</name>
+        <rename>em_znk4_nombre_tienda</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>email</name>
+        <rename>email</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>estado_tienda</name>
+        <rename>estado_tienda</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>firstname</name>
+        <rename>firstname</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formaanillo</name>
+        <rename>formaanillo</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formaaretes</name>
+        <rename>formaaretes</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formaboxset</name>
+        <rename>formaboxset</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formabrasalete</name>
+        <rename>formabrasalete</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formacharm</name>
+        <rename>formacharm</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formacollar</name>
+        <rename>formacollar</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>identificador_tienda</name>
+        <rename>identificador_tienda</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>joyas_aditamentos</name>
+        <rename>joyas_aditamentos</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>joyas_color</name>
+        <rename>joyas_color</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>joyas_forma</name>
+        <rename>joyas_forma</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>joyas_materiales</name>
+        <rename>joyas_materiales</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>joyas_metales</name>
+        <rename>joyas_metales</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>lastname</name>
+        <rename>lastname</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>m_product_id</name>
+        <rename>m_product_id</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>material_caja</name>
+        <rename>material_caja</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>material_correa</name>
+        <rename>material_correa</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>mes</name>
+        <rename>mes</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombreDia</name>
+        <rename>nombreDia</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombreMes</name>
+        <rename>nombreMes</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombre_estilo</name>
+        <rename>nombre_estilo</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>num_tienda</name>
+        <rename>num_tienda</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>pais_tienda</name>
+        <rename>pais_tienda</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>precio_de_lista</name>
+        <rename>precio_de_lista</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>product_name</name>
+        <rename>product_name</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>sem</name>
+        <rename>sem</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>semestre</name>
+        <rename>semestre</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>sku_name</name>
+        <rename>sku_name</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>terminado_caja</name>
+        <rename>terminado_caja</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>terminado_caratula</name>
+        <rename>terminado_caratula</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>terminado_correa</name>
+        <rename>terminado_correa</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>tienda_centro_comercial</name>
+        <rename>tienda_centro_comercial</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>tipo</name>
+        <rename>tipo</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>tri</name>
+        <rename>tri</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>trimestre</name>
+        <rename>trimestre</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>typefield</name>
+        <rename>typefield</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>znk2_forma_caja</name>
+        <rename>znk2_forma_caja</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>znk2_producto_sku_id</name>
+        <rename>znk2_producto_sku_id</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>OnHand</name>
+        <rename>OnHand</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>direccion_cliente_completa</name>
+        <rename>direccion_cliente_completa</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>calle_cliente</name>
+        <rename>calle_cliente</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>numero_cliente</name>
+        <rename>numero_cliente</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>colonia_cliente</name>
+        <rename>colonia_cliente</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ciudad_cliente</name>
+        <rename>ciudad_cliente</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>postal_cliente</name>
+        <rename>postal_cliente</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>delegacion_cliente</name>
+        <rename>delegacion_cliente</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>pais_cliente</name>
+        <rename>pais_cliente</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>c_bpartner_id</name>
+        <rename>c_bpartner_id</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>cliente_nombre</name>
+        <rename>cliente_nombre</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cliente_nombre_completo</name>
+        <rename>cliente_nombre_completo</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>estado_cliente</name>
+        <rename>estado_cliente</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>producto_marca</name>
+        <rename>producto_marca</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>587</xloc>
+      <yloc>545</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Join Rows (cartesian product)</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>%%java.io.tmpdir%%</directory>
+      <prefix>out</prefix>
+      <cache_size>500</cache_size>
+      <main>CSV file input</main>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <conditions>
+  <condition>
+   <negated>N</negated>
+   <leftvalue>descripcion</leftvalue>
+   <function>CONTAINS</function>
+   <rightvalue>name</rightvalue>
+   </condition>
+  </conditions>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>299</xloc>
+      <yloc>114</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Merge Join</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<join_type>LEFT OUTER</join_type>
+<step1>Sort SKU</step1>
+<step2>DNK Producto-SKU Liverpool</step2>
+    <keys_1>
+      <key>m_product_id</key>
+    </keys_1>
+    <keys_2>
+      <key>m_product_id</key>
+    </keys_2>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>419</xloc>
+      <yloc>342</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Merge Join 2</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<join_type>LEFT OUTER</join_type>
+<step1>Sort id Tienda</step1>
+<step2>Direccion Tiendas</step2>
+    <keys_1>
+      <key>id_tienda</key>
+    </keys_1>
+    <keys_2>
+      <key>identificador_tienda</key>
+    </keys_2>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>567</xloc>
+      <yloc>443</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Merge Join 3</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<join_type>LEFT OUTER</join_type>
+<step1>Sort rows</step1>
+<step2>Almacen</step2>
+    <keys_1>
+      <key>m_product_id</key>
+      <key>fecha</key>
+    </keys_1>
+    <keys_2>
+      <key>id_producto</key>
+      <key>fecha_tabla</key>
+    </keys_2>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>550</xloc>
+      <yloc>247</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Microsoft Excel Input</name>
+    <type>ExcelInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <header>N</header>
+    <noempty>Y</noempty>
+    <stoponempty>N</stoponempty>
+    <filefield/>
+    <sheetfield/>
+    <sheetrownumfield/>
+    <rownumfield/>
+    <sheetfield/>
+    <filefield/>
+    <limit>3</limit>
+    <encoding/>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <accept_filenames>N</accept_filenames>
+    <accept_field/>
+    <accept_stepname/>
+    <file>
+      <name>&#47;home&#47;sanborns-dnk&#47;</name>
+      <filemask>.*\.xls</filemask>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>x</name>
+        <type>String</type>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>y</name>
+        <type>String</type>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+    </fields>
+    <sheets>
+      <sheet>
+        <name>VENTAS</name>
+        <startrow>0</startrow>
+        <startcol>0</startcol>
+        </sheet>
+    </sheets>
+    <strict_types>N</strict_types>
+    <error_ignored>N</error_ignored>
+    <error_line_skipped>N</error_line_skipped>
+    <bad_line_files_destination_directory/>
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory/>
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory/>
+    <line_number_files_extension>line</line_number_files_extension>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
+    <spreadsheet_type>JXL</spreadsheet_type>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>32</xloc>
+      <yloc>330</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#47;&#47;CHeca si es el primero que llega
+if(first){
+	temp=(y.split(&apos;-&apos;))[1];
+	temp=temp.replace(&#47;^\s+|\s+$&#47;, &apos;&apos;);
+	fecha=temp;
+	first = false;
+}else{
+	&#47;&#47;Deshecha la columna
+	trans_Status = SKIP_TRANSFORMATION;
+}</jsScript_script>
+      </jsScript>      <jsScript>        <jsScript_type>1</jsScript_type>
+        <jsScript_name>Inicio</jsScript_name>
+        <jsScript_script>&#47;&#47;Script here
+var first = true;
+
+</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>fecha</name>
+        <rename>fecha</rename>
+        <type>String</type>
+        <length>20</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>122</xloc>
+      <yloc>356</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Normaliza Genero</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#47;&#47;Verifica el genero del producto y lo modifica
+&#47;&#47;Segun si hace match con al expresion regular
+if(em_znk2_genero == null){
+	genero=&quot;No Definido&quot;;
+}else if(em_znk2_genero.match(&#47;(d|D).*&#47;)){
+	genero=&quot;DAMA&quot;;
+}else if(em_znk2_genero.match(&#47;(c|C).*&#47;)){
+	genero = &quot;CABALLERO&quot;;
+}else if(em_znk2_genero.match(&#47;(u|U).*&#47;)){
+	genero = &quot;UNISEX&quot;;
+}else if(em_znk2_genero.match(&#47;(p|P).*&#47;)){
+	genero = &quot;PAREJAS&quot;;
+}else if(em_znk2_genero.match(&#47;(n|N).*(o|O)&#47;)){
+	genero = &quot;NIÑO&quot;;
+}else if(em_znk2_genero.match(&#47;(n|N).*(a|A)&#47;)){
+	genero = &quot;NIÑA&quot;;
+}else{
+	genero = em_znk2_genero.toUpperCase();
+}
+</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>genero</name>
+        <rename>em_znk2_genero</rename>
+        <type>String</type>
+        <length>15</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>889</xloc>
+      <yloc>236</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Pone en 0 las que no tengan numero</name>
+    <type>SetValueConstant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+   <usevar>N</usevar>
+    <fields>
+      <field>
+        <name>cantidad_en_almacen</name>
+        <value>0</value>
+        <mask/>
+        </field>
+      </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>982</xloc>
+      <yloc>429</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Replace in string</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>descripcion</in_stream_name>
+        <out_stream_name/>
+        <use_regex>yes</use_regex>
+        <replace_string>(.*)W950005L1(.*)</replace_string>
+        <replace_by_string>W95050L1</replace_by_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>147</xloc>
+      <yloc>181</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>fecha</name>
+        <rename/>
+        <length>20</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>226</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort SKU</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>%%java.io.tmpdir%%</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>m_product_id</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>404</xloc>
+      <yloc>259</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort id Tienda</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>%%java.io.tmpdir%%</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>id_tienda</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>542</xloc>
+      <yloc>353</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort rows</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>%%java.io.tmpdir%%</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>m_product_id</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+      </field>
+      <field>
+        <name>fecha</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>656</xloc>
+      <yloc>381</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DNK</connection>
+    <sql>SELECT P.m_product_id,P.name FROM m_product P WHERE P.ad_client_id=&apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>81</xloc>
+      <yloc>66</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

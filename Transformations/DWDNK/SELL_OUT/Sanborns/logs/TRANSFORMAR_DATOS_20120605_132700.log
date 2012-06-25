@@ -1,0 +1,21 @@
+2012/06/05 13:27:00 - Transformacion - Loading transformation from XML file [file:///home/mario/Escritorio/Transformations/DWDNK/SELL_OUT/Sanborns/SanbornsReadSpreadSheet.ktr]
+2012/06/05 13:27:00 - SanbornsReadSpreadSheet - Dispatching started for transformation [SanbornsReadSpreadSheet]
+2012/06/05 13:27:01 - Generate Rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2012/06/05 13:27:01 - Campos.0 - Finished processing (I=0, O=0, R=0, W=2, U=0, E=0)
+2012/06/05 13:27:01 - Excel Input Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2012/06/05 13:27:01 - CSV file input.0 - Header row skipped in file 'file:///home/mario/Escritorio/Transformations/DWDNK/SELL_OUT/Sanborns/Layout.csv'
+2012/06/05 13:27:01 - CSV file input.0 - Finished processing (I=166, O=0, R=0, W=165, U=0, E=0)
+2012/06/05 13:27:01 - Add constants.0 - Finished processing (I=0, O=0, R=165, W=165, U=0, E=0)
+2012/06/05 13:27:01 - Select Date Columns.0 - Finished processing (I=0, O=0, R=165, W=330, U=0, E=0)
+2012/06/05 13:27:01 - NormalisedField.0 - Finished processing (I=0, O=0, R=165, W=165, U=0, E=0)
+2012/06/05 13:27:01 - Normaliser Target.0 - Finished processing (I=0, O=0, R=165, W=165, U=0, E=0)
+2012/06/05 13:27:01 - Append streams.0 - Finished processing (I=0, O=0, R=167, W=167, U=0, E=0)
+2012/06/05 13:27:01 - SanbornsReadSpreadSheetTemplate - Dispatching started for transformation [SanbornsReadSpreadSheetTemplate]
+2012/06/05 13:27:01 - CSV file input.0 - Header row skipped in file 'file:///home/mario/Escritorio/Transformations/DWDNK/SELL_OUT/Sanborns/Layout.csv'
+2012/06/05 13:27:01 - CSV file input.0 - Finished processing (I=166, O=0, R=0, W=165, U=0, E=0)
+2012/06/05 13:27:01 - Microsoft Excel Input 2.0 - Finished processing (I=56, O=0, R=0, W=56, U=0, E=0)
+2012/06/05 13:27:02 - Row Normaliser.0 - Finished processing (I=0, O=0, R=56, W=9240, U=0, E=0)
+2012/06/05 13:27:02 - Add id_tienda.0 - Finished processing (I=0, O=0, R=9405, W=9240, U=0, E=0)
+2012/06/05 13:27:02 - Filter rows.0 - Finished processing (I=0, O=0, R=9240, W=9240, U=0, E=0)
+2012/06/05 13:27:02 - Dummy (do nothing).0 - Finished processing (I=0, O=0, R=9021, W=9021, U=0, E=0)
+2012/06/05 13:27:02 - Resultado.0 - Finished processing (I=0, O=220, R=219, W=219, U=0, E=0)

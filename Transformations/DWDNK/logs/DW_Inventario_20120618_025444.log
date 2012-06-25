@@ -1,0 +1,23 @@
+2012/06/18 02:54:44 - DW Inventario - Loading transformation from XML file [file:///root/Transformations/DWDNK\Trans\INVENTARIO PREDW 2.0.ktr]
+2012/06/18 02:54:45 - INVENTARIO PREDW 20 - Dispatching started for transformation [INVENTARIO PREDW 20]
+2012/06/18 02:54:47 - FECHA ULTIMA ACTUALIZACION.0 - Finished reading query, closing connection.
+2012/06/18 02:54:47 - FECHA ULTIMA ACTUALIZACION.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2012/06/18 02:59:10 - INVENTARIO.0 - Finished reading query, closing connection.
+2012/06/18 02:59:11 - calculo de valor del inventario.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 02:59:11 - Rangos de precios.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 02:59:11 - Quita Null a Medidas.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 02:59:11 - Add sequence.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 02:59:11 - String operations.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 02:59:11 - INVENTARIO.0 - Finished processing (I=49585, O=0, R=0, W=49585, U=0, E=0)
+2012/06/18 02:59:11 - Select values.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 02:59:11 - CD ALMACEN.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 02:59:11 - Select values .0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 02:59:11 - If field value is null.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 02:59:11 - estado almacen.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 02:59:11 - GENERO.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 02:59:49 - String operations 2.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 03:00:16 - Join Rows (cartesian product).0 - Finished processing (I=0, O=0, R=49586, W=49585, U=0, E=0)
+2012/06/18 03:00:30 - Filter rows.0 - Finished processing (I=0, O=0, R=49585, W=49585, U=0, E=0)
+2012/06/18 03:00:30 - INVENTARIO AL DIA.0 - Finished processing (I=0, O=0, R=2832, W=2832, U=0, E=0)
+2012/06/18 03:00:51 - Add constants 2.0 - Finished processing (I=0, O=0, R=46753, W=46753, U=0, E=0)
+2012/06/18 03:01:14 - InventarioDWplano.0 - Finished processing (I=49585, O=2832, R=49585, W=49585, U=2832, E=0)

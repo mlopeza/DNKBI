@@ -1,0 +1,18 @@
+2012/05/30 10:09:46 - Obten Descripcion de Archivo - Loading transformation from XML file [file:///home/mario/Escritorio/Transformations/DWDNK/SELL_OUT/Sanborns/SanbornsExtract.ktr]
+2012/05/30 10:09:46 - SanbornsExtract - Dispatching started for transformation [SanbornsExtract]
+2012/05/30 10:09:47 - 1000 columns.0 - Finished processing (I=0, O=0, R=0, W=500, U=0, E=0)
+2012/05/30 10:09:47 - Campos.0 - Finished processing (I=0, O=0, R=0, W=2, U=0, E=0)
+2012/05/30 10:09:47 - colnr.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/05/30 10:09:47 - Set format.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/05/30 10:09:47 - Generate Rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2012/05/30 10:09:47 - Excel Input Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2012/05/30 10:09:47 - Add constants.0 - Finished processing (I=0, O=0, R=500, W=1000, U=0, E=0)
+2012/05/30 10:09:47 - Calculator.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/05/30 10:09:47 - Normalised field.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/05/30 10:09:47 - Select Date Columns.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/05/30 10:09:47 - Select values.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/05/30 10:09:47 - Append streams.0 - Finished processing (I=0, O=0, R=502, W=502, U=0, E=0)
+2012/05/30 10:09:47 - SanbornsExtractTemplate - Dispatching started for transformation [SanbornsExtractTemplate]
+2012/05/30 10:09:47 - Microsoft Excel Input 2.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2012/05/30 10:09:47 - Row Normaliser 2.0 - Finished processing (I=0, O=0, R=1, W=500, U=0, E=0)
+2012/05/30 10:09:47 - Filter rows 2.0 - Finished processing (I=0, O=0, R=500, W=0, U=0, E=0)

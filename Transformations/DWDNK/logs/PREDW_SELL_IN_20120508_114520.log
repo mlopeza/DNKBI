@@ -1,0 +1,24 @@
+2012/05/08 11:45:21 - PREDW SELL IN - Loading transformation from XML file [file:///root/Transformations/DWDNK\SELL_IN\SELL_IN_PLANA.ktr]
+2012/05/08 11:45:22 - SELL_IN_PLANA - Dispatching started for transformation [SELL_IN_PLANA]
+2012/05/08 12:00:59 - Transforma/Normaliza Tipo .0 - Optimization level set to 9.
+2012/05/08 14:36:02 - Table input.0 - linenr 50000
+2012/05/08 14:54:26 - Filter rows.0 - linenr 50000
+2012/05/08 14:54:26 - Utilidad Positiva.0 - linenr 50000
+2012/05/08 14:54:26 - Transforma/Normaliza Tipo .0 - linenr 50000
+2012/05/08 14:54:26 - Formula.0 - Linenr 50000
+2012/05/08 14:54:26 - Campos de Fecha 2.0 - Linenr 50000
+2012/05/08 14:54:26 - Insert / Update.0 - linenr 50000
+2012/05/08 14:54:26 - es PV.0 - LineNr : 50000
+2012/05/08 14:54:27 - Si.0 - LineNr : 50000
+2012/05/08 17:05:08 - Table input.0 - Finished reading query, closing connection.
+2012/05/08 17:05:08 - es PV.0 - Finished processing (I=0, O=0, R=83227, W=83227, U=0, E=0)
+2012/05/08 17:05:08 - no es PV.0 - Finished processing (I=0, O=0, R=3816, W=3816, U=0, E=0)
+2012/05/08 17:05:08 - Si.0 - Finished processing (I=0, O=0, R=80251, W=80251, U=0, E=0)
+2012/05/08 17:05:08 - No.0 - Finished processing (I=0, O=0, R=6792, W=6792, U=0, E=0)
+2012/05/08 17:05:08 - Utilidad Positiva.0 - Finished processing (I=0, O=0, R=87043, W=87043, U=0, E=0)
+2012/05/08 17:05:08 - Filter rows.0 - Finished processing (I=0, O=0, R=87043, W=87043, U=0, E=0)
+2012/05/08 17:05:08 - Transforma/Normaliza Tipo .0 - Finished processing (I=0, O=0, R=87043, W=87043, U=0, E=0)
+2012/05/08 17:05:09 - Campos de Fecha 2.0 - Finished processing (I=0, O=0, R=87043, W=87043, U=0, E=0)
+2012/05/08 17:05:09 - Formula.0 - Finished processing (I=0, O=0, R=87043, W=87043, U=0, E=0)
+2012/05/08 17:05:09 - Table input.0 - Finished processing (I=87043, O=0, R=0, W=87043, U=0, E=0)
+2012/05/08 17:05:19 - Insert / Update.0 - Finished processing (I=87043, O=643, R=87043, W=87043, U=329, E=0)

@@ -1,0 +1,33 @@
+2012/06/07 00:05:19 - PREDW SELL IN - Loading transformation from XML file [file:///root/Transformations/DWDNK\SELL_IN\SELL_IN_PLANA.ktr]
+2012/06/07 00:05:20 - SELL_IN_PLANA - Dispatching started for transformation [SELL_IN_PLANA]
+2012/06/07 00:08:44 - Transforma/Normaliza Tipo .0 - Optimization level set to 9.
+2012/06/07 00:08:45 - normaliza tienda_ciudad.0 - Optimization level set to 9.
+2012/06/07 00:08:46 - normaliza tienda_estado.0 - Optimization level set to 9.
+2012/06/07 00:08:46 - Normaliza Genero.0 - Optimization level set to 9.
+2012/06/07 00:37:03 - Table input.0 - linenr 50000
+2012/06/07 00:40:09 - Campos de Fecha 2.0 - Linenr 50000
+2012/06/07 00:40:09 - Formula.0 - Linenr 50000
+2012/06/07 00:40:10 - Filter rows.0 - linenr 50000
+2012/06/07 00:40:10 - normaliza tienda_ciudad.0 - linenr 50000
+2012/06/07 00:40:10 - Normaliza Genero.0 - linenr 50000
+2012/06/07 00:40:10 - Transforma/Normaliza Tipo .0 - linenr 50000
+2012/06/07 00:40:10 - normaliza tienda_estado.0 - linenr 50000
+2012/06/07 00:40:10 - Utilidad Positiva.0 - linenr 50000
+2012/06/07 00:40:10 - Insert / Update.0 - linenr 50000
+2012/06/07 00:40:10 - es PV.0 - LineNr : 50000
+2012/06/07 00:43:15 - Si.0 - LineNr : 50000
+2012/06/07 01:02:36 - Table input.0 - Finished reading query, closing connection.
+2012/06/07 01:02:36 - Utilidad Positiva.0 - Finished processing (I=0, O=0, R=91139, W=91139, U=0, E=0)
+2012/06/07 01:02:36 - Filter rows.0 - Finished processing (I=0, O=0, R=91139, W=91139, U=0, E=0)
+2012/06/07 01:02:36 - es PV.0 - Finished processing (I=0, O=0, R=87151, W=87151, U=0, E=0)
+2012/06/07 01:02:36 - No.0 - Finished processing (I=0, O=0, R=7052, W=7052, U=0, E=0)
+2012/06/07 01:02:36 - Si.0 - Finished processing (I=0, O=0, R=84087, W=84087, U=0, E=0)
+2012/06/07 01:02:36 - no es PV.0 - Finished processing (I=0, O=0, R=3988, W=3988, U=0, E=0)
+2012/06/07 01:02:36 - Transforma/Normaliza Tipo .0 - Finished processing (I=0, O=0, R=91139, W=91139, U=0, E=0)
+2012/06/07 01:02:36 - Table input.0 - Finished processing (I=91139, O=0, R=0, W=91139, U=0, E=0)
+2012/06/07 01:02:38 - normaliza tienda_ciudad.0 - Finished processing (I=0, O=0, R=91139, W=91139, U=0, E=0)
+2012/06/07 01:02:38 - normaliza tienda_estado.0 - Finished processing (I=0, O=0, R=91139, W=91139, U=0, E=0)
+2012/06/07 01:02:38 - Normaliza Genero.0 - Finished processing (I=0, O=0, R=91139, W=91139, U=0, E=0)
+2012/06/07 01:02:38 - Campos de Fecha 2.0 - Finished processing (I=0, O=0, R=91139, W=91139, U=0, E=0)
+2012/06/07 01:02:38 - Formula.0 - Finished processing (I=0, O=0, R=91139, W=91139, U=0, E=0)
+2012/06/07 01:02:40 - Insert / Update.0 - Finished processing (I=91139, O=1094, R=91139, W=91139, U=146, E=0)

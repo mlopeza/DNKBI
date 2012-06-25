@@ -1,0 +1,55 @@
+2012/06/19 05:06:22 - Insertar A base de Datos - Loading transformation from XML file [file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/InsertDatabase.ktr]
+2012/06/19 05:06:22 - InsertDatabase - Dispatching started for transformation [InsertDatabase]
+2012/06/19 05:06:23 - CSV file input.0 - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/Resultado.csv'
+2012/06/19 05:06:23 - Direccion Cliente (Liverpool).0 - Finished reading query, closing connection.
+2012/06/19 05:06:23 - Direccion Tiendas.0 - Finished reading query, closing connection.
+2012/06/19 05:06:23 - CSV file input.0 - Finished processing (I=9640, O=0, R=0, W=9639, U=0, E=0)
+2012/06/19 05:06:23 - Direccion Cliente (Liverpool).0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2012/06/19 05:06:23 - Almacen.0 - Finished reading query, closing connection.
+2012/06/19 05:06:23 - Almacen.0 - Finished processing (I=1746, O=0, R=0, W=1746, U=0, E=0)
+2012/06/19 05:06:23 - Direccion Tiendas.0 - Finished processing (I=92, O=0, R=0, W=92, U=0, E=0)
+2012/06/19 05:06:23 - Sort SKU.0 - Finished processing (I=0, O=0, R=9639, W=9639, U=0, E=0)
+2012/06/19 05:06:24 - DNK Producto-SKU Liverpool.0 - Finished reading query, closing connection.
+2012/06/19 05:06:24 - DNK Producto-SKU Liverpool.0 - Finished processing (I=3768, O=0, R=0, W=3768, U=0, E=0)
+2012/06/19 05:06:24 - Merge Join.0 - Finished processing (I=0, O=0, R=13407, W=9641, U=0, E=0)
+2012/06/19 05:06:24 - Sort id Tienda.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:06:25 - Merge Join 2.0 - Finished processing (I=0, O=0, R=9733, W=9641, U=0, E=0)
+2012/06/19 05:06:25 - Sort rows.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:06:25 - Normaliza Genero.0 - Optimization level set to 9.
+2012/06/19 05:06:25 - Merge Join 3.0 - Finished processing (I=0, O=0, R=11387, W=9641, U=0, E=0)
+2012/06/19 05:06:25 - Agrega Direccion Cliente.0 - Finished processing (I=0, O=0, R=9642, W=9641, U=0, E=0)
+2012/06/19 05:06:28 - Campos de Fecha 2.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:06:28 - Formula.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:06:28 - Normaliza Genero.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:06:28 - Filter rows.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:06:28 - Pone en 0 las que no tengan numero.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Unexpected error
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : org.pentaho.di.core.exception.KettleStepException: 
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Error in step, asking everyone to stop because of:
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Integer<binary-string> : Unable to compare with value [String(11)]
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Unable to verify if [OnHand Integer<binary-string>] is null or not because of an error:java.lang.ClassCastException: java.lang.Long cannot be cast to [B
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.processRow(InsertUpdate.java:307)
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at java.lang.Thread.run(Thread.java:662)
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Integer<binary-string> : Unable to compare with value [String(11)]
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Unable to verify if [OnHand Integer<binary-string>] is null or not because of an error:java.lang.ClassCastException: java.lang.Long cannot be cast to [B
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.row.ValueMeta.compare(ValueMeta.java:3043)
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.lookupValues(InsertUpdate.java:131)
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.processRow(InsertUpdate.java:290)
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	... 2 more
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Caused by: java.lang.RuntimeException: Unable to verify if [OnHand Integer<binary-string>] is null or not because of an error:java.lang.ClassCastException: java.lang.Long cannot be cast to [B
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.row.ValueMeta.isNull(ValueMeta.java:2852)
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.row.ValueMeta.compare(ValueMeta.java:2887)
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.row.ValueMeta.compare(ValueMeta.java:3039)
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	... 4 more
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Caused by: java.lang.ClassCastException: java.lang.Long cannot be cast to [B
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.row.ValueMeta.isNull(ValueMeta.java:2827)
+2012/06/19 05:07:28 - Insert / Update.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	... 6 more
+2012/06/19 05:07:28 - InsertDatabase - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!
+2012/06/19 05:07:28 - InsertDatabase - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!
+2012/06/19 05:07:28 - Insert / Update.0 - Finished processing (I=5716, O=5715, R=5716, W=5715, U=0, E=1)

@@ -1,0 +1,24 @@
+2012/05/08 17:16:15 - Insertar A base de Datos - Loading transformation from XML file [file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/InsertDatabase.ktr]
+2012/05/08 17:16:16 - InsertDatabase - Dispatching started for transformation [InsertDatabase]
+2012/05/08 17:16:17 - CSV file input.0 - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/Resultado.csv'
+2012/05/08 17:16:17 - CSV file input.0 - Finished processing (I=9640, O=0, R=0, W=9639, U=0, E=0)
+2012/05/08 17:16:17 - Direccion Tiendas.0 - Finished reading query, closing connection.
+2012/05/08 17:16:17 - Sort SKU.0 - Finished processing (I=0, O=0, R=9639, W=9639, U=0, E=0)
+2012/05/08 17:16:18 - Direccion Cliente (Liverpool).0 - Finished reading query, closing connection.
+2012/05/08 17:16:18 - Direccion Tiendas.0 - Finished processing (I=92, O=0, R=0, W=92, U=0, E=0)
+2012/05/08 17:16:18 - Direccion Cliente (Liverpool).0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2012/05/08 17:16:22 - DNK Producto-SKU Liverpool.0 - Finished reading query, closing connection.
+2012/05/08 17:16:22 - DNK Producto-SKU Liverpool.0 - Finished processing (I=3724, O=0, R=0, W=3724, U=0, E=0)
+2012/05/08 17:16:22 - Merge Join.0 - Finished processing (I=0, O=0, R=13363, W=9641, U=0, E=0)
+2012/05/08 17:16:22 - Sort id Tienda.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/05/08 17:16:23 - Merge Join 2.0 - Finished processing (I=0, O=0, R=9733, W=9641, U=0, E=0)
+2012/05/08 17:16:23 - Sort rows.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/05/08 17:16:23 - Almacen.0 - Finished reading query, closing connection.
+2012/05/08 17:16:23 - Almacen.0 - Finished processing (I=32545, O=0, R=0, W=32545, U=0, E=0)
+2012/05/08 17:16:24 - Merge Join 3.0 - Finished processing (I=0, O=0, R=42186, W=9641, U=0, E=0)
+2012/05/08 17:16:24 - Agrega Direccion Cliente.0 - Finished processing (I=0, O=0, R=9642, W=9641, U=0, E=0)
+2012/05/08 17:16:26 - Campos de Fecha 2.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/05/08 17:16:26 - Filter rows.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/05/08 17:16:26 - Pone en 0 las que no tengan numero.0 - Finished processing (I=0, O=0, R=9023, W=9023, U=0, E=0)
+2012/05/08 17:16:26 - Formula.0 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+2012/05/08 17:17:20 - Insert / Update.0 - Finished processing (I=9641, O=1, R=9641, W=9641, U=620, E=0)

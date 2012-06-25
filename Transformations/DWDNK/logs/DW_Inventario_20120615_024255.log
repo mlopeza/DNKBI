@@ -1,0 +1,23 @@
+2012/06/15 02:42:55 - DW Inventario - Loading transformation from XML file [file:///root/Transformations/DWDNK\Trans\INVENTARIO PREDW 2.0.ktr]
+2012/06/15 02:42:56 - INVENTARIO PREDW 20 - Dispatching started for transformation [INVENTARIO PREDW 20]
+2012/06/15 02:42:57 - FECHA ULTIMA ACTUALIZACION.0 - Finished reading query, closing connection.
+2012/06/15 02:42:58 - FECHA ULTIMA ACTUALIZACION.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2012/06/15 02:48:33 - INVENTARIO.0 - Finished reading query, closing connection.
+2012/06/15 02:48:33 - Select values.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:48:33 - INVENTARIO.0 - Finished processing (I=41089, O=0, R=0, W=41089, U=0, E=0)
+2012/06/15 02:48:33 - calculo de valor del inventario.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:48:33 - GENERO.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:48:33 - Quita Null a Medidas.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:48:33 - Add sequence.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:48:33 - If field value is null.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:48:33 - String operations.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:48:33 - CD ALMACEN.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:48:33 - estado almacen.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:48:33 - Select values .0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:48:33 - Rangos de precios.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:48:34 - String operations 2.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:49:01 - Join Rows (cartesian product).0 - Finished processing (I=0, O=0, R=41090, W=41089, U=0, E=0)
+2012/06/15 02:49:26 - INVENTARIO AL DIA.0 - Finished processing (I=0, O=0, R=2895, W=2895, U=0, E=0)
+2012/06/15 02:49:26 - Filter rows.0 - Finished processing (I=0, O=0, R=41089, W=41089, U=0, E=0)
+2012/06/15 02:49:43 - Add constants 2.0 - Finished processing (I=0, O=0, R=38194, W=38194, U=0, E=0)
+2012/06/15 02:49:59 - InventarioDWplano.0 - Finished processing (I=41089, O=2895, R=41089, W=41089, U=12193, E=0)

@@ -1,0 +1,15 @@
+2012/06/19 05:00:29 - Obten Descripcion de Archivo - Loading transformation from XML file [file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/LiverpoolExtract2.ktr]
+2012/06/19 05:00:30 - LiverpoolExtract2 - Dispatching started for transformation [LiverpoolExtract2]
+2012/06/19 05:00:30 - Generate Rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2012/06/19 05:00:30 - Campos.0 - Finished processing (I=0, O=0, R=0, W=16, U=0, E=0)
+2012/06/19 05:00:30 - Excel Input Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2012/06/19 05:00:30 - 1000 columns.0 - Finished processing (I=0, O=0, R=0, W=500, U=0, E=0)
+2012/06/19 05:00:30 - colnr.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/06/19 05:00:30 - Set format.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/06/19 05:00:30 - Calculator.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/06/19 05:00:30 - Add constants.0 - Finished processing (I=0, O=0, R=500, W=1000, U=0, E=0)
+2012/06/19 05:00:30 - Normalised field.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/06/19 05:00:30 - Select Date Columns.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/06/19 05:00:30 - Select values.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2012/06/19 05:00:30 - Append streams.0 - Finished processing (I=0, O=0, R=516, W=516, U=0, E=0)
+2012/06/19 05:00:31 - LiverpoolExtractTemplate - Dispatching started for transformation [LiverpoolExtractTemplate]

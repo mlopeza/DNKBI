@@ -1,0 +1,254 @@
+2012/06/14 01:13:15 - PREDW Compras - Loading transformation from XML file [file:///root/Transformations/DWDNK\COMPRAS\DNK_COMPRAS_PLANA.ktr]
+2012/06/14 01:13:16 - DNK_COMPRAS_PLANA - Dispatching started for transformation [DNK_COMPRAS_PLANA]
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Unexpected error
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : An error occurred executing SQL: 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : SELECT bp.name AS nombre_proveedor,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        bpg.name AS tipo_proveedor,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        cl.address1 AS calle_proveedor,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        cl.address2 AS colonia_proveedor,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        cl.city AS ciudad_proveedor,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        reg.name AS estado_proveedor,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        cl.postal AS cp_proveedor,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        cty.name AS pais_proveedor,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        P.EM_ZNK2_GENERO,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        P.EM_ZNK2_ATM AS ATM,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        P.EM_ZNK2_BASICO_NOVEDAD,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        P.EM_ZNK2_STATUS,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        P.EM_ZNK2_TEMPORADA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        TRIM(em_znk2_tipo_producto) AS tipo,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        EM_ZNK2_ANO_TEMPORADA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        EM_ZNK2_HAY_BRILLANTES,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        P.EM_ZNK2_MAQUINARIA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        P.EM_ZNK2_MOVIMIENTO,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_FORMA_CAJA.NAME AS ZNK2_FORMA_CAJA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        EM_ZNK2_JOYAS_TAMANO,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        EM_ZNK2_JOYERIA_CLASIFICACION,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_MATERIAL_CAJA.NAME AS MATERIAL_CAJA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_MATERIAL_CORREA.NAME AS MATERIAL_CORREA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_TERMINADO_CAJA.NAME AS TERMINADO_CAJA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_TERMINADO_CORREA.NAME AS TERMINADO_CORREA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_COLOR_CAJA.NAME AS COLOR_CAJA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_COLOR_CORREA.NAME AS COLOR_CORREA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_COLOR_CARATULA.NAME AS COLOR_CARATULA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_TERMINADO_CARATULA.NAME AS TERMINADO_CARATULA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_CLASIFICACION.NAME AS CLASIFICACION,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_NOMBRE_ESTILO.NAME AS NOMBRE_ESTILO,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_JOYAS_METALES.NAME AS JOYAS_METALES,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_JOYAS_ADITAMENTOS.NAME AS JOYAS_ADITAMENTOS,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_JOYAS_COLOR.NAME AS JOYAS_COLOR,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_JOYAS_MATERIALES.NAME AS JOYAS_MATERIALES,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_JOYAS_FORMA.NAME AS JOYAS_FORMA,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        FCOLLAR.NAME AS FORMACOLLAR,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        FBRASALETE.NAME AS FORMABRASALETE,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        FARETES.NAME AS FORMAARETES,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        FANILLO.NAME AS FORMAANILLO,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        FBOXSET.NAME AS FORMABOXSET,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        FCHARM.NAME AS FORMACHARM,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ZNK2_COMBINACION_BOXSET.NAME AS COMBINACION_BOXSET,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        COLORADITAMENTO.NAME AS COLOR_ADITAMENTO,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        PL.pricelist AS producto_precio_de_venta,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        b. *
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : FROM ((SELECT org.name AS org,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               p.name AS product,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               MAS.description AS descripcion_producto,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               mca.name AS marca,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               mca.znk2_marca_id,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               bp.c_bpartner_id,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               bpl.c_bpartner_location_id,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               p.m_product_id,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               org.ad_org_id,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               i.poreference AS referencia,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               bp.name AS proveedor,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               o.documentno AS orden,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               o.poreference AS reforden,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               o.dateordered AS fechaorden,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               COALESCE(mpo.qty,ol.qtyordered) AS cantidadorden,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               (SELECT C_CURRENCY_CONVERT_PRECISION (ol.linenetamt,o.c_currency_id,'130',TO_DATE (o.dateordered),NULL,'2D4B4E8A2ACE7F47012AD3387996000A','0','C'))
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        AS preciocompra,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               io.documentno AS remision,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               io.movementdate AS fecharemision,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               iol.movementqty AS cantidadremision,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               wh.name AS almacen,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               i.documentno AS factura,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               i.dateinvoiced AS fechafactura,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               il.qtyinvoiced AS cantidadfactura,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               (SELECT C_CURRENCY_CONVERT_PRECISION (il.linenetamt,i.c_currency_id,'130',TO_DATE (i.dateinvoiced),NULL,'2D4B4E8A2ACE7F47012AD3387996000A','0','C'))
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        AS preciofactura,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               (SELECT COALESCE(cost,0.00)*iol.movementqty
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                FROM m_costing
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                WHERE m_product_id = iol.m_product_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                AND   io.movementdate BETWEEN datefrom
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                AND   dateto LIMIT 1)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        AS costo
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        FROM m_matchpo mpo
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Matches entre receipt lines e inoice lines
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          INNER JOIN c_orderline ol ON mpo.c_orderline_id = ol.c_orderline_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Los elementos de una orden
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          INNER JOIN c_order o ON ol.c_order_id = o.c_order_id AND o.issotrx = 'N'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --La orden en concreto
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Lugar de la tienda
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN c_bpartner_location bpl ON bpl.c_bpartner_location_id = ol.c_bpartner_location_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN m_inoutline iol ON iol.m_inoutline_id = mpo.m_inoutline_id AND (SELECT docstatus
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                                                                                    FROM m_inout
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                                                                                    WHERE m_inout_id = iol.m_inout_id) = 'CO'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	   --Atributo del producto (nuevo, mandado a pulir, etc)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	     LEFT JOIN m_attributesetinstance MAS ON MAS.m_attributesetinstance_id = iol.m_attributesetinstance_id and MAS.ad_client_id='2D4B4E8A2ACE7F47012AD3387996000A'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Ordenes de envio por linea
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN m_inout io ON iol.m_inout_id = io.m_inout_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Ordenes de envio en concreto
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN m_matchinv minv ON iol.m_inoutline_id = minv.m_inoutline_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Esta tabla contiene todos los matches entre las invoicelines y las receiptlines
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN c_invoiceline il ON minv.m_inoutline_id = il.m_inoutline_id AND (SELECT docstatus
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                                                                                     FROM c_invoice
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                                                                                     WHERE c_invoice_id = il.c_invoice_id) = 'CO'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Facturas por producto
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN c_invoice i ON il.c_invoice_id = i.c_invoice_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Facturas en concreto
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN c_bpartner bp ON o.c_bpartner_id = bp.c_bpartner_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --A quienes les vende o compra
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN m_product p ON ol.m_product_id = p.m_product_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --El producto
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN znk2_marca mca ON p.em_znk2_marca_id = mca.znk2_marca_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --La marca
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN m_locator loc ON iol.m_locator_id = loc.m_locator_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --La localizacion
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN m_warehouse wh ON loc.m_warehouse_id = wh.m_warehouse_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --El almacen
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN ad_org org ON ol.ad_org_id = org.ad_org_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --La organizacion (Diferentes DNK)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        WHERE ol.ad_client_id = '2D4B4E8A2ACE7F47012AD3387996000A'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        AND   MPO.C_INVOICELINE_ID IS NULL
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        AND   p.m_product_id <> '3B843E96BF374D0D848A0517376CAFE9'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        AND   o.docstatus = 'CO')
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        ----------------------------------------------------Primer Query
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        UNION
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        -----------------------------------------------------Segundo Query
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        (SELECT org.name AS org,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               p.name AS product,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               NULL AS descripcion_producto,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               mca.name AS marca,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               mca.znk2_marca_id,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               bp.c_bpartner_id,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               bpl.c_bpartner_location_id,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               p.m_product_id,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               org.ad_org_id,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               NULL AS referencia,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               bp.name AS proveedor,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               o.documentno AS orden,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               o.poreference AS reforden,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               o.dateordered AS fechaorden,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               (ol.qtyordered - suma.qty) AS cantidadorden,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               (SELECT C_CURRENCY_CONVERT_PRECISION (ol.linenetamt,o.c_currency_id,'130',TO_DATE (o.dateordered),NULL,'2D4B4E8A2ACE7F47012AD3387996000A','0','C'))
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        AS preciocompra,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               NULL AS remision,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               NULL AS fecharemision,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               NULL AS cantidadremision,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               NULL AS almacen,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               NULL AS factura,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               NULL AS fechafactura,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               NULL AS cantidadfactura,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               NULL preciofactura,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :               NULL AS costo
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        FROM c_orderline ol
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Todos los elementos de las ordenes, de aqui salen los productos
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          INNER JOIN c_order o ON ol.c_order_id = o.c_order_id AND o.issotrx = 'N'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Todas las ordenes de Venta de aqui sale el numero de orden
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          INNER JOIN (SELECT MPO.c_orderline_id,
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                             COALESCE(SUM(MPO.qty),0) AS qty
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                      --Busca todos los registros que tengan una factura asociada
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                      FROM m_matchpo MPO
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                      WHERE MPO.C_INVOICELINE_ID IS NULL
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :                      GROUP BY MPO.c_orderline_id) suma ON suma.c_orderline_id = ol.c_orderline_id 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN c_bpartner bp ON o.c_bpartner_id = bp.c_bpartner_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Las personas con los que hacen transacciones, en este caso ventas
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN m_product p ON ol.m_product_id = p.m_product_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Datos del producto
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN znk2_marca mca ON p.em_znk2_marca_id = mca.znk2_marca_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Marca del producto
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN ad_org org ON ol.ad_org_id = org.ad_org_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Organizaciones (En concreto de DNK)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --Localizacion de la tienda
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :          LEFT JOIN c_bpartner_location bpl ON bpl.c_bpartner_location_id = ol.c_bpartner_location_id
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        --
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        WHERE ol.ad_client_id = '2D4B4E8A2ACE7F47012AD3387996000A'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        AND   p.m_product_id <> '3B843E96BF374D0D848A0517376CAFE9'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        AND   o.docstatus = 'CO'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :        AND   ol.qtyordered - suma.qty > 0)) b 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   INNER JOIN c_bpartner bp ON bp.c_bpartner_id = b.c_bpartner_id 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   INNER JOIN c_bpartner_location bpl ON bpl.c_bpartner_location_id = b.c_bpartner_location_id 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   INNER JOIN c_location cl ON cl.c_location_id = bpl.c_location_id 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   INNER JOIN c_country cty ON cl.c_country_id = cty.c_country_id 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   INNER JOIN m_product p ON p.m_product_id = b.m_product_id 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN (SELECT PP.m_product_id,PP.pricelist,PP.ad_client_id FROM m_productprice PP
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 			LEFT JOIN m_pricelist_version PLV ON PP.m_pricelist_version_id = PLV.m_pricelist_version_id AND PLV.isactive = 'Y'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 			INNER JOIN m_pricelist PL ON PL.m_pricelist_id = PLV.m_pricelist_id 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 			AND PL.isactive='Y' AND isdefault='Y' AND issopricelist='Y' AND c_currency_id='130') PL ON PL.m_product_id = b.m_product_id AND Pl.ad_client_id='2D4B4E8A2ACE7F47012AD3387996000A'
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN c_region reg ON reg.c_region_id = cl.c_region_id 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN c_bp_group bpg ON bp.c_bp_group_id = bpg.c_bp_group_id 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_FORMA_CAJA ON EM_ZNK2_FORMA_CAJA_ID = ZNK2_FORMA_CAJA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_MATERIAL_CAJA ON EM_ZNK2_MATERIAL_CAJA_ID = ZNK2_MATERIAL_CAJA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_MATERIAL_CORREA ON EM_ZNK2_MATERIAL_CORREA_ID = ZNK2_MATERIAL_CORREA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_TERMINADO_CAJA ON EM_ZNK2_TERMINADO_CAJA_ID = ZNK2_TERMINADO_CAJA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_TERMINADO_CORREA ON EM_ZNK2_TERMINADO_CORREA_ID = ZNK2_TERMINADO_CORREA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_COLOR_CAJA ON EM_ZNK2_COLOR_CAJA_ID = ZNK2_COLOR_CAJA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_COLOR_CORREA ON EM_ZNK2_COLOR_CORREA_ID = ZNK2_COLOR_CORREA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_COLOR_CARATULA ON EM_ZNK2_COLOR_CARATULA_ID = ZNK2_COLOR_CARATULA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_TERMINADO_CARATULA ON EM_ZNK2_TERMINADO_CARATULA_ID = ZNK2_TERMINADO_CARATULA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_CLASIFICACION ON EM_ZNK2_CLASIFICACION_ID = ZNK2_CLASIFICACION_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_NOMBRE_ESTILO ON EM_ZNK2_NOMBRE_ESTILO_ID = ZNK2_NOMBRE_ESTILO_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_METALES ON EM_ZNK2_JOYAS_METALES_ID = ZNK2_JOYAS_METALES_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_ADITAMENTOS ON EM_ZNK2_JOYAS_ADITAMENTOS_ID = ZNK2_JOYAS_ADITAMENTOS_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_COLOR ON EM_ZNK2_JOYAS_COLOR_ID = ZNK2_JOYAS_COLOR_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_MATERIALES ON EM_ZNK2_JOYAS_MATERIALES_ID = ZNK2_JOYAS_MATERIALES_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_FORMA ON EM_ZNK2_JOYAS_FORMA_ID = ZNK2_JOYAS_FORMA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_FORMA FCOLLAR ON EM_ZNK2_FORMACOLLAR_ID = FCOLLAR.ZNK2_JOYAS_FORMA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_FORMA FBRASALETE ON EM_ZNK2_FORMABRASALETE_ID = FBRASALETE.ZNK2_JOYAS_FORMA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_FORMA FARETES ON EM_ZNK2_FORMAARETES_ID = FARETES.ZNK2_JOYAS_FORMA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_FORMA FANILLO ON EM_ZNK2_FORMAANILLO_ID = FANILLO.ZNK2_JOYAS_FORMA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_FORMA FBOXSET ON EM_ZNK2_FORMABOXSET_ID = FBOXSET.ZNK2_JOYAS_FORMA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_FORMA FCHARM ON EM_ZNK2_FORMACHARM_ID = FCHARM.ZNK2_JOYAS_FORMA_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_COMBINACION_BOXSET ON EM_ZNK2_COMBINACION_BOXSET_ID = ZNK2_COMBINACION_BOXSET_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_JOYAS_COLOR COLORADITAMENTO ON EM_ZNK2_COLOR_ADITAMENTO_ID = COLORADITAMENTO.ZNK2_JOYAS_COLOR_ID 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) :   LEFT JOIN ZNK2_MARCA MARCA ON P.EM_ZNK2_MARCA_id = MARCA.ZNK2_MARCA_ID
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : ERROR: @NoConversionRate@ (USD-$) @to@ (MXN-$) @ForDate@ '07-06-2012', @Client@ 'DNK - PR' @And@ @ACCS_AD_ORG_ID_D@ '*'.
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.database.Database.openQuery(Database.java:1912)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.tableinput.TableInput.doQuery(TableInput.java:223)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.steps.tableinput.TableInput.processRow(TableInput.java:133)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:40)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at java.lang.Thread.run(Thread.java:619)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Caused by: org.postgresql.util.PSQLException: ERROR: @NoConversionRate@ (USD-$) @to@ (MXN-$) @ForDate@ '07-06-2012', @Client@ 'DNK - PR' @And@ @ACCS_AD_ORG_ID_D@ '*'.
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2077)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1810)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:498)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:372)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:252)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.core.database.Database.openQuery(Database.java:1898)
+2012/06/14 01:13:17 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	... 4 more
+2012/06/14 01:13:17 - DNK_COMPRAS_PLANA - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!
+2012/06/14 01:13:17 - DNK_COMPRAS_PLANA - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Errors detected!
+2012/06/14 01:13:17 - Compras_DNK.0 - Finished reading query, closing connection.
+2012/06/14 01:13:17 - Compras_DNK.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)

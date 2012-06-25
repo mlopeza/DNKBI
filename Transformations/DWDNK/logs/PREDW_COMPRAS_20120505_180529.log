@@ -1,0 +1,24 @@
+2012/05/05 18:05:29 - PREDW Compras - Loading transformation from XML file [file:///root/Transformations/DWDNK\COMPRAS\DNK_COMPRAS_PLANA.ktr]
+2012/05/05 18:05:29 - DNK_COMPRAS_PLANA - Dispatching started for transformation [DNK_COMPRAS_PLANA]
+2012/05/05 18:05:30 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : An error occurred, processing will be stopped: 
+2012/05/05 18:05:30 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Error occured while trying to connect to the database
+2012/05/05 18:05:30 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/05/05 18:05:30 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Error connecting to database: (using class org.postgresql.Driver)
+2012/05/05 18:05:30 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Conexión rechazada. Verifique que el nombre del Host y el puerto sean correctos y que postmaster este aceptando conexiones TCP/IP.
+2012/05/05 18:05:30 - Compras_DNK.0 - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Error initializing step [Compras_DNK]
+2012/05/05 18:05:30 - DNK_COMPRAS_PLANA - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Step [Compras_DNK.0] failed to initialize!
+2012/05/05 18:05:30 - Compras_DNK.0 - Finished reading query, closing connection.
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : Unable to prepare for execution of the transformation
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : We failed to initialize at least one step.  Execution can not begin!
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.Trans.prepareExecution(Trans.java:792)
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.trans.Trans.execute(Trans.java:364)
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:1024)
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:503)
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:642)
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:642)
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:642)
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.job.Job.execute(Job.java:368)
+2012/05/05 18:05:30 - PREDW Compras - ERROR (version 4.2.1-stable, build 15952 from 2011-10-25 15.27.10 by buildguy) : 	at org.pentaho.di.job.Job.run(Job.java:288)

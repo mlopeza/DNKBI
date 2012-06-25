@@ -1,0 +1,12 @@
+2012/06/05 01:04:51 - PREDW INVENTARIO - Loading transformation from XML file [file:///root/Transformations/DWDNK\INVENTARIO\DNK_INVENTARIO_PLANA.ktr]
+2012/06/05 01:04:52 - DNK_INVENTARIO_PLANA - Dispatching started for transformation [DNK_INVENTARIO_PLANA]
+2012/06/05 01:04:52 - Table output.0 - Connected to database [DWDNK] (commit=1000)
+2012/06/05 01:05:46 - Transforma/Normaliza Tipo, Genero, Tiene precio, Producto de venta.0 - Optimization level set to 9.
+2012/06/05 01:05:46 - Normaliza Estado y Ciudad .0 - Optimization level set to 9.
+2012/06/05 01:06:09 - Table input.0 - Finished reading query, closing connection.
+2012/06/05 01:06:09 - Transforma/Normaliza Tipo, Genero, Tiene precio, Producto de venta.0 - Finished processing (I=0, O=0, R=8667, W=8667, U=0, E=0)
+2012/06/05 01:06:09 - Normaliza Estado y Ciudad .0 - Finished processing (I=0, O=0, R=8667, W=8667, U=0, E=0)
+2012/06/05 01:06:09 - Table input.0 - Finished processing (I=8667, O=0, R=0, W=8667, U=0, E=0)
+2012/06/05 01:06:10 - Campos de Fecha 2.0 - Finished processing (I=0, O=0, R=8667, W=8667, U=0, E=0)
+2012/06/05 01:06:10 - Formula.0 - Finished processing (I=0, O=0, R=8667, W=8667, U=0, E=0)
+2012/06/05 01:06:11 - Table output.0 - Finished processing (I=0, O=8667, R=8667, W=8667, U=0, E=0)

@@ -1,0 +1,14 @@
+2012/05/04 17:29:02 - DW SELL OUT - Loading transformation from XML file [file:///root/Transformations/DWDNK\Trans\Sell-Out.ktr]
+2012/05/04 17:29:03 - Sell-Out - Dispatching started for transformation [Sell-Out]
+2012/05/04 17:29:05 - Sell out.0 - Finished reading query, closing connection.
+2012/05/04 17:29:05 - Select values.0 - Finished processing (I=0, O=0, R=9640, W=9640, U=0, E=0)
+2012/05/04 17:29:05 - Quita Nulos.0 - Finished processing (I=0, O=0, R=9640, W=9640, U=0, E=0)
+2012/05/04 17:29:05 - Cantidades Validas.0 - Finished processing (I=0, O=0, R=9640, W=9640, U=0, E=0)
+2012/05/04 17:29:05 - Dummy (do nothing).0 - Finished processing (I=0, O=0, R=642, W=642, U=0, E=0)
+2012/05/04 17:29:05 - quita nulos .0 - Finished processing (I=0, O=0, R=8998, W=8998, U=0, E=0)
+2012/05/04 17:29:05 - Sell out.0 - Finished processing (I=9640, O=0, R=0, W=9640, U=0, E=0)
+2012/05/04 17:29:05 - String operations.0 - Finished processing (I=0, O=0, R=8998, W=8998, U=0, E=0)
+2012/05/04 17:29:05 - Venta Moneda.0 - Finished processing (I=0, O=0, R=8998, W=8998, U=0, E=0)
+2012/05/04 17:29:05 - Add sequence.0 - Finished processing (I=0, O=0, R=8998, W=8998, U=0, E=0)
+2012/05/04 17:29:05 - Rangos de precios.0 - Finished processing (I=0, O=0, R=8998, W=8998, U=0, E=0)
+2012/05/04 17:30:47 - Insert / Update.0 - Finished processing (I=8998, O=0, R=8998, W=8998, U=8998, E=0)

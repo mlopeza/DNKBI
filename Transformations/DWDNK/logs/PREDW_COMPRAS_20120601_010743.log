@@ -1,0 +1,20 @@
+2012/06/01 01:07:43 - PREDW Compras - Loading transformation from XML file [file:///root/Transformations/DWDNK\COMPRAS\DNK_COMPRAS_PLANA.ktr]
+2012/06/01 01:07:44 - DNK_COMPRAS_PLANA - Dispatching started for transformation [DNK_COMPRAS_PLANA]
+2012/06/01 01:07:52 - Transforma/Normaliza Tipo .0 - Optimization level set to 9.
+2012/06/01 01:07:52 - Normaliza Genero.0 - Optimization level set to 9.
+2012/06/01 01:07:52 - Compras_DNK.0 - Finished reading query, closing connection.
+2012/06/01 01:07:52 - Compras_DNK.0 - Finished processing (I=4933, O=0, R=0, W=4933, U=0, E=0)
+2012/06/01 01:07:52 - Transforma/Normaliza Tipo .0 - Finished processing (I=0, O=0, R=4933, W=4933, U=0, E=0)
+2012/06/01 01:07:52 - Normaliza Genero.0 - Finished processing (I=0, O=0, R=4933, W=4933, U=0, E=0)
+2012/06/01 01:07:52 - Compra Completada.0 - Finished processing (I=0, O=0, R=4933, W=4933, U=0, E=0)
+2012/06/01 01:07:52 - Agrega Campos Nulos y Campo Finalizado.0 - Finished processing (I=0, O=0, R=679, W=679, U=0, E=0)
+2012/06/01 01:07:53 - Campos de Fecha 2.0 - Finished processing (I=0, O=0, R=4254, W=4254, U=0, E=0)
+2012/06/01 01:07:53 - Formula.0 - Finished processing (I=0, O=0, R=4254, W=4254, U=0, E=0)
+2012/06/01 01:07:53 - Agrega Campo Finalizado.0 - Finished processing (I=0, O=0, R=4254, W=4254, U=0, E=0)
+2012/06/01 01:07:53 - Tiene Precio.0 - Finished processing (I=0, O=0, R=4933, W=4933, U=0, E=0)
+2012/06/01 01:07:53 - Si tiene precio.0 - Finished processing (I=0, O=0, R=3677, W=3677, U=0, E=0)
+2012/06/01 01:07:53 - No tiene precio.0 - Finished processing (I=0, O=0, R=1256, W=1256, U=0, E=0)
+2012/06/01 01:07:53 - Compras Positivas.0 - Finished processing (I=0, O=0, R=4933, W=4933, U=0, E=0)
+2012/06/01 01:07:53 - No.0 - Finished processing (I=0, O=0, R=306, W=306, U=0, E=0)
+2012/06/01 01:07:53 - Si.0 - Finished processing (I=0, O=0, R=4627, W=4627, U=0, E=0)
+2012/06/01 01:08:06 - Insert / Update.0 - Finished processing (I=4933, O=983, R=4933, W=4933, U=43, E=0)

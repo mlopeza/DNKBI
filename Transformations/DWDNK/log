@@ -1,0 +1,283 @@
+INFO  25-05 11:29:15,357 - Kitchen - Start of run.
+INFO  25-05 11:29:16,729 - DNKDW - Start of job execution
+INFO  25-05 11:29:16,797 - DNKDW - Starting entry [PREDW SELL IN]
+INFO  25-05 11:29:16,858 - PREDW SELL IN - Loading transformation from XML file [file:///root/Transformations/DWDNK\SELL_IN\SELL_IN_PLANA.ktr]
+INFO  25-05 11:29:18,458 - SELL_IN_PLANA - Dispatching started for transformation [SELL_IN_PLANA]
+INFO  25-05 11:32:27,750 - Transforma/Normaliza Tipo  - Optimization level set to 9.
+INFO  25-05 11:32:28,582 - normaliza tienda_ciudad - Optimization level set to 9.
+INFO  25-05 11:32:29,190 - normaliza tienda_estado - Optimization level set to 9.
+INFO  25-05 11:32:29,694 - Normaliza Genero - Optimization level set to 9.
+INFO  25-05 12:00:21,686 - Table input - linenr 50000
+INFO  25-05 12:03:42,461 - Campos de Fecha 2 - Linenr 50000
+INFO  25-05 12:03:42,461 - Formula - Linenr 50000
+INFO  25-05 12:03:42,877 - normaliza tienda_ciudad - linenr 50000
+INFO  25-05 12:03:42,879 - Transforma/Normaliza Tipo  - linenr 50000
+INFO  25-05 12:03:42,880 - Utilidad Positiva - linenr 50000
+INFO  25-05 12:03:42,881 - normaliza tienda_estado - linenr 50000
+INFO  25-05 12:03:42,893 - Insert / Update - linenr 50000
+INFO  25-05 12:03:42,895 - Filter rows - linenr 50000
+INFO  25-05 12:03:42,898 - Normaliza Genero - linenr 50000
+INFO  25-05 12:03:42,975 - es PV - LineNr : 50000
+INFO  25-05 12:06:42,688 - Si - LineNr : 50000
+INFO  25-05 12:24:48,821 - Filter rows - Finished processing (I=0, O=0, R=89334, W=89334, U=0, E=0)
+INFO  25-05 12:24:48,823 - no es PV - Finished processing (I=0, O=0, R=3923, W=3923, U=0, E=0)
+INFO  25-05 12:24:48,836 - es PV - Finished processing (I=0, O=0, R=85411, W=85411, U=0, E=0)
+INFO  25-05 12:24:48,850 - Table input - Finished reading query, closing connection.
+INFO  25-05 12:24:48,866 - Utilidad Positiva - Finished processing (I=0, O=0, R=89334, W=89334, U=0, E=0)
+INFO  25-05 12:24:48,868 - Si - Finished processing (I=0, O=0, R=82350, W=82350, U=0, E=0)
+INFO  25-05 12:24:48,869 - No - Finished processing (I=0, O=0, R=6984, W=6984, U=0, E=0)
+INFO  25-05 12:24:48,969 - Table input - Finished processing (I=89334, O=0, R=0, W=89334, U=0, E=0)
+INFO  25-05 12:24:49,221 - Transforma/Normaliza Tipo  - Finished processing (I=0, O=0, R=89334, W=89334, U=0, E=0)
+INFO  25-05 12:24:59,274 - normaliza tienda_ciudad - Finished processing (I=0, O=0, R=89334, W=89334, U=0, E=0)
+INFO  25-05 12:24:59,282 - Normaliza Genero - Finished processing (I=0, O=0, R=89334, W=89334, U=0, E=0)
+INFO  25-05 12:24:59,278 - normaliza tienda_estado - Finished processing (I=0, O=0, R=89334, W=89334, U=0, E=0)
+INFO  25-05 12:24:59,292 - Campos de Fecha 2 - Finished processing (I=0, O=0, R=89334, W=89334, U=0, E=0)
+INFO  25-05 12:24:59,296 - Formula - Finished processing (I=0, O=0, R=89334, W=89334, U=0, E=0)
+INFO  25-05 12:25:10,101 - Insert / Update - Finished processing (I=89334, O=89298, R=89334, W=89334, U=0, E=0)
+INFO  25-05 12:25:10,151 - DNKDW - Starting entry [DW Sell In]
+INFO  25-05 12:25:10,170 - DW Sell In - Loading transformation from XML file [file:///root/Transformations/DWDNK\Trans\SELL-INN PREDW 3.0.ktr]
+INFO  25-05 12:25:10,969 - SELL-INN PREDW 30 - Dispatching started for transformation [SELL-INN PREDW 30]
+INFO  25-05 12:25:14,867 - Todas las Facturas - Finished reading query, closing connection.
+INFO  25-05 12:25:15,064 - Todas las Facturas - Finished processing (I=7675, O=0, R=0, W=7675, U=0, E=0)
+INFO  25-05 12:25:15,155 - Sort rows - Finished processing (I=0, O=0, R=7675, W=7675, U=0, E=0)
+INFO  25-05 12:25:16,716 - Descuento  en Facturas - Finished reading query, closing connection.
+INFO  25-05 12:25:16,770 - Descuento  en Facturas - Finished processing (I=3615, O=0, R=0, W=3615, U=0, E=0)
+INFO  25-05 12:25:16,916 - Sort rows 2 - Finished processing (I=0, O=0, R=3615, W=3615, U=0, E=0)
+INFO  25-05 12:25:17,168 - Subtotales de las Facturas - Finished reading query, closing connection.
+INFO  25-05 12:25:17,334 - Subtotales de las Facturas - Finished processing (I=7673, O=0, R=0, W=7673, U=0, E=0)
+INFO  25-05 12:25:17,371 - Sort rows 4 - Finished processing (I=0, O=0, R=7673, W=7673, U=0, E=0)
+INFO  25-05 12:25:17,616 - Left join - Finished processing (I=0, O=0, R=11290, W=7675, U=0, E=0)
+INFO  25-05 12:25:17,838 - Sort rows 4 2 - Finished processing (I=0, O=0, R=7675, W=7675, U=0, E=0)
+INFO  25-05 12:25:18,860 - Merge Join 2 - Finished processing (I=0, O=0, R=15348, W=7675, U=0, E=0)
+INFO  25-05 12:25:18,870 - If field value is null - Finished processing (I=0, O=0, R=7675, W=7675, U=0, E=0)
+INFO  25-05 12:25:18,912 - Formula 2 - Finished processing (I=0, O=0, R=7675, W=7675, U=0, E=0)
+INFO  25-05 12:25:18,937 - Select values - Finished processing (I=0, O=0, R=7675, W=7675, U=0, E=0)
+INFO  25-05 12:25:18,964 - Sort rows 3 2 - Finished processing (I=0, O=0, R=7675, W=7675, U=0, E=0)
+INFO  25-05 12:25:36,288 - SELL IN PLANA - linenr 50000
+INFO  25-05 12:25:36,528 - Formula - Linenr 50000
+INFO  25-05 12:25:36,692 - Split Fields - linenr 50000
+INFO  25-05 12:25:36,718 - Add ID a cada registro - linenr 50000
+INFO  25-05 12:25:36,755 - Formato y clasificación de Atributos - linenr 50000
+INFO  25-05 12:25:36,816 - Filter rows - linenr 50000
+INFO  25-05 12:25:36,863 - VENTAS EFECTIVAS - LineNr : 50000
+INFO  25-05 12:25:36,879 - Append streams - linenr 50000
+INFO  25-05 12:25:36,909 - Coato Total y Subtotal - Linenr 50000
+INFO  25-05 12:25:36,913 - Sort rows 3 - Linenr 50000
+INFO  25-05 12:25:46,906 - SELL IN PLANA - Finished reading query, closing connection.
+INFO  25-05 12:25:46,943 - Add ID a cada registro - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:46,937 - Split Fields - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:46,933 - Formula - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:46,991 - Quita valores nulos - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:46,995 - SELL IN PLANA - Finished processing (I=89298, O=0, R=0, W=89298, U=0, E=0)
+INFO  25-05 12:25:46,993 - Quita Ceros - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:47,011 - Formato y clasificación de Atributos - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:47,020 - String  - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:47,031 - Rangos de precios - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:47,041 - String - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:47,046 - ESTADOS - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:47,061 - TIENDA ESTADO - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:47,068 - Filter rows - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:47,071 - VENTAS NO EFECTIVAS - Finished processing (I=0, O=0, R=126, W=126, U=0, E=0)
+INFO  25-05 12:25:47,081 - VENTAS EFECTIVAS - Finished processing (I=0, O=0, R=89172, W=89172, U=0, E=0)
+INFO  25-05 12:25:47,393 - Append streams - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:47,402 - Coato Total y Subtotal - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:25:55,800 - Merge Join - linenr 50000
+INFO  25-05 12:25:56,954 - Filter rows 3 - linenr 50000
+INFO  25-05 12:25:57,890 - descuento % - Linenr 50000
+INFO  25-05 12:25:57,920 - DESCUENTO$ - Linenr 50000
+INFO  25-05 12:25:57,927 - Filter rows 3 2 - linenr 50000
+INFO  25-05 12:25:58,115 - MARGEN DE VENTA  - Linenr 50000
+INFO  25-05 12:26:00,282 - Sort rows 3 - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:26:02,302 - Merge Join - Finished processing (I=0, O=0, R=96973, W=89298, U=0, E=0)
+INFO  25-05 12:26:03,254 - Filter rows 3 - Finished processing (I=0, O=0, R=89298, W=89298, U=0, E=0)
+INFO  25-05 12:26:03,334 - Dummy (do nothing) - Finished processing (I=0, O=0, R=48, W=48, U=0, E=0)
+INFO  25-05 12:26:22,655 - descuento % - Finished processing (I=0, O=0, R=89250, W=89250, U=0, E=0)
+INFO  25-05 12:26:33,565 - Append streams 2 - linenr 50000
+INFO  25-05 12:26:48,134 - DESCUENTO$ - Finished processing (I=0, O=0, R=89250, W=89250, U=0, E=0)
+INFO  25-05 12:26:58,178 - Cantidades validas - linenr 50000
+INFO  25-05 12:27:19,474 - Filter rows 3 2 - Finished processing (I=0, O=0, R=89250, W=89250, U=0, E=0)
+INFO  25-05 12:27:19,485 - Add constants - Finished processing (I=0, O=0, R=3835, W=3835, U=0, E=0)
+INFO  25-05 12:27:30,622 - Filter rows 2 - linenr 50000
+INFO  25-05 12:27:43,057 - MARGEN DE VENTA  - Finished processing (I=0, O=0, R=85415, W=85415, U=0, E=0)
+INFO  25-05 12:27:53,008 - vENTA NETA MARGEN BRUTO% - Linenr 50000
+INFO  25-05 12:28:20,989 - Append streams 2 - Finished processing (I=0, O=0, R=89250, W=89250, U=0, E=0)
+INFO  25-05 12:28:22,702 - Insert / Update - linenr 50000
+INFO  25-05 12:28:41,964 - Cantidades validas - Finished processing (I=0, O=0, R=89250, W=89250, U=0, E=0)
+INFO  25-05 12:28:41,967 - Dummy (do nothing) 2 - Finished processing (I=0, O=0, R=126, W=126, U=0, E=0)
+INFO  25-05 12:28:54,942 - Filter rows 2 - Finished processing (I=0, O=0, R=89124, W=89124, U=0, E=0)
+INFO  25-05 12:28:54,948 - Dummy (do nothing) 2 2 - Finished processing (I=0, O=0, R=3796, W=3796, U=0, E=0)
+INFO  25-05 12:29:23,288 - vENTA NETA MARGEN BRUTO% - Finished processing (I=0, O=0, R=85328, W=85328, U=0, E=0)
+INFO  25-05 12:29:42,698 - Insert / Update - Finished processing (I=85328, O=85328, R=85328, W=85328, U=0, E=0)
+INFO  25-05 12:29:42,935 - DNKDW - Finished job entry [DW Sell In] (result=[true])
+INFO  25-05 12:29:42,937 - DNKDW - Starting entry [PREDW INVENTARIO]
+INFO  25-05 12:29:43,015 - PREDW INVENTARIO - Loading transformation from XML file [file:///root/Transformations/DWDNK\INVENTARIO\DNK_INVENTARIO_PLANA.ktr]
+INFO  25-05 12:29:43,499 - DNK_INVENTARIO_PLANA - Dispatching started for transformation [DNK_INVENTARIO_PLANA]
+INFO  25-05 12:29:44,093 - Table output - Connected to database [DWDNK] (commit=1000)
+INFO  25-05 12:30:45,051 - Transforma/Normaliza Tipo, Genero, Tiene precio, Producto de venta - Optimization level set to 9.
+INFO  25-05 12:30:45,181 - Normaliza Estado y Ciudad  - Optimization level set to 9.
+INFO  25-05 12:31:13,525 - Table input - Finished reading query, closing connection.
+INFO  25-05 12:31:13,942 - Transforma/Normaliza Tipo, Genero, Tiene precio, Producto de venta - Finished processing (I=0, O=0, R=9230, W=9230, U=0, E=0)
+INFO  25-05 12:31:13,947 - Normaliza Estado y Ciudad  - Finished processing (I=0, O=0, R=9230, W=9230, U=0, E=0)
+INFO  25-05 12:31:13,951 - Table input - Finished processing (I=9230, O=0, R=0, W=9230, U=0, E=0)
+INFO  25-05 12:31:17,834 - Campos de Fecha 2 - Finished processing (I=0, O=0, R=9230, W=9230, U=0, E=0)
+INFO  25-05 12:31:17,839 - Formula - Finished processing (I=0, O=0, R=9230, W=9230, U=0, E=0)
+INFO  25-05 12:31:18,747 - Table output - Finished processing (I=0, O=9230, R=9230, W=9230, U=0, E=0)
+INFO  25-05 12:31:18,776 - DNKDW - Starting entry [PREDW SELL OUT]
+INFO  25-05 12:31:19,059 - LiverpoolJob - Starting entry [Obten Descripcion de Archivo]
+INFO  25-05 12:31:19,067 - Obten Descripcion de Archivo - Loading transformation from XML file [file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/LiverpoolExtract2.ktr]
+INFO  25-05 12:31:19,519 - LiverpoolExtract2 - Dispatching started for transformation [LiverpoolExtract2]
+INFO  25-05 12:31:20,092 - 1000 columns - Finished processing (I=0, O=0, R=0, W=500, U=0, E=0)
+INFO  25-05 12:31:20,096 - Generate Rows - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+INFO  25-05 12:31:20,095 - Campos - Finished processing (I=0, O=0, R=0, W=16, U=0, E=0)
+INFO  25-05 12:31:20,100 - colnr - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+INFO  25-05 12:31:20,110 - Excel Input Variables - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+INFO  25-05 12:31:20,133 - Set format - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+INFO  25-05 12:31:20,182 - Calculator - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+INFO  25-05 12:31:20,192 - Add constants - Finished processing (I=0, O=0, R=500, W=1000, U=0, E=0)
+INFO  25-05 12:31:20,201 - Select Date Columns - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+INFO  25-05 12:31:20,204 - Normalised field - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+INFO  25-05 12:31:20,212 - Select values - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+INFO  25-05 12:31:20,431 - Append streams - Finished processing (I=0, O=0, R=516, W=516, U=0, E=0)
+INFO  25-05 12:31:21,356 - LiverpoolExtractTemplate - Dispatching started for transformation [LiverpoolExtractTemplate]
+INFO  25-05 12:31:23,790 - Microsoft Excel Input 2 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+INFO  25-05 12:31:23,900 - Row Normaliser 2 - Finished processing (I=0, O=0, R=1, W=500, U=0, E=0)
+INFO  25-05 12:31:23,913 - Filter rows 2 - Finished processing (I=0, O=0, R=500, W=19, U=0, E=0)
+INFO  25-05 12:31:23,933 - layout.txt - Finished processing (I=0, O=20, R=19, W=19, U=0, E=0)
+INFO  25-05 12:31:24,029 - LiverpoolJob - Starting entry [Transformacion]
+INFO  25-05 12:31:24,039 - Transformacion - Loading transformation from XML file [file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/LiverpoolReadSpreadSheet.ktr]
+INFO  25-05 12:31:24,490 - LiverpoolReadSpreadSheet - Dispatching started for transformation [LiverpoolReadSpreadSheet]
+INFO  25-05 12:31:24,937 - Generate Rows - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+INFO  25-05 12:31:24,949 - Campos - Finished processing (I=0, O=0, R=0, W=16, U=0, E=0)
+INFO  25-05 12:31:24,980 - Excel Input Variables - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+INFO  25-05 12:31:25,033 - CSV file input - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/Layout.csv'
+INFO  25-05 12:31:25,051 - CSV file input - Finished processing (I=20, O=0, R=0, W=19, U=0, E=0)
+INFO  25-05 12:31:25,082 - Add constants - Finished processing (I=0, O=0, R=19, W=19, U=0, E=0)
+INFO  25-05 12:31:25,099 - Select Date Columns - Finished processing (I=0, O=0, R=19, W=38, U=0, E=0)
+INFO  25-05 12:31:25,106 - NormalisedField - Finished processing (I=0, O=0, R=19, W=19, U=0, E=0)
+INFO  25-05 12:31:25,113 - Normaliser Target - Finished processing (I=0, O=0, R=19, W=19, U=0, E=0)
+INFO  25-05 12:31:25,262 - Append streams - Finished processing (I=0, O=0, R=35, W=35, U=0, E=0)
+INFO  25-05 12:31:25,756 - LiverpoolReadSpreadSheetTemplate - Dispatching started for transformation [LiverpoolReadSpreadSheetTemplate]
+INFO  25-05 12:31:25,976 - CSV file input - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/Layout.csv'
+INFO  25-05 12:31:25,978 - CSV file input - Finished processing (I=20, O=0, R=0, W=19, U=0, E=0)
+INFO  25-05 12:31:26,410 - Modified Java Script Value - Optimization level set to 9.
+INFO  25-05 12:31:27,917 - Add Date - linenr 50000
+INFO  25-05 12:31:27,930 - Filter rows - linenr 50000
+INFO  25-05 12:32:53,028 - Modified Java Script Value - Finished processing (I=0, O=0, R=4601, W=4601, U=0, E=0)
+INFO  25-05 12:32:53,035 - Resultado - Finished processing (I=0, O=9640, R=9639, W=9639, U=0, E=0)
+INFO  25-05 12:32:53,032 - Add Date - Finished processing (I=0, O=0, R=87438, W=87419, U=0, E=0)
+INFO  25-05 12:32:53,073 - Filter rows - Finished processing (I=0, O=0, R=87419, W=9639, U=0, E=0)
+INFO  25-05 12:32:53,038 - Row Normaliser - Finished processing (I=0, O=0, R=4601, W=87419, U=0, E=0)
+INFO  25-05 12:32:53,118 - Microsoft Excel Input 2 - Finished processing (I=4601, O=0, R=0, W=4601, U=0, E=0)
+INFO  25-05 12:32:53,633 - LiverpoolJob - Starting entry [Insertar A base de Datos]
+INFO  25-05 12:32:53,637 - Insertar A base de Datos - Loading transformation from XML file [file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/InsertDatabase.ktr]
+INFO  25-05 12:32:54,431 - InsertDatabase - Dispatching started for transformation [InsertDatabase]
+INFO  25-05 12:32:55,598 - CSV file input - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/Resultado.csv'
+INFO  25-05 12:32:55,983 - Direccion Tiendas - Finished reading query, closing connection.
+INFO  25-05 12:32:56,010 - Direccion Cliente (Liverpool) - Finished reading query, closing connection.
+INFO  25-05 12:32:56,264 - Direccion Tiendas - Finished processing (I=92, O=0, R=0, W=92, U=0, E=0)
+INFO  25-05 12:32:56,323 - Direccion Cliente (Liverpool) - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+INFO  25-05 12:32:57,492 - Almacen - Finished reading query, closing connection.
+INFO  25-05 12:32:57,577 - Almacen - Finished processing (I=3510, O=0, R=0, W=3510, U=0, E=0)
+INFO  25-05 12:32:58,268 - CSV file input - Finished processing (I=9640, O=0, R=0, W=9639, U=0, E=0)
+INFO  25-05 12:32:58,383 - Sort SKU - Finished processing (I=0, O=0, R=9639, W=9639, U=0, E=0)
+INFO  25-05 12:33:00,727 - DNK Producto-SKU Liverpool - Finished reading query, closing connection.
+INFO  25-05 12:33:00,808 - DNK Producto-SKU Liverpool - Finished processing (I=3726, O=0, R=0, W=3726, U=0, E=0)
+INFO  25-05 12:33:01,348 - Merge Join - Finished processing (I=0, O=0, R=13365, W=9641, U=0, E=0)
+INFO  25-05 12:33:01,470 - Sort id Tienda - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+INFO  25-05 12:33:05,252 - Merge Join 2 - Finished processing (I=0, O=0, R=9733, W=9641, U=0, E=0)
+INFO  25-05 12:33:06,002 - Normaliza Genero - Optimization level set to 9.
+INFO  25-05 12:33:06,046 - Sort rows - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+INFO  25-05 12:33:10,272 - Agrega Direccion Cliente - Finished processing (I=0, O=0, R=9642, W=9641, U=0, E=0)
+INFO  25-05 12:33:10,299 - Merge Join 3 - Finished processing (I=0, O=0, R=13151, W=9641, U=0, E=0)
+INFO  25-05 12:33:23,916 - Formula - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+INFO  25-05 12:33:24,013 - Pone en 0 las que no tengan numero - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+INFO  25-05 12:33:23,980 - Campos de Fecha 2 - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+INFO  25-05 12:33:23,929 - Filter rows - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+INFO  25-05 12:33:23,924 - Normaliza Genero - Finished processing (I=0, O=0, R=9641, W=9641, U=0, E=0)
+INFO  25-05 12:33:56,999 - Insert / Update - Finished processing (I=9641, O=9639, R=9641, W=9641, U=2, E=0)
+INFO  25-05 12:33:57,078 - LiverpoolJob - Starting entry [Eliminar archivos]
+INFO  25-05 12:33:57,166 - LiverpoolJob - Finished job entry [Eliminar archivos] (result=[true])
+INFO  25-05 12:33:57,167 - LiverpoolJob - Finished job entry [Insertar A base de Datos] (result=[true])
+INFO  25-05 12:33:57,169 - LiverpoolJob - Finished job entry [Transformacion] (result=[true])
+INFO  25-05 12:33:57,173 - LiverpoolJob - Finished job entry [Obten Descripcion de Archivo] (result=[true])
+INFO  25-05 12:33:57,220 - DNKDW - Starting entry [DW SELL OUT]
+INFO  25-05 12:33:57,224 - DW SELL OUT - Loading transformation from XML file [file:///root/Transformations/DWDNK\Trans\Sell-Out.ktr]
+INFO  25-05 12:33:57,596 - Sell-Out - Dispatching started for transformation [Sell-Out]
+INFO  25-05 12:33:59,486 - Sell out - Finished reading query, closing connection.
+INFO  25-05 12:33:59,517 - quita nulos  - Finished processing (I=0, O=0, R=8998, W=8998, U=0, E=0)
+INFO  25-05 12:33:59,512 - Dummy (do nothing) - Finished processing (I=0, O=0, R=641, W=641, U=0, E=0)
+INFO  25-05 12:33:59,507 - Cantidades Validas - Finished processing (I=0, O=0, R=9639, W=9639, U=0, E=0)
+INFO  25-05 12:33:59,502 - Quita Nulos - Finished processing (I=0, O=0, R=9639, W=9639, U=0, E=0)
+INFO  25-05 12:33:59,497 - Select values - Finished processing (I=0, O=0, R=9639, W=9639, U=0, E=0)
+INFO  25-05 12:33:59,524 - String operations - Finished processing (I=0, O=0, R=8998, W=8998, U=0, E=0)
+INFO  25-05 12:33:59,535 - Add sequence - Finished processing (I=0, O=0, R=8998, W=8998, U=0, E=0)
+INFO  25-05 12:33:59,539 - Rangos de precios - Finished processing (I=0, O=0, R=8998, W=8998, U=0, E=0)
+INFO  25-05 12:33:59,533 - Sell out - Finished processing (I=9639, O=0, R=0, W=9639, U=0, E=0)
+INFO  25-05 12:33:59,531 - Venta Moneda - Finished processing (I=0, O=0, R=8998, W=8998, U=0, E=0)
+INFO  25-05 12:34:48,714 - Insert / Update - Finished processing (I=8998, O=8998, R=8998, W=8998, U=0, E=0)
+INFO  25-05 12:34:48,738 - DNKDW - Finished job entry [DW SELL OUT] (result=[true])
+INFO  25-05 12:34:48,738 - DNKDW - Finished job entry [PREDW SELL OUT] (result=[true])
+INFO  25-05 12:34:48,739 - DNKDW - Starting entry [DW Inventario]
+INFO  25-05 12:34:48,781 - DW Inventario - Loading transformation from XML file [file:///root/Transformations/DWDNK\Trans\INVENTARIO PREDW 2.0.ktr]
+INFO  25-05 12:34:49,093 - INVENTARIO PREDW 20 - Dispatching started for transformation [INVENTARIO PREDW 20]
+INFO  25-05 12:34:52,302 - INVENTARIO - Finished reading query, closing connection.
+INFO  25-05 12:34:52,340 - Select values  - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,367 - If field value is null - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,391 - calculo de valor del inventario - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,383 - Select values - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,381 - INVENTARIO - Finished processing (I=8231, O=0, R=0, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,396 - Add sequence - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,375 - Quita Null a Medidas - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,422 - String operations - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,431 - CD ALMACEN - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,427 - estado almacen - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,436 - GENERO - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,442 - Rangos de precios - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:34:52,450 - String operations 2 - Finished processing (I=0, O=0, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:35:08,312 - InventarioDWplano - Finished processing (I=8231, O=8231, R=8231, W=8231, U=0, E=0)
+INFO  25-05 12:35:08,319 - DNKDW - Finished job entry [DW Inventario] (result=[true])
+INFO  25-05 12:35:08,335 - DNKDW - Starting entry [PREDW Compras]
+INFO  25-05 12:35:08,388 - PREDW Compras - Loading transformation from XML file [file:///root/Transformations/DWDNK\COMPRAS\DNK_COMPRAS_PLANA.ktr]
+INFO  25-05 12:35:09,421 - DNK_COMPRAS_PLANA - Dispatching started for transformation [DNK_COMPRAS_PLANA]
+INFO  25-05 12:35:16,552 - Transforma/Normaliza Tipo  - Optimization level set to 9.
+INFO  25-05 12:35:16,675 - Normaliza Genero - Optimization level set to 9.
+INFO  25-05 12:35:16,940 - Compras_DNK - Finished reading query, closing connection.
+INFO  25-05 12:35:17,063 - Compras_DNK - Finished processing (I=4809, O=0, R=0, W=4809, U=0, E=0)
+INFO  25-05 12:35:17,130 - Transforma/Normaliza Tipo  - Finished processing (I=0, O=0, R=4809, W=4809, U=0, E=0)
+INFO  25-05 12:35:17,169 - Normaliza Genero - Finished processing (I=0, O=0, R=4809, W=4809, U=0, E=0)
+INFO  25-05 12:35:17,181 - Compra Completada - Finished processing (I=0, O=0, R=4809, W=4809, U=0, E=0)
+INFO  25-05 12:35:17,204 - Agrega Campos Nulos y Campo Finalizado - Finished processing (I=0, O=0, R=603, W=603, U=0, E=0)
+INFO  25-05 12:35:19,462 - Campos de Fecha 2 - Finished processing (I=0, O=0, R=4206, W=4206, U=0, E=0)
+INFO  25-05 12:35:19,469 - Formula - Finished processing (I=0, O=0, R=4206, W=4206, U=0, E=0)
+INFO  25-05 12:35:19,474 - Agrega Campo Finalizado - Finished processing (I=0, O=0, R=4206, W=4206, U=0, E=0)
+INFO  25-05 12:35:19,478 - Tiene Precio - Finished processing (I=0, O=0, R=4809, W=4809, U=0, E=0)
+INFO  25-05 12:35:19,491 - Si tiene precio - Finished processing (I=0, O=0, R=3677, W=3677, U=0, E=0)
+INFO  25-05 12:35:19,493 - No tiene precio - Finished processing (I=0, O=0, R=1132, W=1132, U=0, E=0)
+INFO  25-05 12:35:19,511 - Compras Positivas - Finished processing (I=0, O=0, R=4809, W=4809, U=0, E=0)
+INFO  25-05 12:35:19,519 - Si - Finished processing (I=0, O=0, R=4541, W=4541, U=0, E=0)
+INFO  25-05 12:35:19,516 - No - Finished processing (I=0, O=0, R=268, W=268, U=0, E=0)
+INFO  25-05 12:35:32,272 - Insert / Update - Finished processing (I=4809, O=4790, R=4809, W=4809, U=19, E=0)
+INFO  25-05 12:35:32,278 - DNKDW - Starting entry [DW Compras]
+INFO  25-05 12:35:32,294 - DW Compras - Loading transformation from XML file [file:///root/Transformations/DWDNK\Trans\COMPRAS PREDW.ktr]
+INFO  25-05 12:35:32,618 - COMPRAS PREDW - Dispatching started for transformation [COMPRAS PREDW]
+INFO  25-05 12:35:33,207 - Compras - Finished reading query, closing connection.
+INFO  25-05 12:35:33,244 - If field value is null 2 - Finished processing (I=0, O=0, R=4790, W=4790, U=0, E=0)
+INFO  25-05 12:35:33,243 - Filter rows - Finished processing (I=0, O=0, R=4790, W=4790, U=0, E=0)
+INFO  25-05 12:35:33,242 - Add constants - Finished processing (I=0, O=0, R=603, W=603, U=0, E=0)
+INFO  25-05 12:35:33,223 - Select values - Finished processing (I=0, O=0, R=4790, W=4790, U=0, E=0)
+INFO  25-05 12:35:33,260 - Formula - Finished processing (I=0, O=0, R=4187, W=4187, U=0, E=0)
+INFO  25-05 12:35:33,263 - Compras - Finished processing (I=4790, O=0, R=0, W=4790, U=0, E=0)
+INFO  25-05 12:35:33,559 - Append streams - Finished processing (I=0, O=0, R=4790, W=4790, U=0, E=0)
+INFO  25-05 12:35:33,564 - IdCompra - Finished processing (I=0, O=0, R=4790, W=4790, U=0, E=0)
+INFO  25-05 12:35:33,571 - If field value is null - Finished processing (I=0, O=0, R=4790, W=4790, U=0, E=0)
+INFO  25-05 12:35:33,574 - Rangos de precios - Finished processing (I=0, O=0, R=4790, W=4790, U=0, E=0)
+INFO  25-05 12:35:33,599 - String operations - Finished processing (I=0, O=0, R=4790, W=4790, U=0, E=0)
+INFO  25-05 12:35:40,623 - DataWarehose_plano - Finished processing (I=4790, O=4790, R=4790, W=4790, U=0, E=0)
+INFO  25-05 12:35:40,634 - DNKDW - Finished job entry [DW Compras] (result=[true])
+INFO  25-05 12:35:40,636 - DNKDW - Finished job entry [PREDW Compras] (result=[true])
+INFO  25-05 12:35:40,637 - DNKDW - Finished job entry [PREDW INVENTARIO] (result=[true])
+INFO  25-05 12:35:40,640 - DNKDW - Finished job entry [PREDW SELL IN] (result=[true])
+INFO  25-05 12:35:40,644 - DNKDW - Job execution finished
+INFO  25-05 12:35:40,653 - Kitchen - Finished!
+INFO  25-05 12:35:40,654 - Kitchen - Start=2012/05/25 11:29:15.360, Stop=2012/05/25 12:35:40.653
+INFO  25-05 12:35:40,654 - Kitchen - Processing ended after 1 hours, 6 minutes and 25 seconds (3985 seconds total).

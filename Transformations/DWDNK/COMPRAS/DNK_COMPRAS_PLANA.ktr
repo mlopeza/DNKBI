@@ -1,0 +1,1490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>DNK_COMPRAS_PLANA</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2012&#47;04&#47;24 16:19:19.989</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2012&#47;04&#47;24 16:19:19.989</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>DNK</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>openbravo</database>
+    <port>5832</port>
+    <username>tad</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce10be86aede</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5832</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>DWDNK</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>PREDW</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4a016be7fc797addb</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Campos de Fecha 2</from><to>Formula</to><enabled>Y</enabled> </hop>  <hop> <from>Compra Completada</from><to>Agrega Campos Nulos y Campo Finalizado</to><enabled>Y</enabled> </hop>  <hop> <from>Formula</from><to>Agrega Campo Finalizado</to><enabled>Y</enabled> </hop>  <hop> <from>Compras_DNK</from><to>Transforma&#47;Normaliza Tipo </to><enabled>Y</enabled> </hop>  <hop> <from>Compra Completada</from><to>Campos de Fecha 2</to><enabled>Y</enabled> </hop>  <hop> <from>Tiene Precio</from><to>Si tiene precio</to><enabled>Y</enabled> </hop>  <hop> <from>Tiene Precio</from><to>No tiene precio</to><enabled>Y</enabled> </hop>  <hop> <from>Compras Positivas</from><to>Si</to><enabled>Y</enabled> </hop>  <hop> <from>Compras Positivas</from><to>No</to><enabled>Y</enabled> </hop>  <hop> <from>Agrega Campo Finalizado</from><to>Tiene Precio</to><enabled>Y</enabled> </hop>  <hop> <from>Agrega Campos Nulos y Campo Finalizado</from><to>Tiene Precio</to><enabled>Y</enabled> </hop>  <hop> <from>No tiene precio</from><to>Compras Positivas</to><enabled>Y</enabled> </hop>  <hop> <from>Si tiene precio</from><to>Compras Positivas</to><enabled>Y</enabled> </hop>  <hop> <from>No</from><to>Insert &#47; Update</to><enabled>Y</enabled> </hop>  <hop> <from>Si</from><to>Insert &#47; Update</to><enabled>Y</enabled> </hop>  <hop> <from>Transforma&#47;Normaliza Tipo </from><to>Normaliza Genero</to><enabled>Y</enabled> </hop>  <hop> <from>Normaliza Genero</from><to>Compra Completada</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Agrega Campo Finalizado</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>Finalizado</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Si</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>488</xloc>
+      <yloc>69</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Agrega Campos Nulos y Campo Finalizado</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>anio_remision</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>mes_remision</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>sem_remision</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cuatri_remision</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tri_remision</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>dia_remision</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombreDia_remision</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombreMes_remision</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>trimestre_remision</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>semestre_remision</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cuatrimestre_remision</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Finalizado</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>No</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>266</xloc>
+      <yloc>162</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Campos de Fecha 2</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>anio_remision</field_name>
+<formula_string>year([fecharemision])</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>mes_remision</field_name>
+<formula_string>month([fecharemision])</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>sem_remision</field_name>
+<formula_string>int((month([fecharemision])&#47;6)+.9)</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>cuatri_remision</field_name>
+<formula_string>int((month([fecharemision])&#47;4)+.9)
+</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>tri_remision</field_name>
+<formula_string>int((month([fecharemision])&#47;3)+.9)</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>dia_remision</field_name>
+<formula_string>day([fecharemision])</formula_string>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>nombreDia_remision</field_name>
+<formula_string>choose(weekday([fecharemision];1);&quot;Domingo&quot;;&quot;Lunes&quot;;&quot;Martes&quot;;&quot;Miercoles&quot;;&quot;Jueves&quot;;&quot;Viernes&quot;;&quot;Sabado&quot;)</formula_string>
+<value_type>String</value_type>
+<value_length>10</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>nombreMes_remision</field_name>
+<formula_string>choose(month([fecharemision]);&quot;Enero&quot;;&quot;Febrero&quot;;&quot;Marzo&quot;;&quot;Abril&quot;;&quot;Mayo&quot;;&quot;Junio&quot;;&quot;Julio&quot;;&quot;Agosto&quot;;&quot;Septiembre&quot;;&quot;Octubre&quot;;&quot;Noviembre&quot;;&quot;Diciembre&quot;)</formula_string>
+<value_type>String</value_type>
+<value_length>10</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>271</xloc>
+      <yloc>67</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Compra Completada</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Campos de Fecha 2</send_true_to>
+<send_false_to>Agrega Campos Nulos y Campo Finalizado</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>fecharemision</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>167</xloc>
+      <yloc>111</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Compras Positivas</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Si</send_true_to>
+<send_false_to>No</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>cantidadorden</leftvalue>
+ <function>&gt;=</function>
+ <rightvalue/>
+ <value><name>constant</name><type>BigNumber</type><text>1</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask>#.###############################################;-#.###############################################</mask></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>646</xloc>
+      <yloc>316</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Compras_DNK</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DNK</connection>
+    <sql>SELECT bp.name AS nombre_proveedor,
+       bpg.name AS tipo_proveedor,
+       cl.address1 AS calle_proveedor,
+       cl.address2 AS colonia_proveedor,
+       cl.city AS ciudad_proveedor,
+       reg.name AS estado_proveedor,
+       cl.postal AS cp_proveedor,
+       cty.name AS pais_proveedor,
+       P.EM_ZNK2_GENERO,
+       P.EM_ZNK2_ATM AS ATM,
+       P.EM_ZNK2_BASICO_NOVEDAD,
+       P.EM_ZNK2_STATUS,
+       P.EM_ZNK2_TEMPORADA,
+       TRIM(em_znk2_tipo_producto) AS tipo,
+       EM_ZNK2_ANO_TEMPORADA,
+       EM_ZNK2_HAY_BRILLANTES,
+       P.EM_ZNK2_MAQUINARIA,
+       P.EM_ZNK2_MOVIMIENTO,
+       ZNK2_FORMA_CAJA.NAME AS ZNK2_FORMA_CAJA,
+       EM_ZNK2_JOYAS_TAMANO,
+       EM_ZNK2_JOYERIA_CLASIFICACION,
+       ZNK2_MATERIAL_CAJA.NAME AS MATERIAL_CAJA,
+       ZNK2_MATERIAL_CORREA.NAME AS MATERIAL_CORREA,
+       ZNK2_TERMINADO_CAJA.NAME AS TERMINADO_CAJA,
+       ZNK2_TERMINADO_CORREA.NAME AS TERMINADO_CORREA,
+       ZNK2_COLOR_CAJA.NAME AS COLOR_CAJA,
+       ZNK2_COLOR_CORREA.NAME AS COLOR_CORREA,
+       ZNK2_COLOR_CARATULA.NAME AS COLOR_CARATULA,
+       ZNK2_TERMINADO_CARATULA.NAME AS TERMINADO_CARATULA,
+       ZNK2_CLASIFICACION.NAME AS CLASIFICACION,
+       ZNK2_NOMBRE_ESTILO.NAME AS NOMBRE_ESTILO,
+       ZNK2_JOYAS_METALES.NAME AS JOYAS_METALES,
+       ZNK2_JOYAS_ADITAMENTOS.NAME AS JOYAS_ADITAMENTOS,
+       ZNK2_JOYAS_COLOR.NAME AS JOYAS_COLOR,
+       ZNK2_JOYAS_MATERIALES.NAME AS JOYAS_MATERIALES,
+       ZNK2_JOYAS_FORMA.NAME AS JOYAS_FORMA,
+       FCOLLAR.NAME AS FORMACOLLAR,
+       FBRASALETE.NAME AS FORMABRASALETE,
+       FARETES.NAME AS FORMAARETES,
+       FANILLO.NAME AS FORMAANILLO,
+       FBOXSET.NAME AS FORMABOXSET,
+       FCHARM.NAME AS FORMACHARM,
+       ZNK2_COMBINACION_BOXSET.NAME AS COMBINACION_BOXSET,
+       COLORADITAMENTO.NAME AS COLOR_ADITAMENTO,
+       PL.pricelist AS producto_precio_de_venta,
+       b. *
+FROM ((SELECT org.name AS org,
+              p.name AS product,
+              MAS.description AS descripcion_producto,
+              mca.name AS marca,
+              mca.znk2_marca_id,
+              bp.c_bpartner_id,
+              bpl.c_bpartner_location_id,
+              p.m_product_id,
+              org.ad_org_id,
+              i.poreference AS referencia,
+              bp.name AS proveedor,
+              o.documentno AS orden,
+              o.poreference AS reforden,
+              o.dateordered AS fechaorden,
+              COALESCE(mpo.qty,ol.qtyordered) AS cantidadorden,
+              (SELECT C_CURRENCY_CONVERT_PRECISION (ol.linenetamt,o.c_currency_id,&apos;130&apos;,TO_DATE (o.dateordered),NULL,&apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;,&apos;0&apos;,&apos;C&apos;))
+       AS preciocompra,
+              io.documentno AS remision,
+              io.movementdate AS fecharemision,
+              iol.movementqty AS cantidadremision,
+              wh.name AS almacen,
+              i.documentno AS factura,
+              i.dateinvoiced AS fechafactura,
+              il.qtyinvoiced AS cantidadfactura,
+              (SELECT C_CURRENCY_CONVERT_PRECISION (il.linenetamt,i.c_currency_id,&apos;130&apos;,TO_DATE (i.dateinvoiced),NULL,&apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;,&apos;0&apos;,&apos;C&apos;))
+       AS preciofactura,
+              (SELECT COALESCE(cost,0.00)*iol.movementqty
+               FROM m_costing
+               WHERE m_product_id = iol.m_product_id
+               AND   io.movementdate BETWEEN datefrom
+               AND   dateto LIMIT 1)
+       AS costo
+       FROM m_matchpo mpo
+       --Matches entre receipt lines e inoice lines
+       
+         INNER JOIN c_orderline ol ON mpo.c_orderline_id = ol.c_orderline_id
+       --Los elementos de una orden
+       
+         INNER JOIN c_order o ON ol.c_order_id = o.c_order_id AND o.issotrx = &apos;N&apos;
+       --La orden en concreto
+       --Lugar de la tienda
+       
+         LEFT JOIN c_bpartner_location bpl ON bpl.c_bpartner_location_id = ol.c_bpartner_location_id
+       --
+       
+         LEFT JOIN m_inoutline iol ON iol.m_inoutline_id = mpo.m_inoutline_id AND (SELECT docstatus
+                                                                                   FROM m_inout
+                                                                                   WHERE m_inout_id = iol.m_inout_id) = &apos;CO&apos;
+	   --Atributo del producto (nuevo, mandado a pulir, etc)
+	     LEFT JOIN m_attributesetinstance MAS ON MAS.m_attributesetinstance_id = iol.m_attributesetinstance_id and MAS.ad_client_id=&apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;
+       --Ordenes de envio por linea
+       
+         LEFT JOIN m_inout io ON iol.m_inout_id = io.m_inout_id
+       --Ordenes de envio en concreto
+       
+         LEFT JOIN m_matchinv minv ON iol.m_inoutline_id = minv.m_inoutline_id
+       --Esta tabla contiene todos los matches entre las invoicelines y las receiptlines
+       
+         LEFT JOIN c_invoiceline il ON minv.m_inoutline_id = il.m_inoutline_id AND (SELECT docstatus
+                                                                                    FROM c_invoice
+                                                                                    WHERE c_invoice_id = il.c_invoice_id) = &apos;CO&apos;
+       --Facturas por producto
+       
+         LEFT JOIN c_invoice i ON il.c_invoice_id = i.c_invoice_id
+       --Facturas en concreto
+       
+         LEFT JOIN c_bpartner bp ON o.c_bpartner_id = bp.c_bpartner_id
+       --A quienes les vende o compra
+       
+         LEFT JOIN m_product p ON ol.m_product_id = p.m_product_id
+       --El producto
+       
+         LEFT JOIN znk2_marca mca ON p.em_znk2_marca_id = mca.znk2_marca_id
+       --La marca
+       
+         LEFT JOIN m_locator loc ON iol.m_locator_id = loc.m_locator_id
+       --La localizacion
+       
+         LEFT JOIN m_warehouse wh ON loc.m_warehouse_id = wh.m_warehouse_id
+       --El almacen
+       
+         LEFT JOIN ad_org org ON ol.ad_org_id = org.ad_org_id
+       --La organizacion (Diferentes DNK)
+       WHERE ol.ad_client_id = &apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;
+       AND   MPO.C_INVOICELINE_ID IS NULL
+       AND   p.m_product_id &lt;&gt; &apos;3B843E96BF374D0D848A0517376CAFE9&apos;
+       AND   o.docstatus = &apos;CO&apos;)
+       ----------------------------------------------------Primer Query
+       UNION
+       -----------------------------------------------------Segundo Query
+       (SELECT org.name AS org,
+              p.name AS product,
+              NULL AS descripcion_producto,
+              mca.name AS marca,
+              mca.znk2_marca_id,
+              bp.c_bpartner_id,
+              bpl.c_bpartner_location_id,
+              p.m_product_id,
+              org.ad_org_id,
+              NULL AS referencia,
+              bp.name AS proveedor,
+              o.documentno AS orden,
+              o.poreference AS reforden,
+              o.dateordered AS fechaorden,
+              (ol.qtyordered - suma.qty) AS cantidadorden,
+              (SELECT C_CURRENCY_CONVERT_PRECISION (ol.linenetamt,o.c_currency_id,&apos;130&apos;,TO_DATE (o.dateordered),NULL,&apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;,&apos;0&apos;,&apos;C&apos;))
+       AS preciocompra,
+              NULL AS remision,
+              NULL AS fecharemision,
+              NULL AS cantidadremision,
+              NULL AS almacen,
+              NULL AS factura,
+              NULL AS fechafactura,
+              NULL AS cantidadfactura,
+              NULL preciofactura,
+              NULL AS costo
+       FROM c_orderline ol
+       --Todos los elementos de las ordenes, de aqui salen los productos
+       
+         INNER JOIN c_order o ON ol.c_order_id = o.c_order_id AND o.issotrx = &apos;N&apos;
+       --Todas las ordenes de Venta de aqui sale el numero de orden
+       
+         INNER JOIN (SELECT MPO.c_orderline_id,
+                            COALESCE(SUM(MPO.qty),0) AS qty
+                     --Busca todos los registros que tengan una factura asociada
+                     FROM m_matchpo MPO
+                     WHERE MPO.C_INVOICELINE_ID IS NULL
+                     GROUP BY MPO.c_orderline_id) suma ON suma.c_orderline_id = ol.c_orderline_id 
+         LEFT JOIN c_bpartner bp ON o.c_bpartner_id = bp.c_bpartner_id
+       --Las personas con los que hacen transacciones, en este caso ventas
+       
+         LEFT JOIN m_product p ON ol.m_product_id = p.m_product_id
+       --Datos del producto
+       
+         LEFT JOIN znk2_marca mca ON p.em_znk2_marca_id = mca.znk2_marca_id
+       --Marca del producto
+       
+         LEFT JOIN ad_org org ON ol.ad_org_id = org.ad_org_id
+       --Organizaciones (En concreto de DNK)
+       --Localizacion de la tienda
+       
+         LEFT JOIN c_bpartner_location bpl ON bpl.c_bpartner_location_id = ol.c_bpartner_location_id
+       --
+       WHERE ol.ad_client_id = &apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;
+       AND   p.m_product_id &lt;&gt; &apos;3B843E96BF374D0D848A0517376CAFE9&apos;
+       AND   o.docstatus = &apos;CO&apos;
+       AND   ol.qtyordered - suma.qty &gt; 0)) b 
+  INNER JOIN c_bpartner bp ON bp.c_bpartner_id = b.c_bpartner_id 
+  INNER JOIN c_bpartner_location bpl ON bpl.c_bpartner_location_id = b.c_bpartner_location_id 
+  INNER JOIN c_location cl ON cl.c_location_id = bpl.c_location_id 
+  INNER JOIN c_country cty ON cl.c_country_id = cty.c_country_id 
+  INNER JOIN m_product p ON p.m_product_id = b.m_product_id 
+  LEFT JOIN (SELECT PP.m_product_id,PP.pricelist,PP.ad_client_id FROM m_productprice PP
+			LEFT JOIN m_pricelist_version PLV ON PP.m_pricelist_version_id = PLV.m_pricelist_version_id AND PLV.isactive = &apos;Y&apos;
+			INNER JOIN m_pricelist PL ON PL.m_pricelist_id = PLV.m_pricelist_id 
+			AND PL.isactive=&apos;Y&apos; AND isdefault=&apos;Y&apos; AND issopricelist=&apos;Y&apos; AND c_currency_id=&apos;130&apos;) PL ON PL.m_product_id = b.m_product_id AND Pl.ad_client_id=&apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;
+  LEFT JOIN c_region reg ON reg.c_region_id = cl.c_region_id 
+  LEFT JOIN c_bp_group bpg ON bp.c_bp_group_id = bpg.c_bp_group_id 
+  LEFT JOIN ZNK2_FORMA_CAJA ON EM_ZNK2_FORMA_CAJA_ID = ZNK2_FORMA_CAJA_ID 
+  LEFT JOIN ZNK2_MATERIAL_CAJA ON EM_ZNK2_MATERIAL_CAJA_ID = ZNK2_MATERIAL_CAJA_ID 
+  LEFT JOIN ZNK2_MATERIAL_CORREA ON EM_ZNK2_MATERIAL_CORREA_ID = ZNK2_MATERIAL_CORREA_ID 
+  LEFT JOIN ZNK2_TERMINADO_CAJA ON EM_ZNK2_TERMINADO_CAJA_ID = ZNK2_TERMINADO_CAJA_ID 
+  LEFT JOIN ZNK2_TERMINADO_CORREA ON EM_ZNK2_TERMINADO_CORREA_ID = ZNK2_TERMINADO_CORREA_ID 
+  LEFT JOIN ZNK2_COLOR_CAJA ON EM_ZNK2_COLOR_CAJA_ID = ZNK2_COLOR_CAJA_ID 
+  LEFT JOIN ZNK2_COLOR_CORREA ON EM_ZNK2_COLOR_CORREA_ID = ZNK2_COLOR_CORREA_ID 
+  LEFT JOIN ZNK2_COLOR_CARATULA ON EM_ZNK2_COLOR_CARATULA_ID = ZNK2_COLOR_CARATULA_ID 
+  LEFT JOIN ZNK2_TERMINADO_CARATULA ON EM_ZNK2_TERMINADO_CARATULA_ID = ZNK2_TERMINADO_CARATULA_ID 
+  LEFT JOIN ZNK2_CLASIFICACION ON EM_ZNK2_CLASIFICACION_ID = ZNK2_CLASIFICACION_ID 
+  LEFT JOIN ZNK2_NOMBRE_ESTILO ON EM_ZNK2_NOMBRE_ESTILO_ID = ZNK2_NOMBRE_ESTILO_ID 
+  LEFT JOIN ZNK2_JOYAS_METALES ON EM_ZNK2_JOYAS_METALES_ID = ZNK2_JOYAS_METALES_ID 
+  LEFT JOIN ZNK2_JOYAS_ADITAMENTOS ON EM_ZNK2_JOYAS_ADITAMENTOS_ID = ZNK2_JOYAS_ADITAMENTOS_ID 
+  LEFT JOIN ZNK2_JOYAS_COLOR ON EM_ZNK2_JOYAS_COLOR_ID = ZNK2_JOYAS_COLOR_ID 
+  LEFT JOIN ZNK2_JOYAS_MATERIALES ON EM_ZNK2_JOYAS_MATERIALES_ID = ZNK2_JOYAS_MATERIALES_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA ON EM_ZNK2_JOYAS_FORMA_ID = ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FCOLLAR ON EM_ZNK2_FORMACOLLAR_ID = FCOLLAR.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FBRASALETE ON EM_ZNK2_FORMABRASALETE_ID = FBRASALETE.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FARETES ON EM_ZNK2_FORMAARETES_ID = FARETES.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FANILLO ON EM_ZNK2_FORMAANILLO_ID = FANILLO.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FBOXSET ON EM_ZNK2_FORMABOXSET_ID = FBOXSET.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_JOYAS_FORMA FCHARM ON EM_ZNK2_FORMACHARM_ID = FCHARM.ZNK2_JOYAS_FORMA_ID 
+  LEFT JOIN ZNK2_COMBINACION_BOXSET ON EM_ZNK2_COMBINACION_BOXSET_ID = ZNK2_COMBINACION_BOXSET_ID 
+  LEFT JOIN ZNK2_JOYAS_COLOR COLORADITAMENTO ON EM_ZNK2_COLOR_ADITAMENTO_ID = COLORADITAMENTO.ZNK2_JOYAS_COLOR_ID 
+  LEFT JOIN ZNK2_MARCA MARCA ON P.EM_ZNK2_MARCA_id = MARCA.ZNK2_MARCA_ID</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>63</xloc>
+      <yloc>53</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Formula</name>
+    <type>Formula</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>trimestre_remision</field_name>
+<formula_string>choose([tri_remision];&quot;T1&quot;;&quot;T2&quot;;&quot;T3&quot;;&quot;T4&quot;)</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>semestre_remision</field_name>
+<formula_string>choose([sem_remision];&quot;S1&quot;;&quot;S2&quot;)</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>cuatrimestre_remision</field_name>
+<formula_string>choose([cuatri_remision];&quot;C1&quot;;&quot;C2&quot;;&quot;C3&quot;)</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>380</xloc>
+      <yloc>68</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Insert &#47; Update</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DWDNK</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>PREDW</schema>
+      <table>COMPRAS_PLANA</table>
+      <key>
+        <name>ad_org_id</name>
+        <field>ad_org_id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>c_bpartner_id</name>
+        <field>c_bpartner_id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>c_bpartner_location_id</name>
+        <field>c_bpartner_location_id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>m_product_id</name>
+        <field>m_product_id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>orden</name>
+        <field>orden</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>factura</name>
+        <field>factura</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>remision</name>
+        <field>remision</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>fechaorden</name>
+        <field>fechaorden</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>almacen</name>
+        <field>almacen</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ad_org_id</name>
+        <rename>ad_org_id</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>c_bpartner_id</name>
+        <rename>c_bpartner_id</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>c_bpartner_location_id</name>
+        <rename>c_bpartner_location_id</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>factura</name>
+        <rename>factura</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>fechaorden</name>
+        <rename>fechaorden</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>m_product_id</name>
+        <rename>m_product_id</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>orden</name>
+        <rename>orden</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>Finalizado</name>
+        <rename>Finalizado</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>almacen</name>
+        <rename>almacen</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>anio_remision</name>
+        <rename>anio_remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>atm</name>
+        <rename>atm</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>calle_proveedor</name>
+        <rename>calle_proveedor</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cantidadfactura</name>
+        <rename>cantidadfactura</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cantidadorden</name>
+        <rename>cantidadorden</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cantidadremision</name>
+        <rename>cantidadremision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ciudad_proveedor</name>
+        <rename>ciudad_proveedor</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>clasificacion</name>
+        <rename>clasificacion</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>colonia_proveedor</name>
+        <rename>colonia_proveedor</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>color_aditamento</name>
+        <rename>color_aditamento</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>color_caja</name>
+        <rename>color_caja</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>color_caratula</name>
+        <rename>color_caratula</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>color_correa</name>
+        <rename>color_correa</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>combinacion_boxset</name>
+        <rename>combinacion_boxset</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>costo</name>
+        <rename>costo</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cp_proveedor</name>
+        <rename>cp_proveedor</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cuatri_remision</name>
+        <rename>cuatri_remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>cuatrimestre_remision</name>
+        <rename>cuatrimestre_remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>dia_remision</name>
+        <rename>dia_remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_ano_temporada</name>
+        <rename>em_znk2_ano_temporada</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_basico_novedad</name>
+        <rename>em_znk2_basico_novedad</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_genero</name>
+        <rename>em_znk2_genero</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_hay_brillantes</name>
+        <rename>em_znk2_hay_brillantes</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_joyas_tamano</name>
+        <rename>em_znk2_joyas_tamano</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_joyeria_clasificacion</name>
+        <rename>em_znk2_joyeria_clasificacion</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_maquinaria</name>
+        <rename>em_znk2_maquinaria</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_movimiento</name>
+        <rename>em_znk2_movimiento</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_status</name>
+        <rename>em_znk2_status</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>em_znk2_temporada</name>
+        <rename>em_znk2_temporada</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>estado_proveedor</name>
+        <rename>estado_proveedor</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fechafactura</name>
+        <rename>fechafactura</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fecharemision</name>
+        <rename>fecharemision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formaanillo</name>
+        <rename>formaanillo</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formaaretes</name>
+        <rename>formaaretes</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formaboxset</name>
+        <rename>formaboxset</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formabrasalete</name>
+        <rename>formabrasalete</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formacharm</name>
+        <rename>formacharm</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>formacollar</name>
+        <rename>formacollar</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>joyas_aditamentos</name>
+        <rename>joyas_aditamentos</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>joyas_color</name>
+        <rename>joyas_color</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>joyas_forma</name>
+        <rename>joyas_forma</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>joyas_materiales</name>
+        <rename>joyas_materiales</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>joyas_metales</name>
+        <rename>joyas_metales</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>marca</name>
+        <rename>marca</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>material_caja</name>
+        <rename>material_caja</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>material_correa</name>
+        <rename>material_correa</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>mes_remision</name>
+        <rename>mes_remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombreDia_remision</name>
+        <rename>nombreDia_remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombreMes_remision</name>
+        <rename>nombreMes_remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombre_estilo</name>
+        <rename>nombre_estilo</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombre_proveedor</name>
+        <rename>nombre_proveedor</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>org</name>
+        <rename>org</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>pais_proveedor</name>
+        <rename>pais_proveedor</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>preciocompra</name>
+        <rename>preciocompra</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>preciofactura</name>
+        <rename>preciofactura</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>product</name>
+        <rename>product</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>producto_precio_de_venta</name>
+        <rename>producto_precio_de_venta</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>proveedor</name>
+        <rename>proveedor</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>referencia</name>
+        <rename>referencia</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>reforden</name>
+        <rename>reforden</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>remision</name>
+        <rename>remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>sem_remision</name>
+        <rename>sem_remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>semestre_remision</name>
+        <rename>semestre_remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>terminado_caja</name>
+        <rename>terminado_caja</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>terminado_caratula</name>
+        <rename>terminado_caratula</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>terminado_correa</name>
+        <rename>terminado_correa</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>tipo</name>
+        <rename>tipo</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>tipo_proveedor</name>
+        <rename>tipo_proveedor</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>tri_remision</name>
+        <rename>tri_remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>trimestre_remision</name>
+        <rename>trimestre_remision</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>znk2_forma_caja</name>
+        <rename>znk2_forma_caja</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>znk2_marca_id</name>
+        <rename>znk2_marca_id</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>asignacion_de_precio</name>
+        <rename>asignacion_de_precio</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>compras_positivas</name>
+        <rename>compras_positivas</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>descripcion_producto</name>
+        <rename>descripcion_producto</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>639</xloc>
+      <yloc>465</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>No</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>compras_positivas</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>No</nullif>
+        <length>2</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>699</xloc>
+      <yloc>386</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>No tiene precio</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>asignacion_de_precio</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>No</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>542</xloc>
+      <yloc>233</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Si</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>compras_positivas</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Si</nullif>
+        <length>2</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>563</xloc>
+      <yloc>389</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Si tiene precio</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>asignacion_de_precio</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Si</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>745</xloc>
+      <yloc>229</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Tiene Precio</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Si tiene precio</send_true_to>
+<send_false_to>No tiene precio</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>producto_precio_de_venta</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>650</xloc>
+      <yloc>162</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Transforma&#47;Normaliza Tipo </name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Cuerpo</jsScript_name>
+        <jsScript_script>if(tipo == null){
+	tipoFinal=&quot;No Definido&quot;;
+}else if(tipo.match(&#47;(j|J).*&#47;)){
+	tipoFinal=&quot;Joyeria&quot;
+}else if(tipo.match(&#47;(r|R).*&#47;)){
+	tipoFinal=&quot;Reloj&quot;;
+}else if(tipo.match(&#47;(o|O).*&#47;)){
+	tipoFinal=&quot;Otros&quot;;
+}else{
+	tipoFinal=&quot;No Definido&quot;;
+}
+fact=factura;
+rem = remision;
+
+trans_Status = CONTINUE_TRANSFORMATION;
+</jsScript_script>
+      </jsScript>      <jsScript>        <jsScript_type>1</jsScript_type>
+        <jsScript_name>Script de inicio</jsScript_name>
+        <jsScript_script>&#47;&#47;Script here
+
+</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>tipoFinal</name>
+        <rename>tipo</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>      <field>        <name>fact</name>
+        <rename>factura</rename>
+        <type>String</type>
+        <length>60</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>      <field>        <name>rem</name>
+        <rename>remision</rename>
+        <type>String</type>
+        <length>60</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>60</xloc>
+      <yloc>136</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Normaliza Genero</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#47;&#47;Verifica el genero del producto y lo modifica
+&#47;&#47;Segun si hace match con al expresion regular
+if(em_znk2_genero == null){
+	genero=&quot;No Definido&quot;;
+}else if(em_znk2_genero.match(&#47;(d|D).*&#47;)){
+	genero=&quot;DAMA&quot;;
+}else if(em_znk2_genero.match(&#47;(c|C).*&#47;)){
+	genero = &quot;CABALLERO&quot;;
+}else if(em_znk2_genero.match(&#47;(u|U).*&#47;)){
+	genero = &quot;UNISEX&quot;;
+}else if(em_znk2_genero.match(&#47;(p|P).*&#47;)){
+	genero = &quot;PAREJAS&quot;;
+}else if(em_znk2_genero.match(&#47;(n|N).*(o|O)&#47;)){
+	genero = &quot;NIÑO&quot;;
+}else if(em_znk2_genero.match(&#47;(n|N).*(a|A)&#47;)){
+	genero = &quot;NIÑA&quot;;
+}else{
+	genero = em_znk2_genero.toUpperCase();
+}
+</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>genero</name>
+        <rename>em_znk2_genero</rename>
+        <type>String</type>
+        <length>15</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>133</xloc>
+      <yloc>255</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

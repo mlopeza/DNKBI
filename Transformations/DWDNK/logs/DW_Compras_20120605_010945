@@ -1,0 +1,15 @@
+2012/06/05 01:09:45 - DW Compras - Loading transformation from XML file [file:///root/Transformations/DWDNK\Trans\COMPRAS PREDW.ktr]
+2012/06/05 01:09:45 - COMPRAS PREDW - Dispatching started for transformation [COMPRAS PREDW]
+2012/06/05 01:09:46 - Compras.0 - Finished reading query, closing connection.
+2012/06/05 01:09:46 - Formula.0 - Finished processing (I=0, O=0, R=4471, W=4471, U=0, E=0)
+2012/06/05 01:09:46 - Add constants.0 - Finished processing (I=0, O=0, R=2037, W=2037, U=0, E=0)
+2012/06/05 01:09:46 - Filter rows.0 - Finished processing (I=0, O=0, R=6508, W=6508, U=0, E=0)
+2012/06/05 01:09:46 - If field value is null 2.0 - Finished processing (I=0, O=0, R=6508, W=6508, U=0, E=0)
+2012/06/05 01:09:46 - Select values.0 - Finished processing (I=0, O=0, R=6508, W=6508, U=0, E=0)
+2012/06/05 01:09:46 - Compras.0 - Finished processing (I=6508, O=0, R=0, W=6508, U=0, E=0)
+2012/06/05 01:09:46 - Append streams.0 - Finished processing (I=0, O=0, R=6508, W=6508, U=0, E=0)
+2012/06/05 01:09:46 - IdCompra.0 - Finished processing (I=0, O=0, R=6508, W=6508, U=0, E=0)
+2012/06/05 01:09:46 - If field value is null.0 - Finished processing (I=0, O=0, R=6508, W=6508, U=0, E=0)
+2012/06/05 01:09:46 - Rangos de precios.0 - Finished processing (I=0, O=0, R=6508, W=6508, U=0, E=0)
+2012/06/05 01:09:46 - String operations.0 - Finished processing (I=0, O=0, R=6508, W=6508, U=0, E=0)
+2012/06/05 01:09:58 - DataWarehose_plano.0 - Finished processing (I=6508, O=797, R=6508, W=6508, U=5459, E=0)

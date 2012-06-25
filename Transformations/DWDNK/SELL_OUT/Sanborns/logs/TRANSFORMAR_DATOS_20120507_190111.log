@@ -1,0 +1,24 @@
+2012/05/07 19:01:11 - Transformacion - Loading transformation from XML file [file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/LiverpoolReadSpreadSheet.ktr]
+2012/05/07 19:01:12 - LiverpoolReadSpreadSheet - Dispatching started for transformation [LiverpoolReadSpreadSheet]
+2012/05/07 19:01:13 - Campos.0 - Finished processing (I=0, O=0, R=0, W=16, U=0, E=0)
+2012/05/07 19:01:13 - Excel Input Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2012/05/07 19:01:13 - Generate Rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2012/05/07 19:01:13 - CSV file input.0 - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/Layout.csv'
+2012/05/07 19:01:13 - Add constants.0 - Finished processing (I=0, O=0, R=19, W=19, U=0, E=0)
+2012/05/07 19:01:13 - Select Date Columns.0 - Finished processing (I=0, O=0, R=19, W=38, U=0, E=0)
+2012/05/07 19:01:13 - CSV file input.0 - Finished processing (I=20, O=0, R=0, W=19, U=0, E=0)
+2012/05/07 19:01:13 - NormalisedField.0 - Finished processing (I=0, O=0, R=19, W=19, U=0, E=0)
+2012/05/07 19:01:13 - Normaliser Target.0 - Finished processing (I=0, O=0, R=19, W=19, U=0, E=0)
+2012/05/07 19:01:13 - Append streams.0 - Finished processing (I=0, O=0, R=35, W=35, U=0, E=0)
+2012/05/07 19:01:14 - LiverpoolReadSpreadSheetTemplate - Dispatching started for transformation [LiverpoolReadSpreadSheetTemplate]
+2012/05/07 19:01:14 - CSV file input.0 - Header row skipped in file 'file:///root/Transformations/DWDNK/SELL_OUT/Liverpool/Layout.csv'
+2012/05/07 19:01:14 - CSV file input.0 - Finished processing (I=20, O=0, R=0, W=19, U=0, E=0)
+2012/05/07 19:01:16 - Modified Java Script Value.0 - Optimization level set to 9.
+2012/05/07 19:01:17 - Microsoft Excel Input 2.0 - Finished processing (I=4601, O=0, R=0, W=4601, U=0, E=0)
+2012/05/07 19:01:18 - Add Date.0 - linenr 50000
+2012/05/07 19:01:18 - Filter rows.0 - linenr 50000
+2012/05/07 19:01:19 - Modified Java Script Value.0 - Finished processing (I=0, O=0, R=4601, W=4601, U=0, E=0)
+2012/05/07 19:01:19 - Row Normaliser.0 - Finished processing (I=0, O=0, R=4601, W=87419, U=0, E=0)
+2012/05/07 19:01:19 - Filter rows.0 - Finished processing (I=0, O=0, R=87419, W=9639, U=0, E=0)
+2012/05/07 19:01:19 - Add Date.0 - Finished processing (I=0, O=0, R=87438, W=87419, U=0, E=0)
+2012/05/07 19:01:20 - Resultado.0 - Finished processing (I=0, O=9640, R=9639, W=9639, U=0, E=0)
