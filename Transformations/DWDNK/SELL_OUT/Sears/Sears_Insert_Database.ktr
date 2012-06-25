@@ -1601,7 +1601,7 @@ if(em_znk2_genero == null){
         <precision>-2</precision>
       </field>      <field>        <name>id_tienda</name>
         <rename/>
-        <length>50</length>
+        <length>-2</length>
         <precision>-2</precision>
       </field>      <field>        <name>identificador_tienda</name>
         <rename/>
@@ -1772,6 +1772,18 @@ if(em_znk2_genero == null){
         <rename>typefield</rename>
         <type>String</type>
         <length>11</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>      <meta>        <name>Cantidad</name>
+        <rename>Cantidad</rename>
+        <type>Integer</type>
+        <length>-2</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
