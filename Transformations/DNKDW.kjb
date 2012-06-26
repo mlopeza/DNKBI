@@ -51,7 +51,7 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>43</xloc>
-      <yloc>235</yloc>
+      <yloc>281</yloc>
       </entry>
     <entry>
       <name>PREDW INVENTARIO</name>
@@ -82,7 +82,7 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>255</xloc>
+      <xloc>254</xloc>
       <yloc>180</yloc>
       </entry>
     <entry>
@@ -114,7 +114,7 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>270</xloc>
+      <xloc>254</xloc>
       <yloc>66</yloc>
       </entry>
     <entry>
@@ -208,7 +208,7 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>587</xloc>
+      <xloc>399</xloc>
       <yloc>19</yloc>
       </entry>
     <entry>
@@ -240,7 +240,7 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>324</xloc>
+      <xloc>254</xloc>
       <yloc>468</yloc>
       </entry>
     <entry>
@@ -304,7 +304,7 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>275</xloc>
+      <xloc>254</xloc>
       <yloc>406</yloc>
       </entry>
     <entry>
@@ -378,40 +378,38 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>226</xloc>
-      <yloc>564</yloc>
+      <xloc>106</xloc>
+      <yloc>565</yloc>
       </entry>
     <entry>
-      <name>Sears SELL OUT</name>
+      <name>Sears SELL OUT </name>
       <description/>
-      <type>TRANS</type>
+      <type>JOB</type>
       <specification_method>filename</specification_method>
-      <trans_object_id/>
-      <filename>${Internal.Job.Filename.Directory}&#47;DWDNK&#47;SELL_OUT&#47;Sears&#47;Sears_Insert_Database.ktr</filename>
-      <transname/>
+      <job_object_id/>
+      <filename>${Internal.Job.Filename.Directory}&#47;DWDNK&#47;SELL_OUT&#47;Sears&#47;Sears_Job.kjb</filename>
+      <jobname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>Y</set_logfile>
-      <logfile>${Internal.Job.Filename.Directory}&#47;DWDNK\logs\DW_Sell_out</logfile>
-      <logext>log</logext>
-      <add_date>Y</add_date>
-      <add_time>Y</add_time>
-      <loglevel>Detailed</loglevel>
-      <cluster>N</cluster>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
       <slave_server_name/>
-      <set_append_logfile>Y</set_append_logfile>
       <wait_until_finished>Y</wait_until_finished>
       <follow_abort_remote>N</follow_abort_remote>
       <create_parent_folder>N</create_parent_folder>
+      <pass_export>N</pass_export>
       <parameters>        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>      <parallel>N</parallel>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>359</xloc>
-      <yloc>562</yloc>
+      <xloc>254</xloc>
+      <yloc>565</yloc>
       </entry>
   </entries>
   <hops>
@@ -552,7 +550,7 @@
     </hop>
     <hop>
       <from>Sanborns SELL OUT</from>
-      <to>Sears SELL OUT</to>
+      <to>Sears SELL OUT </to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -560,7 +558,7 @@
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>Sears SELL OUT</from>
+      <from>Sears SELL OUT </from>
       <to>DW SELL OUT</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
