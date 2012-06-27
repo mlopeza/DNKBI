@@ -92,7 +92,7 @@
         <precision>-1</precision>
       </field>
     </fields>
-    <limit>500</limit>
+    <limit>999</limit>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>125</xloc>
@@ -447,25 +447,25 @@
         <source_step>Select values</source_step>
         <source_field>Name</source_field>
       </mapping>      <mapping>        <target_step_name>Microsoft Excel Input 2</target_step_name>
+        <target_attribute_key>CURRENCY</target_attribute_key>
+        <target_detail>Y</target_detail>
+        <source_step>Append streams</source_step>
+        <source_field>Currency</source_field>
+      </mapping>      <mapping>        <target_step_name>Microsoft Excel Input 2</target_step_name>
         <target_attribute_key>REPEAT</target_attribute_key>
         <target_detail>Y</target_detail>
         <source_step>Append streams</source_step>
         <source_field>Repeat</source_field>
       </mapping>      <mapping>        <target_step_name>Microsoft Excel Input 2</target_step_name>
-        <target_attribute_key>CURRENCY</target_attribute_key>
+        <target_attribute_key>FORMAT</target_attribute_key>
         <target_detail>Y</target_detail>
         <source_step>Append streams</source_step>
-        <source_field>Currency</source_field>
+        <source_field>Format</source_field>
       </mapping>      <mapping>        <target_step_name>Microsoft Excel Input</target_step_name>
         <target_attribute_key>PRECISION</target_attribute_key>
         <target_detail>Y</target_detail>
         <source_step>Append streams</source_step>
         <source_field>Precision</source_field>
-      </mapping>      <mapping>        <target_step_name>Microsoft Excel Input 2</target_step_name>
-        <target_attribute_key>FORMAT</target_attribute_key>
-        <target_detail>Y</target_detail>
-        <source_step>Append streams</source_step>
-        <source_field>Format</source_field>
       </mapping>      <mapping>        <target_step_name>Microsoft Excel Input</target_step_name>
         <target_attribute_key>SHEET_START_COL</target_attribute_key>
         <target_detail>Y</target_detail>
@@ -481,16 +481,16 @@
         <target_detail>Y</target_detail>
         <source_step>Append streams</source_step>
         <source_field>Length</source_field>
-      </mapping>      <mapping>        <target_step_name>Microsoft Excel Input</target_step_name>
-        <target_attribute_key>TYPE</target_attribute_key>
-        <target_detail>Y</target_detail>
-        <source_step>Append streams</source_step>
-        <source_field>Type</source_field>
       </mapping>      <mapping>        <target_step_name>Microsoft Excel Input 2</target_step_name>
         <target_attribute_key>NAME</target_attribute_key>
         <target_detail>Y</target_detail>
         <source_step>Append streams</source_step>
         <source_field>Name</source_field>
+      </mapping>      <mapping>        <target_step_name>Microsoft Excel Input</target_step_name>
+        <target_attribute_key>TYPE</target_attribute_key>
+        <target_detail>Y</target_detail>
+        <source_step>Append streams</source_step>
+        <source_field>Type</source_field>
       </mapping>      <mapping>        <target_step_name>Microsoft Excel Input 2</target_step_name>
         <target_attribute_key>GROUP</target_attribute_key>
         <target_detail>Y</target_detail>
@@ -546,16 +546,16 @@
         <target_detail>Y</target_detail>
         <source_step>Append streams</source_step>
         <source_field>Currency</source_field>
-      </mapping>      <mapping>        <target_step_name>Microsoft Excel Input</target_step_name>
-        <target_attribute_key>FORMAT</target_attribute_key>
-        <target_detail>Y</target_detail>
-        <source_step>Append streams</source_step>
-        <source_field>Format</source_field>
       </mapping>      <mapping>        <target_step_name>Microsoft Excel Input 2</target_step_name>
         <target_attribute_key>PRECISION</target_attribute_key>
         <target_detail>Y</target_detail>
         <source_step>Append streams</source_step>
         <source_field>Precision</source_field>
+      </mapping>      <mapping>        <target_step_name>Microsoft Excel Input</target_step_name>
+        <target_attribute_key>FORMAT</target_attribute_key>
+        <target_detail>Y</target_detail>
+        <source_step>Append streams</source_step>
+        <source_field>Format</source_field>
       </mapping>      <mapping>        <target_step_name>Row Normaliser 2</target_step_name>
         <target_attribute_key>VALUE</target_attribute_key>
         <target_detail>Y</target_detail>
@@ -571,16 +571,16 @@
         <target_detail>Y</target_detail>
         <source_step>Select values</source_step>
         <source_field>value</source_field>
+      </mapping>      <mapping>        <target_step_name>Row Normaliser</target_step_name>
+        <target_attribute_key>NORMALISED</target_attribute_key>
+        <target_detail>Y</target_detail>
+        <source_step>Select values</source_step>
+        <source_field>Normalised Field</source_field>
       </mapping>      <mapping>        <target_step_name>Microsoft Excel Input</target_step_name>
         <target_attribute_key>SHEET_NAME</target_attribute_key>
         <target_detail>Y</target_detail>
         <source_step>Excel Input Variables</source_step>
         <source_field>sheet</source_field>
-      </mapping>      <mapping>        <target_step_name>Row Normaliser</target_step_name>
-        <target_attribute_key>NORMALISED</target_attribute_key>
-        <target_detail>Y</target_detail>
-        <source_step>Select values</source_step>
-        <source_field>Normalised Field</source_field>
       </mapping>      <mapping>        <target_step_name>Microsoft Excel Input 2</target_step_name>
         <target_attribute_key>SHEET_START_ROW</target_attribute_key>
         <target_detail>Y</target_detail>
