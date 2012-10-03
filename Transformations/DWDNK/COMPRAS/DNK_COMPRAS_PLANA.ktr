@@ -519,13 +519,12 @@ FROM ((SELECT org.name AS org,
                AND   io.movementdate BETWEEN datefrom
                AND   dateto LIMIT 1)
        AS costo
-       FROM m_matchpo mpo
+       FROM c_order o
        --Matches entre receipt lines e inoice lines
-       
-         INNER JOIN c_orderline ol ON mpo.c_orderline_id = ol.c_orderline_id
+         INNER JOIN c_orderline ol ON o.c_order_id = ol.c_order_id
        --Los elementos de una orden
-       
-         INNER JOIN c_order o ON ol.c_order_id = o.c_order_id AND o.issotrx = &apos;N&apos;
+        
+         LEFT JOIN m_matchpo mpo ON mpo.c_orderline_id = ol.c_orderline_id
        --La orden en concreto
        --Lugar de la tienda
        
@@ -571,9 +570,12 @@ FROM ((SELECT org.name AS org,
          LEFT JOIN ad_org org ON ol.ad_org_id = org.ad_org_id
        --La organizacion (Diferentes DNK)
        WHERE ol.ad_client_id = &apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;
+       AND o.issotrx = &apos;N&apos;
        AND   MPO.C_INVOICELINE_ID IS NULL
        AND   p.m_product_id &lt;&gt; &apos;3B843E96BF374D0D848A0517376CAFE9&apos;
-       AND   o.docstatus = &apos;CO&apos;)
+       AND   o.docstatus = &apos;CO&apos;
+       AND   (o.dateordered &lt;= now() OR o.dateordered IS NULL)
+       )
        ----------------------------------------------------Primer Query
        UNION
        -----------------------------------------------------Segundo Query
@@ -609,7 +611,7 @@ FROM ((SELECT org.name AS org,
          INNER JOIN c_order o ON ol.c_order_id = o.c_order_id AND o.issotrx = &apos;N&apos;
        --Todas las ordenes de Venta de aqui sale el numero de orden
        
-         INNER JOIN (SELECT MPO.c_orderline_id,
+         LEFT JOIN (SELECT MPO.c_orderline_id,
                             COALESCE(SUM(MPO.qty),0) AS qty
                      --Busca todos los registros que tengan una factura asociada
                      FROM m_matchpo MPO
@@ -633,7 +635,9 @@ FROM ((SELECT org.name AS org,
        WHERE ol.ad_client_id = &apos;2D4B4E8A2ACE7F47012AD3387996000A&apos;
        AND   p.m_product_id &lt;&gt; &apos;3B843E96BF374D0D848A0517376CAFE9&apos;
        AND   o.docstatus = &apos;CO&apos;
-       AND   ol.qtyordered - suma.qty &gt; 0)) b 
+       AND   ol.qtyordered - suma.qty &gt; 0
+       AND   (o.dateordered &lt;= now() OR o.dateordered IS NULL)
+				)) b 
   INNER JOIN c_bpartner bp ON bp.c_bpartner_id = b.c_bpartner_id 
   INNER JOIN c_bpartner_location bpl ON bpl.c_bpartner_location_id = b.c_bpartner_location_id 
   INNER JOIN c_location cl ON cl.c_location_id = bpl.c_location_id 
@@ -1284,6 +1288,54 @@ FROM ((SELECT org.name AS org,
     </step>
 
   <step>
+    <name>Normaliza Genero</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#47;&#47;Verifica el genero del producto y lo modifica
+&#47;&#47;Segun si hace match con al expresion regular
+if(em_znk2_genero == null){
+	genero=&quot;No Definido&quot;;
+}else if(em_znk2_genero.match(&#47;(d|D).*&#47;)){
+	genero=&quot;DAMA&quot;;
+}else if(em_znk2_genero.match(&#47;(c|C).*&#47;)){
+	genero = &quot;CABALLERO&quot;;
+}else if(em_znk2_genero.match(&#47;(u|U).*&#47;)){
+	genero = &quot;UNISEX&quot;;
+}else if(em_znk2_genero.match(&#47;(p|P).*&#47;)){
+	genero = &quot;PAREJAS&quot;;
+}else if(em_znk2_genero.match(&#47;(n|N).*(o|O)&#47;)){
+	genero = &quot;NIÑO&quot;;
+}else if(em_znk2_genero.match(&#47;(n|N).*(a|A)&#47;)){
+	genero = &quot;NIÑA&quot;;
+}else{
+	genero = em_znk2_genero.toUpperCase();
+}
+</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>genero</name>
+        <rename>em_znk2_genero</rename>
+        <type>String</type>
+        <length>15</length>
+        <precision>-1</precision>
+        <replace>Y</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>133</xloc>
+      <yloc>255</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>Si</name>
     <type>Constant</type>
     <description/>
@@ -1430,54 +1482,6 @@ trans_Status = CONTINUE_TRANSFORMATION;
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>60</xloc>
       <yloc>136</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Normaliza Genero</name>
-    <type>ScriptValueMod</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <compatible>N</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#47;&#47;Verifica el genero del producto y lo modifica
-&#47;&#47;Segun si hace match con al expresion regular
-if(em_znk2_genero == null){
-	genero=&quot;No Definido&quot;;
-}else if(em_znk2_genero.match(&#47;(d|D).*&#47;)){
-	genero=&quot;DAMA&quot;;
-}else if(em_znk2_genero.match(&#47;(c|C).*&#47;)){
-	genero = &quot;CABALLERO&quot;;
-}else if(em_znk2_genero.match(&#47;(u|U).*&#47;)){
-	genero = &quot;UNISEX&quot;;
-}else if(em_znk2_genero.match(&#47;(p|P).*&#47;)){
-	genero = &quot;PAREJAS&quot;;
-}else if(em_znk2_genero.match(&#47;(n|N).*(o|O)&#47;)){
-	genero = &quot;NIÑO&quot;;
-}else if(em_znk2_genero.match(&#47;(n|N).*(a|A)&#47;)){
-	genero = &quot;NIÑA&quot;;
-}else{
-	genero = em_znk2_genero.toUpperCase();
-}
-</jsScript_script>
-      </jsScript>    </jsScripts>    <fields>      <field>        <name>genero</name>
-        <rename>em_znk2_genero</rename>
-        <type>String</type>
-        <length>15</length>
-        <precision>-1</precision>
-        <replace>Y</replace>
-      </field>    </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>133</xloc>
-      <yloc>255</yloc>
       <draw>Y</draw>
       </GUI>
     </step>

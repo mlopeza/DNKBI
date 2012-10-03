@@ -945,8 +945,8 @@ trans_Status = CONTINUE_TRANSFORMATION;</jsScript_script>
         <replace>Y</replace>
       </field>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>211</xloc>
-      <yloc>275</yloc>
+      <xloc>248</xloc>
+      <yloc>288</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
